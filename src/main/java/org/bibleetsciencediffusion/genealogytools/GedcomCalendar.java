@@ -108,7 +108,7 @@ public class GedcomCalendar {
         System.out.println(toAD("0001"));
         System.out.println(toAD("@#DHEBREW@ 5780"));
         */
-        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\Bible_Genealogy.ged"),new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\Bible_Genealogy.AD.ged"));
+        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.ged"),new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AD.ged"));
 
     }
 }
