@@ -80,7 +80,7 @@ public class GedcomCalendar {
             formater = new SimpleDateFormat("yyyy G", Locale.ENGLISH);
         }
 
-        String adDateString = formater.format(calendar.getTime());
+        String adDateString = formater.format(calendar.getTime()).replace("BC","B.C.");
         return adDateString;
     }
 
@@ -101,13 +101,13 @@ public class GedcomCalendar {
 
 
     public static void main(String args[]) {
-        /*
+
         System.out.println(toAD("@#DHEBREW@ 0001"));
         System.out.println(toAD("@#DHEBREW@ 1656"));
         System.out.println(toAD("@#DHEBREW@ 1948"));
         System.out.println(toAD("0001"));
         System.out.println(toAD("@#DHEBREW@ 5780"));
-        */
+
         convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.ged"),new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AD.ged"));
 
     }
