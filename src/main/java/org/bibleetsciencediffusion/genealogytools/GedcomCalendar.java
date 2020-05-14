@@ -13,13 +13,19 @@ import java.util.regex.Pattern;
 
 public class GedcomCalendar {
 
-    static Date HEBREW_REFERENCE_DATE = new Date();
-    static int HEBREW_DIFFERENCE_YEARS = -167;
-
+    /**
+     * Date of destruction of first temple
+     */
+    static Date HEBREW_REFERENCE_DATE;
+    /**
+     * Difference between pharisan calendar and codex judaica calendar
+     */
+    static int HEBREW_DIFFERENCE_YEARS = -164;
+    static int HEBREW_DIFFERENCE_MONTHS = 0;
+    static int HEBREW_DIFFERENCE_DAYS = -8;
     static {
         Calendar calendar = Calendar.getInstance();
-        calendar.setTime(HEBREW_REFERENCE_DATE);
-        calendar.set(Calendar.YEAR,1);
+        calendar.set(Calendar.YEAR,-587);
         calendar.set(Calendar.MONTH, 0);
         calendar.set(Calendar.DAY_OF_MONTH, 0);
         HEBREW_REFERENCE_DATE = calendar.getTime();
@@ -75,12 +81,12 @@ public class GedcomCalendar {
         SimpleDateFormat formater = new SimpleDateFormat("dd MMM yyyy", Locale.ENGLISH);
         if (isHebrewDate(dateString) && date.before(HEBREW_REFERENCE_DATE)) {
             calendar.add(Calendar.YEAR, HEBREW_DIFFERENCE_YEARS);
-            calendar.set(Calendar.MONTH, 0);
-            calendar.set(Calendar.DAY_OF_MONTH, 0);
+            calendar.add(Calendar.MONTH, HEBREW_DIFFERENCE_MONTHS);
+            calendar.add(Calendar.DAY_OF_MONTH, HEBREW_DIFFERENCE_DAYS);
             formater = new SimpleDateFormat("yyyy G", Locale.ENGLISH);
         }
 
-        String adDateString = formater.format(calendar.getTime()).replace("BC","B.C.");
+        String adDateString = formater.format(calendar.getTime()).replace("BC","B.C.").toUpperCase();
         return adDateString;
     }
 
@@ -102,13 +108,14 @@ public class GedcomCalendar {
 
     public static void main(String args[]) {
 
+        //TODO: use test cases
         System.out.println(toAD("@#DHEBREW@ 0001"));
         System.out.println(toAD("@#DHEBREW@ 1656"));
         System.out.println(toAD("@#DHEBREW@ 1948"));
         System.out.println(toAD("0001"));
         System.out.println(toAD("@#DHEBREW@ 5780"));
 
-        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.ged"),new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AD.ged"));
+        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AM.ged"),new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AD.ged"));
 
     }
 }
