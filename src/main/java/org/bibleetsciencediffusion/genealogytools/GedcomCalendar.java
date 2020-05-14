@@ -104,18 +104,11 @@ public class GedcomCalendar {
     }
 
 
-
-
+    /**
+     *
+     * @param args : input and output filename
+     */
     public static void main(String args[]) {
-
-        //TODO: use test cases
-        System.out.println(toAD("@#DHEBREW@ 0001"));
-        System.out.println(toAD("@#DHEBREW@ 1656"));
-        System.out.println(toAD("@#DHEBREW@ 1948"));
-        System.out.println(toAD("0001"));
-        System.out.println(toAD("@#DHEBREW@ 5780"));
-
-        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AM.ged"),new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AD.ged"));
-
+        convertWithAD(new File(args[1]), new File(args[2]));
     }
 }
