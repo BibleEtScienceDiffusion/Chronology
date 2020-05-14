@@ -78,6 +78,7 @@ Johnson, Ken. Ancient Post-Flood History (pp. 18-19). Biblefacts.org. Édition d
 
 #### Éléments externes
 
+Le livre du Juste confirme en 13:17 que c'est en l'année 2018 AM que Abraham a eu la prophétie sur Canaan, alors qu'il était âgé de 70 ans.
 ### La datation de la prise de Jéricho
 #### Éléments internes
 
