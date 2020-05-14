@@ -4,7 +4,7 @@
 Cela suppose de ne pas considérer comme de la mythologie tout ce qui a trait aux âges indiqués et aux au déluge
 
 Avertissement de 2 Pierre 3:5-6 :
-"5For this they willfully forget: that by the word of God the heavens were of old, and the earth standing out of water and in the water, 6by which the world that then existed perished, being flooded with water."
+"5For this they willfully forget: that by the word of God the heavens were of old, and the earth standing out of water and in the water, 6by which the world that then existed perished, being flooded with water." 1 Peter 3:5-6 (NKJV)
 
 Il est nécessaire d'accepter que oes conditions terrestres avant le déluge ont eu un rôle primordial sur la longévité des premiers hommes.
 
@@ -43,6 +43,9 @@ Années lunaires et solaires
 
 ### La datation du  déluge
 #### Éléments internes
+
+* 1656 AM
+
 #### Éléments externes
 
 ### Les datations après le deluge
@@ -50,10 +53,14 @@ Années lunaires et solaires
 #### Éléments externes
 
 ## Le séjour d'Israël en Égypte et Canaan
-### La datation de la venue d'Israël en Egypte
+### La datation de la migration d'Israël en Egypte
 #### Éléments internes
-#### Éléments externes
+* 2238 AM
 
+### Éléments externes
+Jasher date la migration d’Israël en Égypte à 2238 AM et l’Exode à 2448 AM. Ces dates divisent les quatre cent trente ans comme suit: le séjour en Égypte deux cent dix ans et le temps passé à Canaan, deux cent vingt ans. Cela équivaut aux quatre cent trente ans trouvés dans Galates 3:17.
+Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Kindle.  
+#
 ### La datation de l'exode d'Israel hors d'Egypte
 #### Éléments internes
 
@@ -67,12 +74,14 @@ Johnson, Ken. Ancient Post-Flood History (pp. 18-19). Biblefacts.org. Édition d
 
 “And the sojourning of the children of Israel, while they sojourned in the land of Egypt and the land of Canaan, was four hundred and thirty years. And it came to pass after the four hundred and thirty years, all the forces of the Lord came forth out of the land of Egypt by night.” Exodus 12: 40-41 LXX
  
-
+* 2448 AM
 
 #### Éléments externes
 
 ### La datation de la prise de Jéricho
 #### Éléments internes
+
+* 2488 AM
 #### Éléments externes
 
 ## Le premier temple d'Israël
