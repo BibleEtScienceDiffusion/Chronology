@@ -1,7 +1,7 @@
 # Chronologie biblique
 ## Principes généraux
 ### Partir de la naissance d'Adam comme année de référence
-Cela suppose de ne pas considérer comme de la mythologie tout ce qui a trait aux âges indiqués et aux au déluge
+Cela suppose de ne pas considérer comme de la mythologie tout ce qui a trait aux âges indiqués et au déluge
 
 Avertissement de 2 Pierre 3:5-6 :
 "5For this they willfully forget: that by the word of God the heavens were of old, and the earth standing out of water and in the water, 6by which the world that then existed perished, being flooded with water." 1 Peter 3:5-6 (NKJV)
