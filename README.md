@@ -32,7 +32,7 @@ Il possède une chronologie divergente, plus longue, mais contient d'autres él�
 * Midrashim
 
 ### Recalibrer des datations de certaines preuves archéologiques externes
-Cf. Wild, Eva MArie et Kultneria, Walter : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
+Cf. Wild, Eva Maria et Kutschera : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
 
 Dans cet article, la référence demeure les recoupements  dendrochronologique, dénombrant  de manière indiscutable le nombres d'années terrestres qui se sont écoulées.
 Les datations radiocarbones donnent des estimations qui sont d'autant plus reculées dans le temps qu'elles sont anciennes, ce qui nécessite un recalibrage non linéaire.
