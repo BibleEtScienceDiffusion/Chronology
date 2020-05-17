@@ -78,7 +78,7 @@ Johnson, Ken. Ancient Post-Flood History (pp. 18-19). Biblefacts.org. Édition d
 
 “And the sojourning of the children of Israel, while they sojourned in the land of Egypt and the land of Canaan, was four hundred and thirty years. And it came to pass after the four hundred and thirty years, all the forces of the Lord came forth out of the land of Egypt by night.” Exodus 12: 40-41 LXX
  
-On a vu que la promesse faite à Abraham ne concernait pas l'Egypte seulement mais toute la période où les descendants d'Abraham ont été dans un pays étranger,  que ce soit en Egypte ou à Canaan.
+Nous avons vu que la promesse faite à Abraham ne concernait pas l'Egypte seulement mais toute la période où les descendants d'Abraham ont été dans un pays étranger,  que ce soit en Egypte ou à Canaan.
 La date de la migration en Egypte remonte à 2238 AM et de l'Exode à 2448 AM, soit 210 ans après.
 La partie passée à Canaan comme pays étranger précède la migration en Egypte, soit 2018 AM, c'est à dire l'année correspondant aux 70 ans d'Abram, lorsque Dieu lui a fait la promesse.
  
@@ -90,16 +90,16 @@ Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Ki
 
 * 2238 AM (migration en Egypte) correspond à une datation biblique/historique de 1687 av. J.-C., soit une datation académique de -2500 à -2600, en tenant compte du recalibrage nécessaire.
 
-Il apparaît dans les archives egyptiennes qu'il y a eu une grande famine, selon ce que rapporte Ken Johnson :
+L'archive egyptienne Manethi mentionne qu'il y a eu une grande famine, selon ce que rapporte Ken Johnson :
 
-In 2228 AM, Joseph interpreted Pharaoh’s dream of seven years of plenty and seven years of famine. This same year Joseph became Viceroy of Egypt. We are told in Genesis 41: 45 that Pharaoh renamed Joseph “Zaphnath-Paaneah.” Manetho records a seven-year famine occurred in the eighteenth year of the reign of Djoser. If this seven-year famine is the same as the one Joseph predicted, then the eighteenth year of Djoser was 2235 AM.
+En 2228 AM, Joseph a interprété le rêve de Pharaon de sept ans d'abondance et sept ans de famine. Cette même année, Joseph est devenu vice-roi d'Égypte. On nous dit dans Genèse 41:45 que Pharaon a renommé Joseph «Zaphnath-Paaneah». Manetho enregistre une famine de sept ans survenue au cours de la dix-huitième année du règne de Djoser. Si cette famine de sept ans est la même que celle prédite par Joseph, alors la dix-huitième année de Djoser était 2235 AM.
 
-The Viceroy of Djoser, Imhotep, designed the step pyramid at Sakkara. On a rock monument at Sehel, there is an inscription telling how Pharaoh consulted the wise Imhotep about a seven-year famine. In another inscription near the step pyramid, the builder is referred to as Zanakht – very close to Joseph’s Egyptian name Zaphnath-Paaneah as given in Genesis. Imhotep’s Legacy Both Imhotep and Joseph lived to be one hundred and ten years old. When Imhotep was one hundred years old, his wisdom was tested by new court officials by asking him to create an oasis in the desert. He engineered a feeder canal from the Nile to his man-made lake. Today in the region of El-Fayoum, southwest of Cairo, there still remains the man-made fresh water lake called Birqet Qarun. It is fed by a canal stretching from the Nile to the Basin. The canal is known as Bahr Yousef or the Sea of Joseph!
- 
+Le vice-roi de Djéser, Imhotep, a conçu la pyramide à degrés de Sakkara. Sur un monument rocheux à Sehel, il y a une inscription racontant comment Pharaon a consulté le sage Imhotep au sujet d'une famine de sept ans. Dans une autre inscription près de la pyramide à degrés, le constructeur est appelé Zanakht - très proche du nom égyptien de Joseph Zaphnath-Paaneah tel qu'il est donné dans la Genèse. L'héritage d'Imhotep Imhotep atteste qu'il a vécu jusqu'à cent dix ans, soit le même âge que Joseph. Quand Imhotep avait cent ans, sa sagesse a été testée par de nouveaux fonctionnaires de la cour en lui demandant de créer une oasis dans le désert. Il a aménagé un canal d'alimentation du Nil à son lac artificiel. Aujourd'hui, dans la région d'El-Fayoum, au sud-ouest du Caire, il reste encore le lac d'eau douce artificiel appelé Birqet Qarun. Il est alimenté par un canal qui s'étend du Nil au bassin. Le canal est connu comme Bahr Yousef ou la mer de Joseph! 
+
 Johnson, Ken. Ancient Post-Flood History (pp. 152-153). Biblefacts.org. Édition du Kindle.
 
-Ainsi, le fils d'Israël (Jacob),Joseph, correspond au personnage historique d'Egypte Imhotep. C'était le vizir du pharaon Djozer, qui aurait vécu sous la IIIe dynastie, soit, selon la datation académique, entre -2700 et -2600.
-Cela correspond donc très bien.
+Ainsi, le fils d'Israël (Jacob),Joseph, correspond selon toute vraisemblance au personnage historique d'Egypte Imhotep. C'était le vizir du pharaon Djozer, qui aurait vécu sous la IIIe dynastie, soit, selon la datation académique, entre -2700 et -2600.
+Cela correspond donc très bien également, au niveau des dates académiques, à cette migration de la tribu d'Israël en Egypte, en raison d'une famine.
  
 * 2448 AM (exode d'Egypte) correspond à une datation biblique/historique de 1477 av. J.-C., soit une datation académique de -2000, en tenant compte du recalibrage nécessaire.
 
