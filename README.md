@@ -77,28 +77,44 @@ La Terre Promise concerne le pays de Canaan, descendant de Cham, fils de Noé. C
 
 L'écart de 30 ans entre 400 et 430, correspond au temps écoulé entre la promesse et la naissance d'Isaac, la postérité dont il est question dans Genèse 15:13, naissance à partir de laquelle s'effectue le décompte des 400 ans, jusqu'à réception de la Loi par Moïse.
 
-La promesse a donc été faite en 2018 AM et la naissance du fils de la promesse (Isaac) s'est faite en 2048 AM.
+La promesse a donc été faite en 2018 AM et la naissance du fils de la promesse (Isaac) s'est faite en 2048 AM, 30 ans plus tard.
+
+La confirmation est donnée dans Exode :
+
+“Now the sojourning of the children of Israel, who dwelt in Egypt, was four hundred and thirty years. And it came to pass at the end of the four hundred and thirty years, even the selfsame day it came to pass, that all the hosts of the LORD went out from the land of Egypt.” Exodus 12: 40-41
+
+“And the sojourning of the children of Israel, while they sojourned in the land of Egypt and the land of Canaan, was four hundred and thirty years. And it came to pass after the four hundred and thirty years, all the forces of the Lord came forth out of the land of Egypt by night.” Exodus 12: 40-41 LXX
+
+Johnson, Ken. Ancient Post-Flood History (pp. 18-19). Biblefacts.org. Édition du Kindle. 
+ 
+Nous avons vu que la promesse faite à Abraham ne concernait pas l'Egypte seulement mais toute la période où les descendants d'Abraham ont été dans un pays étranger,  que ce soit en Egypte ou à Canaan.
+La date de la migration en Egypte remonte à 2238 AM et de l'Exode à 2448 AM, soit 210 ans après.
+La partie passée à Canaan comme pays étranger précède la migration en Egypte, soit 2018 AM, c'est à dire l'année correspondant aux 70 ans d'Abram, lorsque Dieu lui a fait la promesse.
+
 
 ### Éléments externes
 Le livre du Juste confirme en 13:17 que c'est en l'année 2018 AM que Abraham a eu la prophétie sur Canaan, alors qu'il était âgé de 70 ans.
 ohnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Kindle.  
 
-### La datation du séjour d'Israël en Egypte
+### La migration d'Israël en Egypte
 #### Éléments internes
 
-Johnson, Ken. Ancient Post-Flood History (pp. 18-19). Biblefacts.org. Édition du Kindle. 
+La datation en 2238 AM s'effectue de deux manières concordantes :
+- la généalogie de Jacob et sa date d'arrivée en Egypte 
+Genèse 25:26 Date de naissance de Jacob (70 ans d'Isaac)
+Genèse 47:9 Jacob 130 ans lors de l'entrée d'Egypte (confirmation de la promesse de 430 ans faite à Abram lors de ses 70 ans).  
 
-“Now the sojourning of the children of Israel, who dwelt in Egypt, was four hundred and thirty years. And it came to pass at the end of the four hundred and thirty years, even the selfsame day it came to pass, that all the hosts of the LORD went out from the land of Egypt.” Exodus 12: 40-41
-
-“And the sojourning of the children of Israel, while they sojourned in the land of Egypt and the land of Canaan, was four hundred and thirty years. And it came to pass after the four hundred and thirty years, all the forces of the Lord came forth out of the land of Egypt by night.” Exodus 12: 40-41 LXX
- 
-Nous avons vu que la promesse faite à Abraham ne concernait pas l'Egypte seulement mais toute la période où les descendants d'Abraham ont été dans un pays étranger,  que ce soit en Egypte ou à Canaan.
-La date de la migration en Egypte remonte à 2238 AM et de l'Exode à 2448 AM, soit 210 ans après.
-La partie passée à Canaan comme pays étranger précède la migration en Egypte, soit 2018 AM, c'est à dire l'année correspondant aux 70 ans d'Abram, lorsque Dieu lui a fait la promesse.
- 
+- la biographie de Joseph
+Genèse 41:46 Joseph a 30 ans lorsqu'il rencontre le Pharaon et interprète le rêve de 2 x 7 ans (richesse+famine) 
+Genèse 45:11 encore 5 ans de famine. Joseph a donc 39 (30 + 7 + 2) ans lorsque sa famille (70 membres)  le rejoint pour migrer en Egypte
 
 ### Éléments externes
-Jasher date la migration d’Israël en Égypte à 2238 AM et l’Exode à 2448 AM. Ces dates divisent les quatre cent trente ans comme suit: le séjour en Égypte deux cent dix ans et le temps passé à Canaan, deux cent vingt ans. Cela équivaut aux quatre cent trente ans trouvés dans Galates 3:17.
+Jasher date la migration d’Israël en Égypte à 2238 AM.
+
+Cette date est parfaitement corroborée par cet élément sur la vie de Joseph issue du livre du Juste (Jasher) :
+En effet, Dans Jasher chapitre 59, on a la confirmation externe que Joseph avait 17 ans lorsqu'il a été vendu par ses frères et 30 ans lorsqu'il a commencé à gouverner (en comptant à partir du fait qu'il a vécu 110 ans) :
+          
+"And Joseph lived in the land of Egypt ninety-three years, and Joseph reigned over all Egypt eighty years." (Jasher 59:20)
 
 Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Kindle.  
 
@@ -112,10 +128,26 @@ Le vice-roi de Djéser, Imhotep, a conçu la pyramide à degrés de Sakkara. Sur
 
 Johnson, Ken. Ancient Post-Flood History (pp. 152-153). Biblefacts.org. Édition du Kindle.
 
+
+
 Ainsi, le fils d'Israël (Jacob),Joseph, correspond selon toute vraisemblance au personnage historique d'Egypte Imhotep. C'était le vizir du pharaon Djozer, qui aurait vécu sous la IIIe dynastie, soit, selon la datation académique, entre -2700 et -2600.
 La date de migration en Egypte, établie à 1687 av. J.-C. correspond à une datation académique de -2500 à -2600, en tenant compte du recalibrage nécessaire. 
 Cela correspond donc très bien également, au niveau des dates académiques, à cette migration de la tribu d'Israël en Egypte, en raison d'une famine.
  
+
+
+### L'Exode d'Israël hors d'Egypte
+#### Éléments internes
+
+Nous reprenons le passage d'Exode : “And the sojourning of the children of Israel, while they sojourned in the land of Egypt and the land of Canaan, was four hundred and thirty years. And it came to pass after the four hundred and thirty years, all the forces of the Lord came forth out of the land of Egypt by night.” Exodus 12: 40-41 LXX
+Le décompte des 430 ans s'effectue depuis l'arrivée de Abram en Canaan, alors qu'il avait 70 ans. 
+Cela équivaut aux quatre cent trente ans trouvés dans Galates 3:17 (cf. partie sur la promesse faite à Abraham).
+
+### Éléments externes
+
+Jasher date, comme on l'a vu, la migration d’Israël en Égypte à 2238 AM et l’Exode à 2448 AM. Ces dates divisent les quatre cent trente ans comme suit: le séjour en Égypte deux cent dix ans et le temps passé à Canaan, deux cent vingt ans. 
+
+
 * 2448 AM (exode d'Egypte) correspond à une datation biblique/historique de 1477 av. J.-C.
 
 Selon le livre du Juste, cité par Ken Johnson (P. 158), le Pharaon contemporain de Moïse correspond à Melol, qui a régné entre 2353 AM et 2447 AM, soit le plus long règne (94 ans) dans la VIème dynastie, soit une période biblique/historique allant de 1572 av. J.-C. à 1478 av. J.-C.
@@ -174,7 +206,7 @@ Le calendrier hébreu pharisien
 
 * Le Codex Judaica (manuscrits de la mer morte)
 
-3338 AM 
+3338 AM, ce qui correspond à une date historique de 587 av. J.-C.
 
 
 # Bibliographie
