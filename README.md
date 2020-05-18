@@ -1,6 +1,10 @@
 # Chronologie biblique
 ## Principes généraux
-### Partir de la naissance d'Adam comme année de référence
+
+En respectant bien certains principes, on aboutit à une cohérence interne parfaite entre tous les repères chronologiques mentionnés dans la Bible,
+relatifs à des événements historiques.
+
+### Partir de la création d'Adam comme année de référence
 Cela suppose de ne pas considérer comme de la mythologie tout ce qui a trait aux âges indiqués et au déluge
 
 Avertissement de 2 Pierre 3:5-6 :
@@ -31,12 +35,20 @@ Il possède une chronologie divergente, plus longue, mais contient d'autres él�
 * Talmud, 
 * Midrashim
 
+
 ### Recalibrer des datations de certaines preuves archéologiques externes
+
 Cf. Wild, Eva Maria et Kutschera : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
 
-Dans cet article, la référence demeure les recoupements  dendrochronologique, dénombrant  de manière indiscutable le nombres d'années terrestres qui se sont écoulées.
+Dans cet article, la référence demeure les recoupements  dendrochronologiques, dénombrant  de manière indiscutable le nombres d'années terrestres qui se sont écoulées, à travers des coupes d'arbres.
+
 Les datations radiocarbones donnent des estimations qui sont d'autant plus reculées dans le temps qu'elles sont anciennes, ce qui nécessite un recalibrage non linéaire.
 Eddie Marie-Couste a exploré cette piste selon une étude à publier.
+
+### Privilégier les chronologies relatives aux datations absolues  
+
+Comme les datations radiocarbones sont à considérer avec beaucoup de précautions, on tirera profit de toutes les archives qui mentionnent des durées de vie de personnages historiques, des durées de vie.
+La méthode est de faire des recoupements à travers diverses sources ou événements.
 
 ## Les patriarches de Adam à Israël
 ### Les datations avant le déluge
@@ -54,7 +66,9 @@ Eddie Marie-Couste a exploré cette piste selon une étude à publier.
 #### Éléments internes
 #### Éléments externes
 
-## Le pays de Canaan : de la promesse à la conquête, en passant par l'Egypte
+## La Terre Promise : de la promesse à la conquête, en passant par l'Egypte
+
+La Terre Promise concerne le pays de Canaan, descendant de Cham, fils de Noé. C'est la terre qui a été promise à Abram, comme pays où coule le lait et le miel, pour qu'une descendance en prenne possession, à travers le fils de la promesse, Isaac, puis Jacob. 
 
 ### La promesse faite à Abraham
 #### Éléments internes
@@ -88,7 +102,7 @@ Jasher date la migration d’Israël en Égypte à 2238 AM et l’Exode à 2448 
 
 Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Kindle.  
 
-* 2238 AM (migration en Egypte) correspond à une datation biblique/historique de 1687 av. J.-C., soit une datation académique de -2500 à -2600, en tenant compte du recalibrage nécessaire.
+* 2238 AM (migration en Egypte) correspond à une datation biblique/historique de 1687 av. J.-C.
 
 L'archive egyptienne Manethi mentionne qu'il y a eu une grande famine, selon ce que rapporte Ken Johnson :
 
@@ -99,9 +113,10 @@ Le vice-roi de Djéser, Imhotep, a conçu la pyramide à degrés de Sakkara. Sur
 Johnson, Ken. Ancient Post-Flood History (pp. 152-153). Biblefacts.org. Édition du Kindle.
 
 Ainsi, le fils d'Israël (Jacob),Joseph, correspond selon toute vraisemblance au personnage historique d'Egypte Imhotep. C'était le vizir du pharaon Djozer, qui aurait vécu sous la IIIe dynastie, soit, selon la datation académique, entre -2700 et -2600.
+La date de migration en Egypte, établie à 1687 av. J.-C. correspond à une datation académique de -2500 à -2600, en tenant compte du recalibrage nécessaire. 
 Cela correspond donc très bien également, au niveau des dates académiques, à cette migration de la tribu d'Israël en Egypte, en raison d'une famine.
  
-* 2448 AM (exode d'Egypte) correspond à une datation biblique/historique de 1477 av. J.-C., soit une datation académique de -2000, en tenant compte du recalibrage nécessaire.
+* 2448 AM (exode d'Egypte) correspond à une datation biblique/historique de 1477 av. J.-C.
 
 Selon le livre du Juste, cité par Ken Johnson (P. 158), le Pharaon contemporain de Moïse correspond à Melol, qui a régné entre 2353 AM et 2447 AM, soit le plus long règne (94 ans) dans la VIème dynastie, soit une période biblique/historique allant de 1572 av. J.-C. à 1478 av. J.-C.
 
@@ -110,6 +125,8 @@ On retrouve la même durée de règne dans le document égyptien Manethon de 94 
 Selon le livre du Juste, Melol est décédé un an avant l'Exode. Son premier fils (Adikam dans le livre du Juste, Neferkare the Younger dans Manetho) lui a succédé puis est décédé au bout d'un an de règne  selon les deux sources (en 2448 AM dans le livre du Juste). Cela coincide avec la dixième plaie d'Egypte, selon laquelle mourrait le premier né masculin.
 
 Il apparaît que le Pharaon Neferkare Pépi II aurait vécu selon les datations académiques entre -2250 à -2150, soit 1600 ans à 1500 ans av. J.-C., si l'on tient compte du recalibrage.
+La date de sa mort selon la Bible ou le livre du Juste, établie à 2447 AM, correspond à une datation académique de -2000, en tenant compte du recalibrage nécessaire.
+On voit donc que les datations coïncident très bien dans ces conditions.
 
 
 ### La datation de la conquête de Canaan
