@@ -53,6 +53,19 @@ La méthode est de faire des recoupements à travers diverses sources ou événe
 ## Les patriarches de Adam à Israël
 ### Les datations avant le déluge
 #### Éléments internes
+
+* Postérité de Noé
+
+Sem avait 98 ans au déluge, et non pas 100, comme le montre le verset suivant :
+
+This is the genealogy of Shem: Shem was one hundred years old, and begot Arphaxad two years after the flood. (Genesis 11:10, NKJV)
+
+Voici la postérité de Sem. Sem, âgé de cent ans, engendra Arpacschad, deux ans après le déluge. (Genèse 11:10, NEG)
+
+Lorsque c'est mentionné fin de Genèse 5 que Noé a eu 3 fils à 500 ans, c'est en fait à partir. 
+Japhet né en 1556, soit 100 ans avant le déluge, l'âiné. Genèse 9:24 nous apprend que Cham est le plus jeune des fils de Noé.
+Sem est toujours cité en premier car c'est le plus important des trois frères dans l'histoire des juifs.
+
 #### Éléments externes
 
 ### La datation du  déluge
