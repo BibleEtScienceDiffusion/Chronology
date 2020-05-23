@@ -50,9 +50,26 @@ Eddie Marie-Couste a exploré cette piste selon une étude à publier.
 Comme les datations radiocarbones sont à considérer avec beaucoup de précautions, on tirera profit de toutes les archives qui mentionnent des durées de vie de personnages historiques, des durées de vie.
 La méthode est de faire des recoupements à travers diverses sources ou événements.
 
-## Les patriarches de Adam à Israël
+## Les patriarches de Adam à Jacob (Israël)
 ### Les datations avant le déluge
 #### Éléments internes
+
+
+
+| Patriarche  | Date de naissance (AM) | Engendre    | Age procréation | Age atteint à la mort | Date de mort (AM) | Référence |
+| ----------- | ---------------------- | ----------- | --------------- | --------------------- | ----------------- | --------  |
+| Adam        | 1                      | Seth        | 130             | 930                   | 930               | Genèse 5 |
+| Seth        | 130                    | Enosch      | 105             | 912                   | 1042              | Genèse 5 |
+| Enosch      | 235                    | Kenan       | 90              | 905                   | 1140              | Genèse 5 |
+| Kenan       | 325                    | Mahalaleel  | 70              | 910                   | 1235              | Genèse 5 |
+| Mahalaleel  | 395                    | Jered       | 65              | 895                   | 1290              | Genèse 5 |
+| Jered       | 460                    | Henoc       | 162             | 962                   | 1422              | Genèse 5 |
+| Henoc       | 622                    | Metuschelah | 65              | 365 (enlevé)          | 987 (enlevé)      | Genèse 5 |
+| Metuschelah | 687                    | Lemec       | 187             | 969                   | 1656              | Genèse 5 |
+| Lemec       | 874                    | Noé         | 182             | 777                   | 1651              | Genèse 5 |
+| Noé         | 1056                   | Sem         | 502             | 950                   | 2154              | Genèse 9 |
+
+
 
 * Postérité de Noé
 
@@ -77,6 +94,23 @@ Sem est toujours cité en premier car c'est le plus important des trois frères 
 
 ### Les datations après le deluge
 #### Éléments internes
+
+
+
+| Patriarche | Date de naissance (AM) | Engendre  | Age procréation | Age atteint à la mort | Date de mort (AM) | Référence |
+| ---------- | ---------------------- | --------- | --------------- | --------------------- | ----------------- | --------- |
+| Sem        | 1558                   | Arpaschad | 100             | 600                   | 2158              | Genèse 11 |
+| Arpaschad  | 1658                   | Schelach  | 35              | 438                   | 2096              | Genèse 11 |
+| Schelach   | 1693                   | Heber     | 30              | 433                   | 2126              | Genèse 11 |
+| Heber      | 1723                   | Peleg     | 34              | 464                   | 2187              | Genèse 11 |
+| Peleg      | 1757                   | Rehu      | 30              | 239                   | 1996              | Genèse 11 |
+| Rehu       | 1787                   | Serug     | 32              | 239                   | 2026              | Genèse 11 |
+| Serug      | 1819                   | Nachor    | 30              | 230                   | 2049              | Genèse 11 |
+| Nachor     | 1849                   | Terach    | 29              | 148                   | 1997              | Genèse 11 |
+| Terach     | 1878                   | Abraham   | 70              | 205                   | 2083              | Genèse 11 |
+| Abraham    | 1948                   | Isaac     | 100             | 175                   | 2123              | Genèse 11 |
+| Isaac      | 2048                   | Jacob     | 60              | 180                   | 2228              | Genèse 11 |
+
 #### Éléments externes
 
 ## La Terre Promise : de la promesse à la conquête, en passant par l'Egypte
@@ -99,7 +133,7 @@ La confirmation est donnée dans Exode :
 “And the sojourning of the children of Israel, while they sojourned in the land of Egypt and the land of Canaan, was four hundred and thirty years. And it came to pass after the four hundred and thirty years, all the forces of the Lord came forth out of the land of Egypt by night.” Exodus 12: 40-41 LXX
 
 Johnson, Ken. Ancient Post-Flood History (pp. 18-19). Biblefacts.org. Édition du Kindle. 
- 
+
 Nous avons vu que la promesse faite à Abraham ne concernait pas l'Egypte seulement mais toute la période où les descendants d'Abraham ont été dans un pays étranger,  que ce soit en Egypte ou à Canaan.
 La date de la migration en Egypte remonte à 2238 AM et de l'Exode à 2448 AM, soit 210 ans après.
 La partie passée à Canaan comme pays étranger précède la migration en Egypte, soit 2018 AM, c'est à dire l'année correspondant aux 70 ans d'Abram, lorsque Dieu lui a fait la promesse.
@@ -146,7 +180,7 @@ Johnson, Ken. Ancient Post-Flood History (pp. 152-153). Biblefacts.org. Édition
 Ainsi, le fils d'Israël (Jacob),Joseph, correspond selon toute vraisemblance au personnage historique d'Egypte Imhotep. C'était le vizir du pharaon Djozer, qui aurait vécu sous la IIIe dynastie, soit, selon la datation académique, entre -2700 et -2600.
 La date de migration en Egypte, établie à 1687 av. J.-C. correspond à une datation académique de -2500 à -2600, en tenant compte du recalibrage nécessaire. 
 Cela correspond donc très bien également, au niveau des dates académiques, à cette migration de la tribu d'Israël en Egypte, en raison d'une famine.
- 
+
 
 
 ### L'Exode d'Israël hors d'Egypte
@@ -224,4 +258,5 @@ Le calendrier hébreu pharisien
 
 # Bibliographie
 * Johnson, Ken : Ancient Post Flood History, biblefacts.org
+* Millard, Alan : Des pierres qui parlent... Lumières archéologiques sur les lieux et les temps bibliques, Excelcis, 1998
 * Wild, Eva Maria et Kutschera, Walter : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
