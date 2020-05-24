@@ -10,7 +10,7 @@ Cela suppose de ne pas considérer comme de la mythologie tout ce qui a trait au
 Avertissement de 2 Pierre 3:5-6 :
 "5For this they willfully forget: that by the word of God the heavens were of old, and the earth standing out of water and in the water, 6by which the world that then existed perished, being flooded with water." 1 Peter 3:5-6 (NKJV)
 
-Il est nécessaire d'accepter que oes conditions terrestres avant le déluge ont eu un rôle primordial sur la longévité des premiers hommes.
+Il est nécessaire d'accepter que des conditions terrestres avant le déluge ont eu un rôle primordial sur la longévité des premiers hommes.
 
 ### Adopter une hiérarchie des sources
 
@@ -26,8 +26,10 @@ Il possède une chronologie divergente, plus longue, mais contient d'autres él�
 #### La conformité avec des livres de référence cités dans la Bible
 * Le livre du Juste (Book of the Upright, Sefer HaYasher)
 
+Ce livre est cité dans l'Ancien Testament dans Juges 10:13 et 2 Samuel 1:18. Dans le Nouveau Testament, il est repris dans 2 Timothée 3:8. Il retrace l'histoire du peuple choisi par Dieu de la Création à la sortie d'Egypte.
+
 #### La conformité avec des livres historiques de référence non cités dans la Bible 
-* Textes deuterocanoniques 
+* Textes deutérocanoniques 
 
 * Antiquités Juives de Flavius Josèphe
 
