@@ -52,8 +52,11 @@ Eddie Marie-Couste a exploré cette piste selon une étude à publier.
 Comme les datations radiocarbones sont à considérer avec beaucoup de précautions, on tirera profit de toutes les archives qui mentionnent des durées de vie de personnages historiques, des durées de vie.
 La méthode est de faire de|s recoupements à travers diverses sources ou événements.
 
-
-
+La mise en parallèle de la chronooigie des descendants d'Abraham et de la chronologie égyptienne
+a toujours été une pierre d'achaoppement, car la succession des dynapties égyptiennes prises les unes après les autres est plus étirée.
+Or, on remarque qu'il y a plusieurs lieux d'exercice du pouvoir, Memphis et Elephantine, dans l'Egypte ancienne et moyenne.
+Plutôt que d'avoir une approche complexe où ses lieux du pouvoir s'alterne, il semble plus conforme à la réalitité, que ces pouvoirs se sont exercés simultanément, et donc qu'il y a des dynasties parallèles.
+ 
 Basé sur les archives de  Manetho corrigées par Jasher, le tableau suivant montre le temps total (en parenthèses) de chaque dynastie et le temps total où chaque dynastie régnait sur Memphis ou Elephantine. 
 
 | Memphis (699) | Elephantine (624)|
@@ -107,11 +110,11 @@ Sem est toujours cité en premier car c'est le plus important des trois frères 
 #### Éléments externes
 
 Le rapport du projet RATE (Radioisotopes and the Age of The Earth) de l'ICR  indique que du 14C a été analysé dans dix échantillons de charbon par l’un des meilleurs laboratoires de SMA (Spectrométrie de masse avec accélérateur, limite extrême de détection de 100000 ans) du monde. Selon Baumgardner (l'un des auteurs),
+« notre projet RATE pour le 14C a mesuré des rapports 14C/C au-dessus du seuil de détection par SMA (Spectrometry Mass Accelarator) dans des diamants provenant d’une variété de lieux. Bien que des confirmations soient nécessaires pour justifier une affirmation forte à cet égard, ces mesures apparaissent limiter l’âge de la terre physique elle-même à une étendue de milliers (contre des milliards) d’années. »
 
-« notre projet RATE pour le 14C a mesuré des rapports 14C/C au-dessus du seuil de [détection par] SMA dans des diamants provenant d’une variété de lieux. Bien que des confirmations soient nécessaires pour justifier une affirmation forte à cet égard, ces mesures apparaissent limiter l’âge de la terre physique elle-même à une étendue de milliers (contre des milliards) d’années. »
-
-Il faut diviser par 10 les dates obtenues pour tenir compte du plus faible taux de 14C dans l'atmosphère avant le déluge, dû à présence d'une enveloppe protectrice de l'atmosphère, la canopée, qui arrêtait une bien plus grande partie des rayons cosmiques.
-
+On obtient sur la base de 10 échantillons de charbon envoyés à ce laboratoire utilisant la technique de SMA des âges compris entre 45000 et 55000 ans.
+Or, l faut diviser par 10 les dates obtenues pour tenir compte du plus faible taux de 14C dans l'atmosphère avant le déluge, dû à présence d'une enveloppe protectrice de l'atmosphère, la canopée, qui arrêtait une bien plus grande partie des rayons cosmiques.
+Cela nous ramène ainsi à un âge de 4500 ans, soit environ 2500 av. J.-C. Avec ces hypothèses, on arrivera donc à un âge très proche de celui fourni par la chronologie biblique.
 
 
 ### Les datations après le deluge
@@ -134,6 +137,8 @@ Il faut diviser par 10 les dates obtenues pour tenir compte du plus faible taux 
 | Isaac      | 2048                   | Jacob     | 60              | 180                   | 2228              | Genèse 11 |
 
 #### Éléments externes
+
+1993 AM : Chute de la tour de Babel
 
 ## La Terre Promise : de la promesse à la conquête, en passant par l'Egypte
 
