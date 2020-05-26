@@ -59,11 +59,11 @@ Plutôt que d'avoir une approche complexe où ses lieux du pouvoir s'alterne, il
  
 Basé sur les archives de  Manetho corrigées par Jasher, le tableau suivant montre le temps total (en parenthèses) de chaque dynastie et le temps total où chaque dynastie régnait sur Memphis ou Elephantine. 
 
-| Memphis (699) | Elephantine (624)|
+| Dynasties à Memphis (699 ans) | Dynasties à Elephantine (624 ans)|
 | ------------ | --------------- |
-| First – (253) | Second – (302) |
-| Fourth – (274) | Third – 2120-2334 AM (214) |
-| Sixth – 2278-2448 AM (172)  | Fifth – 2340-2448 AM (108) |
+| Première – (253 ans) | Seconde – (302 ans) | 
+| Quatrième – (274 ans) | Troisième – 2120-2334 AM (214 ans) |
+| Sixième – 2278-2448 AM (172 ans)  | Cinquième – 2340-2448 AM (108 ans) |
 
 Johnson, Ken. Ancient Post-Flood History (pp. 145-146). Biblefacts.org. Édition du Kindle. 
 
@@ -180,11 +180,10 @@ Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Ki
 |           | 5 Usaphais (20)           | 2 Kaiechos (39)         |
 |           | 6 Miebis (26)             | 3 Binothris (47)        |
 |           | 7 Semempses (18)          | 4 Tlas (17)             |
-|           | 8 Bieneches (26)          | 5 Sethenes 41)          |
-|                          |                                                               | 6 Chaires (17)              |
-||| 7 Nephercheres (25|
-||| 8 Sesochris (48)|
-||| 9 Cheneres (30)|
+|           | 8 Bieneches (26)          | 5 Sethenes 41)          |                                                              | 6 Chaires (17)              |
+| | | 7 Nephercheres (25)|
+| | | 8 Sesochris (48)|
+| | | 9 Cheneres (30)|
 
 Années de règne en parenthèses
 
@@ -234,18 +233,16 @@ Johnson, Ken. Ancient Post-Flood History (p. 145). Biblefacts.org. Édition du K
 
 L'archive égyptienne Manethi mentionne qu'il y a eu une grande famine, selon ce que rapporte Ken Johnson :
 
-En 2228 AM, Joseph a interprété le rêve de Pharaon de sept ans d'abondance et sept ans de famine. Cette même année, Joseph est devenu vice-roi d'Égypte. On nous dit dans Genèse 41:45 que Pharaon a renommé Joseph «Zaphnath-Paaneah». Manetho enregistre une famine de sept ans survenue au cours de la dix-huitième année du règne de Djoser. Si cette famine de sept ans est la même que celle prédite par Joseph, alors la dix-huitième année de Djoser était 2235 AM.
+En 2228 AM, Joseph a interprété le rêve de Pharaon de sept ans d'abondance et sept ans de famine. Cette même année, Joseph est devenu vice-roi d'Égypte. On nous dit dans Genèse 41:45 que Pharaon a renommé Joseph «Zaphnath-Paaneah». Manetho enregistre une famine de sept ans survenue au cours de la dix-huitième année du règne de Djoser Teti. Si cette famine de sept ans est la même que celle prédite par Joseph, alors la dix-huitième année de Djoser était 2235 AM.
 
-Le vice-roi de Djéser, Imhotep, a conçu la pyramide à degrés de Sakkara. Sur un monument rocheux à Sehel, il y a une inscription racontant comment Pharaon a consulté le sage Imhotep au sujet d'une famine de sept ans. Dans une autre inscription près de la pyramide à degrés, le constructeur est appelé Zanakht - très proche du nom égyptien de Joseph Zaphnath-Paaneah tel qu'il est donné dans la Genèse. L'héritage d'Imhotep Imhotep atteste qu'il a vécu jusqu'à cent dix ans, soit le même âge que Joseph. Quand Imhotep avait cent ans, sa sagesse a été testée par de nouveaux fonctionnaires de la cour en lui demandant de créer une oasis dans le désert. Il a aménagé un canal d'alimentation du Nil à son lac artificiel. Aujourd'hui, dans la région d'El-Fayoum, au sud-ouest du Caire, il reste encore le lac d'eau douce artificiel appelé Birqet Qarun. Il est alimenté par un canal qui s'étend du Nil au bassin. Le canal est connu comme Bahr Yousef ou la mer de Joseph! 
+Le vice-roi de Djoser Teti, Imhotep, a conçu la pyramide à degrés de Sakkara. Sur un monument rocheux à Sehel, il y a une inscription racontant comment Pharaon a consulté le sage Imhotep au sujet d'une famine de sept ans. Dans une autre inscription près de la pyramide à degrés, le constructeur est appelé Zanakht - très proche du nom égyptien de Joseph Zaphnath-Paaneah tel qu'il est donné dans la Genèse. L'héritage d'Imhotep Imhotep atteste qu'il a vécu jusqu'à cent dix ans, soit le même âge que Joseph. Quand Imhotep avait cent ans, sa sagesse a été testée par de nouveaux fonctionnaires de la cour en lui demandant de créer une oasis dans le désert. Il a aménagé un canal d'alimentation du Nil à son lac artificiel. Aujourd'hui, dans la région d'El-Fayoum, au sud-ouest du Caire, il reste encore le lac d'eau douce artificiel appelé Birqet Qarun. Il est alimenté par un canal qui s'étend du Nil au bassin. Le canal est connu comme Bahr Yousef ou la mer de Joseph! 
 
 Johnson, Ken. Ancient Post-Flood History (pp. 152-153). Biblefacts.org. Édition du Kindle.
 
 
 
 Ainsi, le fils d'Israël (Jacob),Joseph, correspond selon toute vraisemblance au personnage historique d'Egypte Imhotep. C'était le vizir du pharaon Djozer, qui aurait vécu sous la IIIe dynastie, soit, selon la datation académique, entre -2700 et -2600.
-La date de migration en Egypte, établie à 1687 av. J.-C. correspond à une datation académique de -2500 à -2600, en tenant compte du recalibrage nécessaire. 
-Cela correspond donc très bien également, au niveau des dates académiques, à cette migration de la tribu d'Israël en Egypte, en raison d'une famine.
-
+La date de migration en Egypte, établie à 1687 av. J.-C. correspond à 2238 av. J.-C.
 
 
 ### L'Exode d'Israël hors d'Egypte
