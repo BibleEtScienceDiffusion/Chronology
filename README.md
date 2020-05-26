@@ -297,14 +297,13 @@ Le début de la conquête de Canaan correspond à la mort de Moïse, soit un âg
 
 #### Éléments externes
 
-"Ref. Vincent Hugues. La chronologie des ruines de Jéricho. In: Comptes rendus des séances de l'Académie des Inscriptions et
-Belles-Lettres, 74ᵉ année, N. 1, 1930. pp. 50-55"
-
-Ces datations académiques sont évaluées par datation Carbone 14 à environ 2000 ans av. J.C.
-Le racalibrage de cette datation académique au carbone 14 fournit un temps biblique/historique de 1470 av J.-C.
 2488 AM correspond à environ 1440 av J.-C.
 
+Selon l'archéologue britanique Garstang (université de Liverpool), qui a entrepris une expédition dans les années 1930, l'Exode d'Egypte aurait eu lieu vers 1450 avant notre ère et Jéricho serait tombé une cinquantaine d'années plus tard, soit en 1400 avant notre ère. 
+Alan Millard précise que Garstang appuie sa datation sur les scaracbées trouvés dans les tombes ouvertes de Jéricho. Aucun de ces scarabées  n'était postérieur au règne du Pharaon Aménophis III, daté de 1411 à 1375 av. J.-C, selon lui.
+Jéricho aurait été détruit à la suite d'un tremblement de terre; mais les conquérants d'Israël auraient délibérément ajouté aux ravages en les incendiant également, comme indiqué dans Josué 6:24. À l'appui de ces conclusions, Garstang observe que les murs extérieurs de la ville semblent en effet être tombés vers l'extérieur, comme on pourrait s'y attendre naturellement en cas de tremblement de terre, tandis qu'entre les murs extérieur et intérieur, il y a des signes marqués de conflagration. 
 
+Ces travaux ont été repris par l'archéologue Kathleen Kenyon, de l'Université de Londres, vingt ans plus tard. En se fondant sur les styles de poterie, a revu la datation à quelques décennies précédant 1500 av J.C, puis est resté inhabité, comme en témoigne l'érision des murs.
 
 ## Le premier temple d'Israël
 ### La datation de la construction/dédicace du premier temple
@@ -335,7 +334,8 @@ Le calendrier hébreu pharisien
 3338 AM, ce qui correspond à une date historique de 587 av. J.-C.
 
 
-# Bibliographie
+## Bibliographie
+* Garstang, John et Garstang, J.B.E., The Story of Jericho,  New edition, revised. London: Marshall, Morgan and Scott. 200 pp. 8/6.
 * Johnson, Ken : Ancient Post Flood History, biblefacts.org
 * Millard, Alan : Des pierres qui parlent... Lumières archéologiques sur les lieux et les temps bibliques, Excelcis, 1998
 * Wild, Eva Maria et Kutschera, Walter : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
