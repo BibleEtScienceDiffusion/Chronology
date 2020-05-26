@@ -50,7 +50,19 @@ Eddie Marie-Couste a exploré cette piste selon une étude à publier.
 ### Privilégier les chronologies relatives aux datations absolues  
 
 Comme les datations radiocarbones sont à considérer avec beaucoup de précautions, on tirera profit de toutes les archives qui mentionnent des durées de vie de personnages historiques, des durées de vie.
-La méthode est de faire des recoupements à travers diverses sources ou événements.
+La méthode est de faire de|s recoupements à travers diverses sources ou événements.
+
+
+
+Basé sur les archives de  Manetho corrigées par Jasher, le tableau suivant montre le temps total (en parenthèses) de chaque dynastie et le temps total où chaque dynastie régnait sur Memphis ou Elephantine. 
+
+| Memphis (699) | Elephantine (624)|
+| ------------ | --------------- |
+| First – (253) | Second – (302) |
+| Fourth – (274) | Third – 2120-2334 AM (214) |
+| Sixth – 2278-2448 AM (172)  | Fifth – 2340-2448 AM (108) |
+
+Johnson, Ken. Ancient Post-Flood History (pp. 145-146). Biblefacts.org. Édition du Kindle. 
 
 ## Les patriarches de Adam à Jacob (Israël)
 ### Les datations avant le déluge
@@ -93,6 +105,14 @@ Sem est toujours cité en premier car c'est le plus important des trois frères 
 * 1656 AM
 
 #### Éléments externes
+
+Le rapport du projet RATE (Radioisotopes and the Age of The Earth) de l'ICR  indique que du 14C a été analysé dans dix échantillons de charbon par l’un des meilleurs laboratoires de SMA (Spectrométrie de masse avec accélérateur, limite extrême de détection de 100000 ans) du monde. Selon Baumgardner (l'un des auteurs),
+
+« notre projet RATE pour le 14C a mesuré des rapports 14C/C au-dessus du seuil de [détection par] SMA dans des diamants provenant d’une variété de lieux. Bien que des confirmations soient nécessaires pour justifier une affirmation forte à cet égard, ces mesures apparaissent limiter l’âge de la terre physique elle-même à une étendue de milliers (contre des milliards) d’années. »
+
+Il faut diviser par 10 les dates obtenues pour tenir compte du plus faible taux de 14C dans l'atmosphère avant le déluge, dû à présence d'une enveloppe protectrice de l'atmosphère, la canopée, qui arrêtait une bien plus grande partie des rayons cosmiques.
+
+
 
 ### Les datations après le deluge
 #### Éléments internes
@@ -143,7 +163,27 @@ La partie passée à Canaan comme pays étranger précède la migration en Egypt
 
 ### Éléments externes
 Le livre du Juste confirme en 13:17 que c'est en l'année 2018 AM que Abraham a eu la prophétie sur Canaan, alors qu'il était âgé de 70 ans.
-ohnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Kindle.  
+Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Kindle.  
+
+| Date (AM) | Dynastie I                | Dynastie II             |
+| --------- | ------------------------- | ----------------------- |
+|           | 253 ans                   | 302 years               |
+|           | 1 Menes (Mizraim)  (52)   |                         |
+|           | 2 Athothisis (Anom) (57)  |                         |
+|           | 3 Kenkenes (31)           |                         |
+| ~ 2000    | 4 Uenephes (Oswiris) (23) | 1 Boethos (Rikayn) (38) |
+|           | 5 Usaphais (20)           | 2 Kaiechos (39)         |
+|           | 6 Miebis (26)             | 3 Binothris (47)        |
+|           | 7 Semempses (18)          | 4 Tlas (17)             |
+|           | 8 Bieneches (26)          | 5 Sethenes 41)          |
+|                          |                                                               | 6 Chaires (17)              |
+||| 7 Nephercheres (25|
+||| 8 Sesochris (48)|
+||| 9 Cheneres (30)|
+
+Années de règne en parenthèses
+
+Johnson, Ken. Ancient Post-Flood History (p. 144). Biblefacts.org. Édition du Kindle. 
 
 ### La migration d'Israël en Egypte
 #### Éléments internes
@@ -169,7 +209,25 @@ Johnson, Ken. Ancient Post-Flood History (p. 20). Biblefacts.org. Édition du Ki
 
 * 2238 AM (migration en Egypte) correspond à une datation biblique/historique de 1687 av. J.-C.
 
-L'archive egyptienne Manethi mentionne qu'il y a eu une grande famine, selon ce que rapporte Ken Johnson :
+| Dynastie III                   | Dynastie IV       |
+| ------------------------------ | ----------------- |
+| 214 ans                        | 274 ans           |
+| 1 Nebka, Necherophes (28)      | 1 Soris (29)      |
+| 2 Djoser, Tosorthos (29)       | 2 Suphis (53)     |
+| 3 Tyresis (7)                  | 3 Cheops (66)     |
+| 4 Mesochris (17)               | 4 Mencheres (63)  |
+| 5 Setes, Suphis (16)           | 5 Ratoeses (25)   |
+| 6 Djoser Teti, Tosertasis (19) | 6 Bicheres (22)   |
+| 7 Ahtes, Aches (42)            | 7 Sebercheres (7) |
+| 8 Nebkara, Sephuris (30)       | 8 Thamphthis (9)  |
+| 9 Neferkara, Kerpheres (26)    |                   |
+
+
+Années de règne en parenthèses
+
+Johnson, Ken. Ancient Post-Flood History (p. 145). Biblefacts.org. Édition du Kindle. 
+
+L'archive égyptienne Manethi mentionne qu'il y a eu une grande famine, selon ce que rapporte Ken Johnson :
 
 En 2228 AM, Joseph a interprété le rêve de Pharaon de sept ans d'abondance et sept ans de famine. Cette même année, Joseph est devenu vice-roi d'Égypte. On nous dit dans Genèse 41:45 que Pharaon a renommé Joseph «Zaphnath-Paaneah». Manetho enregistre une famine de sept ans survenue au cours de la dix-huitième année du règne de Djoser. Si cette famine de sept ans est la même que celle prédite par Joseph, alors la dix-huitième année de Djoser était 2235 AM.
 
@@ -204,6 +262,25 @@ Selon le livre du Juste, cité par Ken Johnson (P. 158), le Pharaon contemporain
 On retrouve la même durée de règne dans le document égyptien Manethon de 94 ans, qui porte le nom de Neferkare Pépi II 
 
 Selon le livre du Juste, Melol est décédé un an avant l'Exode. Son premier fils (Adikam dans le livre du Juste, Neferkare the Younger dans Manetho) lui a succédé puis est décédé au bout d'un an de règne  selon les deux sources (en 2448 AM dans le livre du Juste). Cela coincide avec la dixième plaie d'Egypte, selon laquelle mourrait le premier né masculin.
+
+
+
+| Dynastie V |  Dynastie VI  |
+| --------------  | ---------------- |
+| 108 ans   |  172 ans  |
+|   1 Usercheres *, Userkaf (28) |  1 Teti, Othoes (30) |
+|  2 Sephres, Sahure (13)  | 2 Meryre Pepi I, Phios (49) |
+|  3 Nephercheres, Neferirkare Kakai (20)  | 3 Menrenre Antiemsaf I Methesuphis (14) *  |
+| 4 Siseres, Shepseskare Isi (7) *  |  4 Neferkare Pepi II (94) Phiops II  |
+| 5 Cheres, Neferefre (7) *  | 5 Menthesuphis (1) Merenre Antiemsaf II  |
+|   6 Rathures, Neuserre (3) * |  6 Netjerykare (0) |
+|7 Mencheres, Menkauhor Akauhor (8) | |
+|	8 Tancheres, Djedkare Isesi (39)| |
+|9 Onnus, Unis (30) | |
+
+Années de règne en parenthèses *Co-règne
+
+Johnson, Ken. Ancient Post-Flood History (p. 145). Biblefacts.org. Édition du Kindle.
 
 Il apparaît que le Pharaon Neferkare Pépi II aurait vécu selon les datations académiques entre -2250 à -2150, soit 1600 ans à 1500 ans av. J.-C., si l'on tient compte du recalibrage.
 La date de sa mort selon la Bible ou le livre du Juste, établie à 2447 AM, correspond à une datation académique de -2000, en tenant compte du recalibrage nécessaire.
