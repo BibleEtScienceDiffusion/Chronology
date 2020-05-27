@@ -16,17 +16,17 @@ public class Relation extends Concept implements RelationOntology {
         this.role = model.role;
     }
 
-    public Relation(Language language, String localizedName) {
-        new Relation().addName(language, localizedName);
+    public Relation(Concept language, String localizedName) {
+        super(language, localizedName);
     }
 
-    public Relation addName(Language language, String localizedName) {
-        this.name.put(language, localizedName);
+    public Relation addName(Concept language, String localizedName) {
+        addName(language, localizedName);
         return this;
     }
 
     public Relation addRole(Role role, Concept concept) {
-        this.role.put(role,concept);
+        addRole(role,concept);
         return this;
     }
 

@@ -3,11 +3,19 @@ package org.bibleetsciencediffusion.chronology.ontology;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Process extends Relation implements PropertyOntology {
+public class Process extends Relation implements ProcessOntology {
+
 
     private Event begin;
 
     private Event end;
+
+    public Process(Process model) {
+        super(model);
+        this.process = model.process;
+        this.begin = model.begin;
+        this.end = model.end;
+    }
 
 
     /**
@@ -19,27 +27,48 @@ public class Process extends Relation implements PropertyOntology {
 
     }
 
-    public Process(Language language, String localizedName) {
+    public Process(Concept language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Process addName(Language language, String localizedName) {
-        this.name.put(language, localizedName);
+    public Process addName(Concept language, String localizedName) {
+        addName(language, localizedName);
         return this;
     }
 
+
+
     public Process addRole(Role role, Concept concept) {
-        this.role.put(role,concept);
+        addRole(role,concept);
         return this;
     }
 
     public Process addProcess(Process process) {
-        this.process.add(process);
+        addProcess(process);
         return this;
     }
 
     public Process addProperty(Property property) {
-        this.property.add(property);
+        addProperty(property);
+        return this;
+    }
+
+    public Event getBegin() {
+        return begin;
+    }
+
+    public Process setBegin(Event begin) {
+        this.begin = begin;
+        return this;
+    }
+
+    public Event getEnd() {
+        return end;
+
+    }
+
+    public Process setEnd(Event end) {
+        this.end = end;
         return this;
     }
 

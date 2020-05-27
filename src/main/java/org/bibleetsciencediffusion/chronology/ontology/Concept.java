@@ -4,8 +4,6 @@ import java.util.Map;
 
 public class Concept implements ConceptOntology {
 
-    protected Map<Language, String> name = new HashMap();
-
     protected Concept ascendant = null;
 
     protected Map<Property,Object> property = new HashMap<Property,Object>();
@@ -19,24 +17,29 @@ public class Concept implements ConceptOntology {
         this.property = model.property;
     }
 
-    public Concept(Language language, String localizedName) {
+    public Concept(Concept language, String localizedName) {
         addName(language, localizedName);
     }
 
 
 
-    public Concept addName(Language language, String localizedName) {
-        this.name.put(language, localizedName);
+    public Concept addName(Concept language, String localizedName) {
+        Map<Concept,Object> name = getName();
+        if (name == null) {
+            name = new HashMap<Concept,Object>();
+        }
+        name.put(language, localizedName);
+        setName (name);
         return this;
     }
 
-    public Concept setName( Map<Language, String> name) {
-        this.name = name;
+    public Concept setName( Map<Concept, Object> name) {
+        this.property.put(Property.NAME, name);
         return this;
     }
 
-    public  Map<Language, String> getName() {
-        return name;
+    public  Map<Concept, Object> getName() {
+        return (Map<Concept,Object>) this.property.get(Property.NAME);
     }
 
     public Concept setAscendant(Concept ascendant) {

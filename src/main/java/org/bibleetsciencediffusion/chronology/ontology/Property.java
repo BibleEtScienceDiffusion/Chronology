@@ -19,12 +19,12 @@ public class Property extends Concept implements PropertyOntology {
         setType(model.getType());
     }
 
-    public Property(Language language, String localizedName) {
+    public Property(Concept language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Property addName(Language language, String localizedName) {
-        this.name.put(language, localizedName);
+    public Property addName(Concept language, String localizedName) {
+        addName(language, localizedName);
         return this;
     }
 

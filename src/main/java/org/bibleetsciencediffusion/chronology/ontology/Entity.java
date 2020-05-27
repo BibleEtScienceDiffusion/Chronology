@@ -19,12 +19,12 @@ public class Entity extends Concept {
     }
 
 
-    public Entity(Language language, String localizedName) {
+    public Entity(Concept language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Entity addName(Language language, String localizedName) {
-        this.name.put(language, localizedName);
+    public Entity addName(Concept language, String localizedName) {
+        addName(language, localizedName);
         return this;
     }
 

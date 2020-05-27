@@ -3,12 +3,7 @@ package org.bibleetsciencediffusion.chronology.ontology;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Event extends Relation implements PropertyOntology {
-
-
-    /**
-     * date when the event occurs
-     */
+public class Event extends Relation implements EventOntology {
 
 
 
@@ -21,7 +16,7 @@ public class Event extends Relation implements PropertyOntology {
 
     }
 
-    public Event(Language language, String localizedName) {
+    public Event(Concept language, String localizedName) {
         super(language, localizedName);
     }
 
@@ -31,8 +26,8 @@ public class Event extends Relation implements PropertyOntology {
         this.process = model.process;
     }
 
-    public Event addName(Language language, String localizedName) {
-        this.name.put(language, localizedName);
+    public Event addName(Concept language, String localizedName) {
+        addName(language, localizedName);
         return this;
     }
 
@@ -50,8 +45,9 @@ public class Event extends Relation implements PropertyOntology {
      * helper
      * @param date
      */
-    public void setDate(Date date) {
+    public Event setDate(Date date) {
         this.property.put(Property.DATE,date);
+        return this;
     }
 
     public Event addProcess(Process process) {
