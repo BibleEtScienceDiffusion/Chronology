@@ -36,6 +36,6 @@ public class GedcomCalendarTest {
 
     @Test
     public void testConvertWithAD() throws Exception {
-        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AM.ged"), new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\Bible_Genealogy.AD.ged"));
+        convertWithAD(new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\genealogies\\Bible_Genealogy.AM.ged"), new File("C:\\Users\\frup43047\\IdeaProjects\\GenealogyTools\\src\\main\\resources\\genealogies\\Bible_Genealogy.AD.ged"));
     }
 }
