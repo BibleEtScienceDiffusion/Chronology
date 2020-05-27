@@ -15,11 +15,12 @@ public class Concept implements ConceptOntology {
     }
 
     public Concept(Concept model) {
-        new Concept().setAscendant(model.getAscendant()).setName(model.getName());
+        setAscendant(model.getAscendant()).setName(model.getName());
+        this.property = model.property;
     }
 
     public Concept(Language language, String localizedName) {
-        new Concept().addName(language, localizedName);
+        addName(language, localizedName);
     }
 
 

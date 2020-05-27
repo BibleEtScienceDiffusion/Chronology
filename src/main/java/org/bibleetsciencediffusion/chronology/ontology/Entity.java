@@ -14,7 +14,8 @@ public class Entity extends Concept {
     }
 
     public Entity(Entity model) {
-        new Entity().setAscendant(model.getAscendant()).setName(model.getName());
+        super(model);
+        this.process = model.process;
     }
 
 
@@ -33,8 +34,8 @@ public class Entity extends Concept {
         return this;
     }
 
-    public Entity addProperty(Property property) {
-        this.property.add(new Property(property));
+    public Entity addProperty(Property property, Object value) {
+        this.property.put(property,value);
         property.setTarget(this);
         return this;
     }

@@ -25,6 +25,12 @@ public class Event extends Relation implements PropertyOntology {
         super(language, localizedName);
     }
 
+
+    public Event(Event model) {
+        super(model);
+        this.process = model.process;
+    }
+
     public Event addName(Language language, String localizedName) {
         this.name.put(language, localizedName);
         return this;
@@ -55,6 +61,11 @@ public class Event extends Relation implements PropertyOntology {
 
     public Event addProperty(Property property, Object value) {
         this.property.put(property, value);
+        return this;
+    }
+
+    public Event addRole(Role role, Concept concept) {
+        this.role.put(role,concept);
         return this;
     }
 

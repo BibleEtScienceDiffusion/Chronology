@@ -3,7 +3,7 @@ package org.bibleetsciencediffusion.chronology.ontology;
 public class Property extends Concept implements PropertyOntology {
 
     /**
-     * the concept on which the property applies
+     * the concept on which the property applies (subject)
      */
     private Concept target;
 
@@ -14,7 +14,9 @@ public class Property extends Concept implements PropertyOntology {
     }
 
     public Property(Property model) {
-        new Property().setAscendant(model.getAscendant()).setName(model.getName());
+        super(model);
+        setTarget(model.getTarget());
+        setType(model.getType());
     }
 
     public Property(Language language, String localizedName) {
