@@ -51,17 +51,17 @@ public class Event extends Relation implements EventOntology {
     }
 
     public Event addProcess(Process process) {
-        this.process.add(process);
+        addProcess(process);
         return this;
     }
 
     public Event addProperty(Property property, Object value) {
-        this.property.put(property, value);
+        addProperty(property, value);
         return this;
     }
 
     public Event addRole(Role role, Concept concept) {
-        this.role.put(role,concept);
+        addRole(role,concept);
         return this;
     }
 

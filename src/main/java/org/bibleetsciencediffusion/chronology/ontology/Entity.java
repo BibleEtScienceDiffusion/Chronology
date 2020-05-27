@@ -5,8 +5,6 @@ import java.util.List;
 
 public class Entity extends Concept {
 
-
-
     private List<Process> process = new ArrayList<Process>();
 
     public Entity() {
@@ -30,13 +28,14 @@ public class Entity extends Concept {
 
 
     public Entity addProcess(Process process) {
-        this.process.add(process);
+        addProcess(process);
+        process.setSubject(new Entity(this));
         return this;
     }
 
     public Entity addProperty(Property property, Object value) {
-        this.property.put(property,value);
-        property.setTarget(this);
+        addProperty(property,value);
+        property.setSubject(new Entity(this));
         return this;
     }
 

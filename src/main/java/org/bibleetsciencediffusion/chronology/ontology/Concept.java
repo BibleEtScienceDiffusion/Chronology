@@ -53,7 +53,7 @@ public class Concept implements ConceptOntology {
 
     public Concept addProperty(Property property, Object value) {
         this.property.put(property, value);
-        property.setTarget(this);
+        property.setSubject(this);
         return this;
     }
 
