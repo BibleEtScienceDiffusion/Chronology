@@ -9,10 +9,10 @@ public class Process extends Relation implements PropertyOntology {
 
     private Event end;
 
-    private Concept target;
 
-
-
+    /**
+     * subprocesses
+     */
     private List<Process> process = new ArrayList<Process>();
 
     public Process() {
@@ -28,17 +28,10 @@ public class Process extends Relation implements PropertyOntology {
         return this;
     }
 
-
-
-    public Process setTarget(Concept target) {
-        this.target = target;
+    public Process addRole(Role role, Concept concept) {
+        this.role.put(role,concept);
         return this;
     }
-
-    public Concept getTarget() {
-        return target;
-    }
-
 
     public Process addProcess(Process process) {
         this.process.add(process);

@@ -7,23 +7,14 @@ public class Property extends Concept implements PropertyOntology {
      */
     private Concept target;
 
-    private Object value;
+    private Class type;
 
     public Property() {
 
     }
 
-    public Property(Property property) {
-        Property clone = null;
-        try {
-            clone = (Property) property.clone();
-        }
-        catch (CloneNotSupportedException e) {
-            clone = property;
-        }
-            this.setTarget(clone.target);
-            this.setValue(clone.value);
-
+    public Property(Property model) {
+        new Property().setAscendant(model.getAscendant()).setName(model.getName());
     }
 
     public Property(Language language, String localizedName) {
@@ -46,14 +37,14 @@ public class Property extends Concept implements PropertyOntology {
         return target;
     }
 
-    public Property setValue(Object value) {
-        this.value = value;
+    public Property setType(Class type) {
+        this.type = type;
         return this;
     }
 
 
-    public Object getValue() {
-        return value;
+    public Class getType() {
+        return type;
     }
 
 

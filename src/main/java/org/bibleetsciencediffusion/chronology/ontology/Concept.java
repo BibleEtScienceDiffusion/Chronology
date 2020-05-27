@@ -1,20 +1,21 @@
 package org.bibleetsciencediffusion.chronology.ontology;
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Concept implements ConceptOntology {
 
     protected Map<Language, String> name = new HashMap();
 
-    protected Concept parent = null;
+    protected Concept ascendant = null;
 
-    protected List<Property> property = new ArrayList<Property>();
+    protected Map<Property,Object> property = new HashMap<Property,Object>();
 
     public Concept() {
 
+    }
+
+    public Concept(Concept model) {
+        new Concept().setAscendant(model.getAscendant()).setName(model.getName());
     }
 
     public Concept(Language language, String localizedName) {
@@ -28,20 +29,30 @@ public class Concept implements ConceptOntology {
         return this;
     }
 
-    public Concept setParent(Concept parent) {
-        this.parent = parent;
+    public Concept setName( Map<Language, String> name) {
+        this.name = name;
         return this;
     }
 
-    public Concept getParent() {
-        return parent;
+    public  Map<Language, String> getName() {
+        return name;
     }
 
-    public Concept addProperty(Property property) {
-        this.property.add(new Property(property));
+    public Concept setAscendant(Concept ascendant) {
+        this.ascendant = ascendant;
+        return this;
+    }
+
+    public Concept getAscendant() {
+        return ascendant;
+    }
+
+    public Concept addProperty(Property property, Object value) {
+        this.property.put(property, value);
         property.setTarget(this);
         return this;
     }
+
 
 
 }

@@ -1,80 +1,62 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
-public class Event extends Concept implements EventOntology {
+import java.util.ArrayList;
+import java.util.List;
 
-    /**
-     * event reference
-     */
-    private Event reference = null;
-
-    /**
-     * sun rotation offset
-     */
-
-    private int year = 0;
+public class Event extends Relation implements PropertyOntology {
 
 
     /**
-     * moon rotation offset
+     * date when the event occurs
      */
-    private int month = 0;
+
+
 
     /**
-     * earth rotation offset
+     * decomposition of event
      */
-    private int day = 0;
+    private List<Process> process = new ArrayList<Process>();
 
     public Event() {
+
     }
 
-    public Event(Event reference) {
-        this.reference = reference;
+    public Event(Language language, String localizedName) {
+        super(language, localizedName);
     }
 
-    public Event(Event reference, int year, int month, int day) {
-        this.reference = reference;
-        this.year = year;
-        this.month = month;
-        this.day = day;
-    }
-
-
-    public Event setReference(Event reference) {
-        this.reference = reference;
+    public Event addName(Language language, String localizedName) {
+        this.name.put(language, localizedName);
         return this;
     }
 
-    public Event setYear(int year) {
-        this.year = year;
+
+    /**
+     * helper
+     * @return
+     */
+    public Date getDate() {
+        return  (Date)
+                this.property.get(Property.DATE);
+    }
+
+    /**
+     * helper
+     * @param date
+     */
+    public void setDate(Date date) {
+        this.property.put(Property.DATE,date);
+    }
+
+    public Event addProcess(Process process) {
+        this.process.add(process);
         return this;
     }
 
-    public Event setMonth(int month) {
-        this.month = month;
+    public Event addProperty(Property property, Object value) {
+        this.property.put(property, value);
         return this;
     }
-
-    public Event setDay(int day) {
-        this.day = day;
-        return this;
-    }
-
-    public Event getReference() {
-        return reference;
-    }
-
-    public int getYear() {
-        return this.year;
-    }
-
-    public int getMonth() {
-        return this.month;
-    }
-
-    public int getDay() {
-        return this.day;
-    }
-
 
 
 }

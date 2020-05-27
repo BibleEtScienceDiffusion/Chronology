@@ -1,13 +1,11 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Relation extends Concept implements RelationOntology {
 
-    private List<Concept> target = new ArrayList<Concept>();
-
-
+    protected Map<Role,Concept> role = new HashMap<Role,Concept>();
 
     public Relation() {
 
@@ -22,9 +20,13 @@ public class Relation extends Concept implements RelationOntology {
         return this;
     }
 
-    public Relation addTarget(Concept target) {
-        this.target.add(target);
+    public Relation addRole(Role role, Concept concept) {
+        this.role.put(role,concept);
         return this;
+    }
+
+    public Concept getRole(Role role) {
+        return this.role.get(role);
     }
 
 }

@@ -13,6 +13,11 @@ public class Entity extends Concept {
 
     }
 
+    public Entity(Entity model) {
+        new Entity().setAscendant(model.getAscendant()).setName(model.getName());
+    }
+
+
     public Entity(Language language, String localizedName) {
         super(language, localizedName);
     }
@@ -25,7 +30,6 @@ public class Entity extends Concept {
 
     public Entity addProcess(Process process) {
         this.process.add(process);
-        process.setTarget(this);
         return this;
     }
 
@@ -35,8 +39,8 @@ public class Entity extends Concept {
         return this;
     }
 
-    public Entity setParent(Concept parent) {
-        this.parent = parent;
+    public Entity setAscendant(Concept ascendant) {
+        this.ascendant = ascendant;
         return this;
     }
 
