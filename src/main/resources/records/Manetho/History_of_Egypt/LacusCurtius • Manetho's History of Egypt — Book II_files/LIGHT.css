@@ -1,0 +1,10 @@
+.running_title {
+	color: #000066 ! important;
+}
+	.running_title .emend {
+		color: #0066cc ! important;
+	}
+
+.my_running_title {
+	color: #0066cc ! important; /* matches .emend */
+}

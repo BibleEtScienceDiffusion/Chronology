@@ -1,0 +1,246 @@
+BODY {
+	background-image: url("http://penelope.uchicago.edu/Thayer/Images/Utility/Backgrounds/Herodotus.jpg") !important;
+	line-height: 1.5;
+}
+
+.tableContainer {
+	width: 100%;
+}
+
+.superheading {
+	margin-top: 5em;
+	font-family : Verdana, Ariel, Helvetica, sans-serif !important;
+	color: #009900 !important;
+}
+
+.help_bar {
+	background-color: #962568 !important;
+	color: #ffffff !important;
+}
+
+.ivy {
+	color: #661947 ! important;
+}
+
+.upcell {
+	line-height: 1.1 !important;
+/* 
+The upcells are all in Greek; and if not constrained, the lines are unpleasantly spaced (too much).
+ */
+}
+
+A.chapter {
+	font-family : "PT Sans", Verdana, Ariel, Helvetica, sans-serif !important;
+	font-size: 1.3em !important;
+	color: #962568 !important;
+	text-decoration: none !important;
+	font-style: normal !important;
+	text-shadow : 1px 0px 0px #962568;
+	line-height: .5 !important;
+}
+
+A.Rawlinson {
+	position: absolute;
+	left: +5em;
+	font-family : "PT Sans", Verdana, Ariel, Helvetica, sans-serif !important;
+	font-size: 60% !important;
+/* 
+OLD:
+	color: #ffffff !important;
+	background-color: #73bbff !important;
+ */
+	color: #D02568 !important;
+	background-color: #D8D8D8 !important;
+	text-align: center;
+	border: .25em ridge #ffffff !important;
+	width: 8em !important;
+}
+
+/* keep LVHA order: */
+/* A:link, A:visited, A:hover, A:active */
+	A.Rawlinson:visited {
+		color: #ff0000 !important;
+	}
+
+	A.Rawlinson:hover {
+		color: #00a000 !important;
+	}
+
+A.HNW1 {
+	position: absolute;
+	left: +5em;
+	font-family : "PT Sans", Verdana, Ariel, Helvetica, sans-serif !important;
+	font-size: 60% !important;
+/* 
+OLD:
+	color: #ffffff !important;
+	background-color: #339cff !important;
+ */
+	color: #D02568 !important;
+	background-color: #cccccc !important;
+	text-align: center;
+	border: .25em ridge #ffffff !important;
+	width: 8em !important;
+}
+
+/* keep LVHA order: */
+/* A:link, A:visited, A:hover, A:active */
+	A.HNW1:visited {
+		color: #ff0000 !important;
+	}
+
+	A.HNW1:hover {
+		color: #00ff00 !important;
+	}
+
+A.HNW2 {
+	position: absolute;
+	margin-top: 3em;
+	left: +5em;
+	font-family : "PT Sans", Verdana, Ariel, Helvetica, sans-serif !important;
+	font-size: 60% !important;
+/* 
+OLD:
+	color: #ffffff !important;
+	background-color: #339cff !important;
+ */
+	color: #D02568 !important;
+	background-color: #cccccc !important;
+	text-align: center;
+	border: .25em ridge #ffffff !important;
+	width: 8em !important;
+}
+
+/* keep LVHA order: */
+/* A:link, A:visited, A:hover, A:active */
+	A.HNW2:visited {
+		color: #ff0000 !important;
+	}
+
+	A.HNW2:hover {
+		color: #009000 !important;
+	}
+
+DIV.boxlinksprompt {
+	background-color: #E8E8E8 !important;
+	text-align: center;
+	font-size: 65%;
+	color: #061CBE !important;
+	width: 42em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.6em;
+	padding-right: 0.6em;
+	border: .25em ridge #ffffff !important;
+}
+
+.Livius_tag {
+	font-size: 80% !important;
+	font-family : serif !important;
+	font-weight: bold; !important;
+	vertical-align:1px; !important;
+	color: #962568; !important;
+	padding-top: 2px; !important;
+	padding-bottom: 2px; !important;
+	padding-left: 4px; !important;
+	padding-right: 4px; !important;
+	border-top: 2px solid; !important;
+	border-bottom: 1px solid; !important;
+	border-left: 1px solid; !important;
+	border-right: 2px solid; !important;
+	border-color: #962568; !important;
+	background-color: #fff6f6 !important;
+}
+
+TABLE.Livius {
+	border: 1px solid; !important;
+	border-color: #5ec2a4; !important;
+	background-color: #fff6f6 !important;
+	vertical-align: bottom; !important;
+	margin-left: 10px; !important;
+	margin-right: 10px; !important;
+}
+TABLE.Livius P {
+	padding-left: 6px; !important;
+	padding-right: 6px; !important;
+	margin-top: .4em; !important;
+	font-size: 70%; !important;
+}
+
+TABLE.Livius P.photocredit {
+	font-size: 60% !important;
+	font-style: italic !important;
+	margin-top: .6em !important;
+}
+
+.Lacus_link {
+	border-top: 1px dotted; !important;
+	border-bottom: 1px dotted; !important;
+	border-left: 0px; !important;
+	border-right: 0px; !important;
+	border-color: #682596; !important;
+	background-color: #e6dbf2; !important;
+	border-radius: 12%;
+	padding-top: 2px; !important;
+	padding-left: 5px; !important;
+	padding-right: 5px; !important;
+	display: inline;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* keep LVHA order: */
+/* A:link, A:visited, A:hover, A:active */
+A.Lacus_link:link {
+	color: #8b22c3 !important;
+}
+
+A.Lacus_link:visited {
+	color: #cc2568 !important;
+}
+
+A.Lacus_link:hover {
+	color: #009933 !important;
+}
+
+A.Lacus_link:active {
+	color: #00ff00 !important;
+}
+
+.Livius_link {
+	border-top: 1px dotted; !important;
+	border-bottom: 1px dotted; !important;
+	border-left: 0px; !important;
+	border-right: 0px; !important;
+	border-color: #962568; !important;
+	background-color: #f9e7f2; !important;
+	border-radius: 12%;
+	padding-top: 2px; !important;
+	padding-left: 5px; !important;
+	padding-right: 5px; !important;
+	display: inline;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+/* keep LVHA order: */
+/* A:link, A:visited, A:hover, A:active */
+A.Livius_link:link {
+	color: #8b22c3 !important;
+}
+
+A.Livius_link:visited {
+	color: #cc2568 !important;
+}
+
+A.Livius_link:hover {
+	color: #009933 !important;
+}
+
+A.Livius_link:active {
+	color: #00ff00 !important;
+}
+
