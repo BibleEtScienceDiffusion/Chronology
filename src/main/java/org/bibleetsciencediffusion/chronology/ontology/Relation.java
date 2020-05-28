@@ -23,11 +23,11 @@ public class Relation extends Concept implements RelationOntology {
         this.role = model.role;
     }
 
-    public Relation(Concept language, String localizedName) {
+    public Relation(Entity language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Relation addName(Concept language, String localizedName) {
+    public Relation addName(Entity language, String localizedName) {
         addName(language, localizedName);
         return this;
     }
@@ -49,6 +49,11 @@ public class Relation extends Concept implements RelationOntology {
 
     public Concept getRole(Role role) {
         return this.role.get(role);
+    }
+
+    public Relation addClass(Concept concept) {
+        addClass(concept);
+        return this;
     }
 
 }

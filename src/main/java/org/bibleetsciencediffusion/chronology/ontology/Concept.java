@@ -15,7 +15,7 @@ public class Concept implements ConceptOntology {
     }
 
     public Concept(Concept model) {
-        addParent(model.getFirstParent()).setName(model.getName());
+        addClass(model.getFirstClass()).setName(model.getName());
         this.property = model.property;
         this.relation = model.relation;
     }
@@ -47,12 +47,12 @@ public class Concept implements ConceptOntology {
 
     /**
      * helper
-     * @param parent
+     * @param concept
      * @return this
      */
-    public Concept addParent(Concept parent) {
-        Relation parentRelation = new Relation(Relation.PARENT);
-        parentRelation.addRole(Role.TARGET,parent);
+    public Concept addClass(Concept concept) {
+        Relation parentRelation = new Relation(Relation.HAS_CLASS);
+        parentRelation.addRole(Role.TARGET,concept);
         addRelation(parentRelation);
         return this;
     }
@@ -61,8 +61,8 @@ public class Concept implements ConceptOntology {
      * helper
      * @return
      */
-    public Concept getFirstParent() {
-        Relation parentRelation = getFirstRelationByModel(Relation.PARENT);
+    public Concept getFirstClass() {
+        Relation parentRelation = getFirstRelationByModel(Relation.HAS_CLASS);
         if (parentRelation == null) {
            return null;
         }

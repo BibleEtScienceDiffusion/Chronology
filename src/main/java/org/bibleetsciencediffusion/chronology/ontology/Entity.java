@@ -45,8 +45,8 @@ public class Entity extends Concept implements EntityOntology {
         return this;
     }
 
-    public Entity addParent(Concept parent) {
-        addParent(parent);
+    public Entity addClass(Concept concept) {
+        addClass(concept);
         return this;
     }
 

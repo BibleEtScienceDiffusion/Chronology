@@ -27,11 +27,11 @@ public class Process extends Relation implements ProcessOntology {
 
     }
 
-    public Process(Concept language, String localizedName) {
+    public Process(Entity language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Process addName(Concept language, String localizedName) {
+    public Process addName(Entity language, String localizedName) {
         addName(language, localizedName);
         return this;
     }
@@ -72,5 +72,9 @@ public class Process extends Relation implements ProcessOntology {
         return this;
     }
 
+    public Process addClass(Concept concept) {
+        addClass(concept);
+        return this;
+    }
 
 }

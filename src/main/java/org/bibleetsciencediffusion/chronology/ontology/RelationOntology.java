@@ -2,14 +2,16 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface RelationOntology {
 
-    Relation PARENT = new Relation(Entity.ENGLISH,"parent").addName(Entity.FRENCH,"parent");
+    Relation HAS_CLASS = new Relation(Entity.ENGLISH,"has class").addName(Entity.FRENCH,"a pour classe").addClass(Concept.RELATION);
 
-    Relation SIBLING = new Relation(Entity.ENGLISH,"sibling").addName(Entity.FRENCH,"frère");
+    Relation PARENT = new Relation(Entity.ENGLISH,"parent").addName(Entity.FRENCH,"parent").addClass(Concept.RELATION);
 
-    Relation AND = new Relation(Entity.ENGLISH,"and").addName(Entity.FRENCH,"et");
+    Relation SIBLING = new Relation(Entity.ENGLISH,"sibling").addName(Entity.FRENCH,"frère").addClass(Concept.RELATION);
 
-    Relation OR = new Relation(Entity.ENGLISH,"or").addName(Entity.FRENCH,"ou");
+    Relation AND = new Relation(Entity.ENGLISH,"and").addName(Entity.FRENCH,"et").addClass(Concept.RELATION);
 
-    Relation NOT = new Relation(Entity.ENGLISH,"not").addName(Entity.FRENCH,"non");
+    Relation OR = new Relation(Entity.ENGLISH,"or").addName(Entity.FRENCH,"ou").addClass(Concept.RELATION);
+
+    Relation NOT = new Relation(Entity.ENGLISH,"not").addName(Entity.FRENCH,"non").addClass(Concept.RELATION);
 
 }
