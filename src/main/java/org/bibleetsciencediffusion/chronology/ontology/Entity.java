@@ -3,7 +3,7 @@ package org.bibleetsciencediffusion.chronology.ontology;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Entity extends Concept {
+public class Entity extends Concept implements EntityOntology {
 
     private List<Process> process = new ArrayList<Process>();
 
@@ -39,8 +39,14 @@ public class Entity extends Concept {
         return this;
     }
 
-    public Entity setAscendant(Concept ascendant) {
-        this.ascendant = ascendant;
+    public Entity addRelation(Relation relation) {
+        addRelation(relation);
+        relation.setSubject(new Entity(this));
+        return this;
+    }
+
+    public Entity setParent(Concept parent) {
+        this.parent = parent;
         return this;
     }
 

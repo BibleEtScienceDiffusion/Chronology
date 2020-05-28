@@ -1,15 +1,16 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface EventOntology {
-    Event BIRTH = new Event(Concept.ENGLISH,"birth")
-            .addName(Concept.FRENCH,"naissance")
+    Event BIRTH = new Event(Entity.ENGLISH,"birth")
+            .addName(Entity.FRENCH,"naissance")
             .addRole(Role.PATIENT,Concept.HUMAN);
-    Event DEATH = new Event(Concept.ENGLISH,"death")
-            .addName(Concept.FRENCH,"mort")
+
+    Event DEATH = new Event(Entity.ENGLISH,"death")
+            .addName(Entity.FRENCH,"mort")
             .addRole(Role.PATIENT,Concept.HUMAN);
 
 
-    Event INTRONIZATION = new Event(Concept.ENGLISH,"intronization")
-            .addName(Concept.FRENCH,"intronisation")
+    Event INTRONIZATION = new Event(Entity.ENGLISH,"intronization")
+            .addName(Entity.FRENCH,"intronisation")
             .addRole(Role.PATIENT,Concept.KING);
 }

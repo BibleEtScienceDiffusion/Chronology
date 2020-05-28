@@ -4,18 +4,12 @@ import java.util.Map;
 
 public interface PropertyOntology {
 
-    Property DATE = new Property(Property.ENGLISH,"date")
-            .addName(Property.FRENCH,"date")
+    Property DATE = new Property(Entity.ENGLISH,"date")
+            .addName(Entity.FRENCH,"date")
             .setType(Date.class);
 
-    Property NAME = new Property(Property.ENGLISH,"name")
-            .addName(Property.FRENCH,"nom")
+    Property NAME = new Property(Entity.ENGLISH,"name")
+            .addName(Entity.FRENCH,"nom")
             .setType(Map.class);
 
-
-    Property ENGLISH = new Property(Property.ENGLISH,"english")
-            .addName(Property.FRENCH,"anglais");
-
-    Property FRENCH = new Property(Property.ENGLISH,"french")
-            .addName(Property.FRENCH,"français");
 }

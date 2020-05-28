@@ -1,12 +1,13 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface ConceptOntology {
-    Concept HUMAN = new Concept(Property.ENGLISH,"human").addName(Property.FRENCH,"humain");
-    Concept KING = new Concept(Property.ENGLISH,"king").addName(Property.FRENCH,"roi").setAscendant(ConceptOntology.HUMAN);;
-    Concept PHARAOH = new Concept(Property.ENGLISH,"pharaoh").addName(Property.FRENCH,"pharaon").setAscendant(ConceptOntology.KING);
+    Concept HUMAN = new Concept(Entity.ENGLISH,"human").addName(Entity.FRENCH,"humain");
+    Concept KING = new Concept(Entity.ENGLISH,"king").addName(Entity.FRENCH,"roi").setParent(ConceptOntology.HUMAN);;
+    Concept PHARAOH = new Concept(Entity.ENGLISH,"pharaoh").addName(Entity.FRENCH,"pharaon").setParent(ConceptOntology.KING);
 
-    Concept PLACE = new Concept(Property.ENGLISH,"place").addName(Property.FRENCH,"lieu");
-    Concept COUNTRY = new Concept(Property.ENGLISH,"country").addName(Property.FRENCH,"pays").setAscendant(ConceptOntology.PLACE);
+    Concept PLACE = new Concept(Entity.ENGLISH,"place").addName(Entity.FRENCH,"lieu");
+    Concept COUNTRY = new Concept(Entity.ENGLISH,"country").addName(Entity.FRENCH,"pays").setParent(ConceptOntology.PLACE);
 
+    Concept LANGUAGE = new Concept(Entity.ENGLISH,"language").addName(Entity.FRENCH,"langue");
 
 }

@@ -1,20 +1,23 @@
 package org.bibleetsciencediffusion.chronology.ontology;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Concept implements ConceptOntology {
 
-    protected Concept ascendant = null;
-
     protected Map<Property,Object> property = new HashMap<Property,Object>();
+
+    protected List<Relation> relation = new ArrayList<Relation>();
 
     public Concept() {
 
     }
 
     public Concept(Concept model) {
-        setAscendant(model.getAscendant()).setName(model.getName());
+        setParent(model.getParent()).setName(model.getName());
         this.property = model.property;
+        this.relation = model.relation;
     }
 
     public Concept(Concept language, String localizedName) {
@@ -42,13 +45,31 @@ public class Concept implements ConceptOntology {
         return (Map<Concept,Object>) this.property.get(Property.NAME);
     }
 
-    public Concept setAscendant(Concept ascendant) {
-        this.ascendant = ascendant;
+    /**
+     * helper
+     * @param parent
+     * @return this
+     */
+    public Concept setParent(Concept parent) {
+        Relation parentRelation = new Relation(Relation.PARENT);
+        parentRelation.addRole(Role.TARGET,parent);
+        addRelation(parentRelation);
         return this;
     }
 
-    public Concept getAscendant() {
-        return ascendant;
+    /**
+     * helper
+     * @return
+     */
+    public Concept getParent() {
+        Relation parentRelation = getFirstRelationByModel(Relation.PARENT);
+        if (parentRelation == null) {
+           return null;
+        }
+        else  {
+            return parentRelation.getRole(Role.TARGET);
+        }
+
     }
 
     public Concept addProperty(Property property, Object value) {
@@ -57,6 +78,21 @@ public class Concept implements ConceptOntology {
         return this;
     }
 
+    public Concept addRelation(Relation relation) {
+        this.relation.add(relation);
+        relation.setSubject(this);
+        return this;
+    }
 
+    public Relation getFirstRelationByModel(Relation model) {
+        Relation foundRelation = null;
+        for (Relation relation: this.relation) {
+            if (relation.getName().hashCode() == model.hashCode()) {
+                foundRelation =relation;
+                break;
+            }
+        }
+        return foundRelation;
+    }
 
 }

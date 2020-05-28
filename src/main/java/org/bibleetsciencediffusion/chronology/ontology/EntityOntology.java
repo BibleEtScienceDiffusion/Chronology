@@ -2,11 +2,20 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface EntityOntology {
 
-    Entity ISRAEL = new Entity(Property.ENGLISH,"Israel").addName(Property.FRENCH,"Israël").setAscendant(ConceptOntology.COUNTRY);
-    Entity CANAAN = new Entity(Property.ENGLISH,"Canaan").addName(Property.FRENCH,"Canaan").setAscendant(ConceptOntology.COUNTRY);;
-    Entity EGYPT = new Entity(Property.ENGLISH,"Egypt").addName(Property.FRENCH,"Egypte").setAscendant(ConceptOntology.COUNTRY);;
+    Entity ENGLISH = new Entity(Entity.ENGLISH,"english")
+            .addName(Entity.FRENCH,"anglais").setParent(Concept.LANGUAGE);
 
-    Entity ABRAHAM = new Entity(Property.ENGLISH,"Abram").setAscendant(Concept.HUMAN)
+    Entity FRENCH = new Entity(EntityOntology.ENGLISH,"french")
+            .addName(Entity.FRENCH,"français").setParent(Concept.LANGUAGE);
+
+
+    Entity ISRAEL = new Entity(Entity.ENGLISH,"Israel").addName(Entity.FRENCH,"Israël").setParent(ConceptOntology.COUNTRY);
+    Entity CANAAN = new Entity(Entity.ENGLISH,"Canaan").addName(Entity.FRENCH,"Canaan").setParent(ConceptOntology.COUNTRY);;
+    Entity EGYPT = new Entity(Entity.ENGLISH,"Egypt").addName(Entity.FRENCH,"Egypte").setParent(ConceptOntology.COUNTRY);;
+
+
+
+    Entity ABRAHAM = new Entity(Entity.ENGLISH,"Abram").setParent(Concept.HUMAN)
                         .addProcess(
                                 new Process(Process.LIFE)
                                         .setBegin(new Event(Event.BIRTH).setDate(new Date(Date.AM,1948)))
@@ -14,7 +23,7 @@ public interface EntityOntology {
                                         .addProcess(new Process((Process.COVENANT))
                                                 .setBegin(new Event().setDate(new Date(Date.AM,2048))))
                                                 .addRole(Role.PARTICIPANT, new Entity(EntityOntology.ABRAHAM)
-                                                    .addName(Property.ENGLISH, "Abraham"))
+                                                    .addName(Entity.ENGLISH, "Abraham"))
                                                 .addRole(Role.LOCATION, CANAAN)
                                                 );
 

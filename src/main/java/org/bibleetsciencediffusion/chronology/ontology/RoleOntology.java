@@ -2,11 +2,13 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface RoleOntology {
 
-    Role AGENT = new Role(Concept.ENGLISH,"agent").addName(Concept.FRENCH,"agent");
+    Role AGENT = new Role(Entity.ENGLISH,"agent").addName(Entity.FRENCH,"agent");
 
-    Role PATIENT = new Role(Concept.ENGLISH,"patient").addName(Concept.FRENCH,"patient");
+    Role PATIENT = new Role(Entity.ENGLISH,"patient").addName(Entity.FRENCH,"patient");
 
-    Role LOCATION = new Role(Concept.ENGLISH,"location").addName(Concept.FRENCH,"localisation");
+    Role LOCATION = new Role(Entity.ENGLISH,"location").addName(Entity.FRENCH,"localisation");
 
-    Role PARTICIPANT = new Role(Concept.ENGLISH,"participant").addName(Concept.FRENCH,"participant");
+    Role PARTICIPANT = new Role(Entity.ENGLISH,"participant").addName(Entity.FRENCH,"participant");
+
+    Role TARGET = new Role(Entity.ENGLISH,"target").addName(Entity.FRENCH,"cible");
 }
