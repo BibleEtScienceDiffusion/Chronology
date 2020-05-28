@@ -28,8 +28,6 @@ public class Property extends Concept implements PropertyOntology {
         return this;
     }
 
-
-
     public Property setSubject(Concept subject) {
         this.subject = subject;
         return this;

@@ -5,15 +5,15 @@ import java.util.Map;
 
 public class Name {
 
-    private Map<Entity,Object> map = new HashMap<Entity,Object>();
+    private Map<String,Object> map = new HashMap<String,Object>();
 
-    public Name add(Entity language, String localizedName) {
-        map.put(language, localizedName);
+    public Name add(String languageIsoCode, String localizedName) {
+        map.put(languageIsoCode, localizedName);
         return this;
     }
 
-    public Object get(Entity language) {
-        return map.get(language);
+    public Object get(String languageIsoCode) {
+        return map.get(languageIsoCode);
     }
 
 }

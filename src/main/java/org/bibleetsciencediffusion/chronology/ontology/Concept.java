@@ -11,7 +11,6 @@ public class Concept implements ConceptOntology {
     protected List<Relation> relation = new ArrayList<Relation>();
 
     public Concept() {
-
     }
 
     public Concept(Concept model) {
@@ -28,7 +27,7 @@ public class Concept implements ConceptOntology {
 
     public Concept addName(Entity language, String localizedName) {
         Name name = getName();
-        name.add(language, localizedName);
+        name.add((String)language.getProperty().get(Property.ISO_CODE), localizedName);
         return this;
     }
 
@@ -78,6 +77,11 @@ public class Concept implements ConceptOntology {
         property.setSubject(this);
         return this;
     }
+
+    public Map<Property, Object> getProperty() {
+        return property;
+    }
+
 
     public Concept addRelation(Relation relation) {
         this.relation.add(relation);

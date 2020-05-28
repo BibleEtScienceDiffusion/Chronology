@@ -11,7 +11,13 @@ public interface PropertyOntology {
 
     Property NAME = new Property(Entity.ENGLISH,"name")
             .addName(Entity.FRENCH,"nom")
-            .setType(Map.class)
+            .setType(Name.class)
+            .addClass(Concept.PROPERTY);
+
+
+    Property ISO_CODE = new Property(Entity.ENGLISH,"ISO code")
+            .addName(Entity.FRENCH,"code ISO")
+            .setType(String.class)
             .addClass(Concept.PROPERTY);
 
 }
