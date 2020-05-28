@@ -27,22 +27,23 @@ public class Concept implements ConceptOntology {
 
 
     public Concept addName(Entity language, String localizedName) {
-        Map<Entity,Object> name = getName();
-        if (name == null) {
-            name = new HashMap<Entity,Object>();
-        }
-        name.put(language, localizedName);
-        setName (name);
+        Name name = getName();
+        name.add(language, localizedName);
         return this;
     }
 
-    public Concept setName( Map<Entity, Object> name) {
+    public Concept setName(Name name) {
         this.property.put(Property.NAME, name);
         return this;
     }
 
-    public  Map<Entity, Object> getName() {
-        return (Map<Entity,Object>) this.property.get(Property.NAME);
+    public  Name getName() {
+        Name name = (Name) this.property.get(Property.NAME);
+        if (name == null) {
+            name = new Name();
+            setName(name);
+        }
+        return name;
     }
 
     /**
