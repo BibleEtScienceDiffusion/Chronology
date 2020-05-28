@@ -95,4 +95,13 @@ public class Concept implements ConceptOntology {
         return foundRelation;
     }
 
+    public boolean isNegation() {
+        Relation  negationRelation = getFirstRelationByModel(Relation.NOT);
+        return (negationRelation != null);
+    }
+
+    public boolean isAffirmation() {
+        Relation  negationRelation = getFirstRelationByModel(Relation.NOT);
+        return (negationRelation == null);
+    }
 }
