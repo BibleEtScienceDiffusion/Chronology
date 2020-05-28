@@ -15,34 +15,34 @@ public class Concept implements ConceptOntology {
     }
 
     public Concept(Concept model) {
-        setParent(model.getParent()).setName(model.getName());
+        addParent(model.getFirstParent()).setName(model.getName());
         this.property = model.property;
         this.relation = model.relation;
     }
 
-    public Concept(Concept language, String localizedName) {
+    public Concept(Entity language, String localizedName) {
         addName(language, localizedName);
     }
 
 
 
-    public Concept addName(Concept language, String localizedName) {
-        Map<Concept,Object> name = getName();
+    public Concept addName(Entity language, String localizedName) {
+        Map<Entity,Object> name = getName();
         if (name == null) {
-            name = new HashMap<Concept,Object>();
+            name = new HashMap<Entity,Object>();
         }
         name.put(language, localizedName);
         setName (name);
         return this;
     }
 
-    public Concept setName( Map<Concept, Object> name) {
+    public Concept setName( Map<Entity, Object> name) {
         this.property.put(Property.NAME, name);
         return this;
     }
 
-    public  Map<Concept, Object> getName() {
-        return (Map<Concept,Object>) this.property.get(Property.NAME);
+    public  Map<Entity, Object> getName() {
+        return (Map<Entity,Object>) this.property.get(Property.NAME);
     }
 
     /**
@@ -50,7 +50,7 @@ public class Concept implements ConceptOntology {
      * @param parent
      * @return this
      */
-    public Concept setParent(Concept parent) {
+    public Concept addParent(Concept parent) {
         Relation parentRelation = new Relation(Relation.PARENT);
         parentRelation.addRole(Role.TARGET,parent);
         addRelation(parentRelation);
@@ -61,7 +61,7 @@ public class Concept implements ConceptOntology {
      * helper
      * @return
      */
-    public Concept getParent() {
+    public Concept getFirstParent() {
         Relation parentRelation = getFirstRelationByModel(Relation.PARENT);
         if (parentRelation == null) {
            return null;

@@ -17,11 +17,11 @@ public class Entity extends Concept implements EntityOntology {
     }
 
 
-    public Entity(Concept language, String localizedName) {
+    public Entity(Entity language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Entity addName(Concept language, String localizedName) {
+    public Entity addName(Entity language, String localizedName) {
         addName(language, localizedName);
         return this;
     }
@@ -45,8 +45,8 @@ public class Entity extends Concept implements EntityOntology {
         return this;
     }
 
-    public Entity setParent(Concept parent) {
-        this.parent = parent;
+    public Entity addParent(Concept parent) {
+        addParent(parent);
         return this;
     }
 
