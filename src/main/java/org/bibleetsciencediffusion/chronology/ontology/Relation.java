@@ -56,4 +56,8 @@ public class Relation extends Concept implements RelationOntology {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
+
 }

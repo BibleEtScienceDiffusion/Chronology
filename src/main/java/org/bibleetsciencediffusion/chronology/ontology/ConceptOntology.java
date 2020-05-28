@@ -2,6 +2,8 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface ConceptOntology {
 
+    void accept(OntologyVisitor v);
+
     Concept CONCEPT = new Concept(Entity.ENGLISH,"concept")
             .addName(Entity.FRENCH,"concept");
 

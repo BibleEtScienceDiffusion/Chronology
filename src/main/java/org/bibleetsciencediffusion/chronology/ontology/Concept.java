@@ -8,6 +8,7 @@ public class Concept implements ConceptOntology {
 
     protected Map<Property,Object> property = new HashMap<Property,Object>();
 
+
     protected List<Relation> relation = new ArrayList<Relation>();
 
     public Concept() {
@@ -89,6 +90,15 @@ public class Concept implements ConceptOntology {
         return this;
     }
 
+    public List<Relation> getRelation() {
+        return relation;
+    }
+
+    public void setRelation(List<Relation> relation) {
+        this.relation = relation;
+    }
+
+
     public Relation getFirstRelationByModel(Relation model) {
         Relation foundRelation = null;
         for (Relation relation: this.relation) {
@@ -108,5 +118,11 @@ public class Concept implements ConceptOntology {
     public boolean isAffirmation() {
         Relation  negationRelation = getFirstRelationByModel(Relation.NOT);
         return (negationRelation == null);
+    }
+
+
+
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
     }
 }

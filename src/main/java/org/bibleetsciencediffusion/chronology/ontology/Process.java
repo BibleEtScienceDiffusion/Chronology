@@ -77,4 +77,8 @@ public class Process extends Relation implements ProcessOntology {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
+
 }

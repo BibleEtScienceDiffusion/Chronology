@@ -6,8 +6,6 @@ public class Role extends Concept implements RoleOntology {
 
     }
 
-
-
     public Role(Entity language, String localizedName) {
         super(language, localizedName);
     }
@@ -22,4 +20,7 @@ public class Role extends Concept implements RoleOntology {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
 }

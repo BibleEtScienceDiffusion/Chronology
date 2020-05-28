@@ -70,4 +70,8 @@ public class Event extends Relation implements EventOntology {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
+
 }

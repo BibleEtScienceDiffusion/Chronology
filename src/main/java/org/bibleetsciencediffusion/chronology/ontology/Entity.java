@@ -50,4 +50,7 @@ public class Entity extends Concept implements EntityOntology {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
 }

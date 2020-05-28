@@ -52,4 +52,8 @@ public class Property extends Concept implements PropertyOntology {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
+
 }
