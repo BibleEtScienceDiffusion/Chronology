@@ -28,10 +28,14 @@ public class Relation extends Concept implements RelationOntology {
     }
 
     public Relation addName(Entity language, String localizedName) {
-        addName(language, localizedName);
+        super.addName(language, localizedName);
         return this;
     }
 
+    public Relation addProperty(Property property, Object value) {
+        super.addProperty(property, value);
+        return this;
+    }
 
     public Relation setSubject(Concept subject) {
         this.subject = subject;
@@ -39,7 +43,13 @@ public class Relation extends Concept implements RelationOntology {
     }
 
     public Relation addRole(Role role, Concept concept) {
-        addRole(role,concept);
+
+        Concept mappedConcept = this.role.get(role);
+        if (mappedConcept instanceof ConceptList) {
+            ((ConceptList) mappedConcept).add(concept);
+        } else {
+            this.role.put(role, concept);
+        }
         return this;
     }
 
@@ -52,7 +62,7 @@ public class Relation extends Concept implements RelationOntology {
     }
 
     public Relation addClass(Concept concept) {
-        addClass(concept);
+        super.addClass(concept);
         return this;
     }
 

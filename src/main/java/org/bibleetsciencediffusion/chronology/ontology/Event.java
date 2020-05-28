@@ -1,8 +1,5 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Event extends Relation implements EventOntology {
 
 
@@ -10,7 +7,7 @@ public class Event extends Relation implements EventOntology {
     /**
      * decomposition of event
      */
-    private List<Process> process = new ArrayList<Process>();
+    private ConceptList<Process> process = new ConceptList<Process>();
 
     public Event() {
 
@@ -27,7 +24,7 @@ public class Event extends Relation implements EventOntology {
     }
 
     public Event addName(Entity language, String localizedName) {
-        addName(language, localizedName);
+        super.addName(language, localizedName);
         return this;
     }
 
@@ -51,22 +48,22 @@ public class Event extends Relation implements EventOntology {
     }
 
     public Event addProcess(Process process) {
-        addProcess(process);
+        this.process.add(process);
         return this;
     }
 
     public Event addProperty(Property property, Object value) {
-        addProperty(property, value);
+        super.addProperty(property, value);
         return this;
     }
 
     public Event addRole(Role role, Concept concept) {
-        addRole(role,concept);
+        super.addRole(role, concept);
         return this;
     }
 
     public Event addClass(Concept concept) {
-        addClass(concept);
+        super.addClass(concept);
         return this;
     }
 

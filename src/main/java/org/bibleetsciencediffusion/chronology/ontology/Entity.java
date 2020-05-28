@@ -1,11 +1,8 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Entity extends Concept implements EntityOntology {
 
-    private List<Process> process = new ArrayList<Process>();
+    private ConceptList<Process> process = new ConceptList<Process>();
 
     public Entity() {
 
@@ -22,31 +19,31 @@ public class Entity extends Concept implements EntityOntology {
     }
 
     public Entity addName(Entity language, String localizedName) {
-        addName(language, localizedName);
+        super.addName(language, localizedName);
         return this;
     }
 
 
     public Entity addProcess(Process process) {
-        addProcess(process);
+        this.process.add(process);
         process.setSubject(new Entity(this));
         return this;
     }
 
     public Entity addProperty(Property property, Object value) {
-        addProperty(property,value);
+        super.addProperty(property, value);
         property.setSubject(new Entity(this));
         return this;
     }
 
     public Entity addRelation(Relation relation) {
-        addRelation(relation);
+        super.addRelation(relation);
         relation.setSubject(new Entity(this));
         return this;
     }
 
     public Entity addClass(Concept concept) {
-        addClass(concept);
+        super.addClass(concept);
         return this;
     }
 
