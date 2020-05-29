@@ -24,7 +24,7 @@ public class Date extends Concept {
     }
 
     public Date setYear(int year) {
-        getProperty().put(Property.YEAR, year);
+        addProperty(Property.YEAR, year);
         return this;
     }
 
@@ -33,7 +33,7 @@ public class Date extends Concept {
     }
 
     public Date setMonth(int month) {
-        getProperty().put(Property.MONTH, month);
+        addProperty(Property.MONTH, month);
         return this;
     }
 
@@ -42,7 +42,7 @@ public class Date extends Concept {
     }
 
     public Date setDay(int day) {
-        getProperty().put(Property.DAY, day);
+        addProperty(Property.DAY, day);
         return this;
     }
 
