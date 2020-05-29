@@ -27,11 +27,13 @@ public class Concept implements ConceptOntology {
 
     public Concept addName(Entity language, String localizedName) {
         Name name = getName();
-        name.add((String)language.getProperty().get(Property.ISO_CODE), localizedName);
+        name.setConcept(this);
+        name.add((String) language.getProperty().get(Property.ISO_CODE), localizedName);
         return this;
     }
 
     public Concept setName(Name name) {
+        name.setConcept(this);
         this.property.put(Property.NAME, name);
         return this;
     }
@@ -97,17 +99,10 @@ public class Concept implements ConceptOntology {
         this.relation = relation;
     }
 
-
     public Relation getFirstRelationByModel(Relation model) {
-        Relation foundRelation = null;
-        for (Relation relation : this.relation.getList()) {
-            if (relation.getName().hashCode() == model.hashCode()) {
-                foundRelation = relation;
-                break;
-            }
-        }
-        return foundRelation;
+        return getRelation().getFirstByModel(model);
     }
+
 
     public boolean isNegation() {
         Relation negationRelation = getFirstRelationByModel(Relation.NOT);

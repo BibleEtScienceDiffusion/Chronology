@@ -71,25 +71,4 @@ public interface ConceptOntology {
             .addName(Entity.FRENCH, "langue")
             .addClass(ENTITY);
 
-    Concept CREATION = new Concept(Entity.ENGLISH, "creation")
-            .addName(Entity.FRENCH, "crétion")
-            .addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, Concept.ENTITY))
-            .addClass(Concept.EVENT);
-
-    Concept BIRTH = new Concept(Entity.ENGLISH, "birth")
-            .addName(Entity.FRENCH, "naissance")
-            .addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, Concept.HUMAN))
-            .addClass(Concept.EVENT);
-
-    Concept DEATH = new Concept(Entity.ENGLISH, "death")
-            .addName(Entity.FRENCH, "mort")
-            .addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, Concept.HUMAN))
-            .addClass(Concept.EVENT);
-
-
-    Concept INTRONIZATION = new Concept(Entity.ENGLISH, "intronization")
-            .addName(Entity.FRENCH, "intronisation")
-            .addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, Concept.HUMAN))
-            .addClass(Concept.EVENT);
-
 }

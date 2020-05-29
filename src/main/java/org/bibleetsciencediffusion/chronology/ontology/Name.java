@@ -5,7 +5,17 @@ import java.util.Map;
 
 public class Name {
 
-    private Map<String,Object> map = new HashMap<String,Object>();
+    // possibility inherit from ISO_FR_LANGUAGE or ISO_EN_LANGUAGE
+    private Map<String, Object> map = new HashMap<String, Object>();
+    private Concept concept;
+
+    public Concept getConcept() {
+        return concept;
+    }
+
+    public void setConcept(Concept concept) {
+        this.concept = concept;
+    }
 
     public Name add(String languageIsoCode, String localizedName) {
         map.put(languageIsoCode, localizedName);

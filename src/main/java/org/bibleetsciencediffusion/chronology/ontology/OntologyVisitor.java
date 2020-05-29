@@ -12,7 +12,11 @@ public interface OntologyVisitor {
 
     void visit(Process process);
 
-    void visit(Event event) ;
+    void visit(Event event);
 
     void visit(Role role);
+
+    void visit(Date date);
+
+    //void visit(Name name);
 }

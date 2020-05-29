@@ -22,17 +22,17 @@ public interface EntityOntology {
             .addName(Entity.FRENCH,"Egypte")
             .addClass(Concept.COUNTRY);;
 
-    Entity ABRAHAM = new Entity(Entity.ENGLISH,"Abram")
+    Entity ABRAHAM = new Entity(Entity.ENGLISH, "Abram")
             .addClass(Concept.HUMAN)
             .addProcess(
-                new Process(Process.LIFE)
-                        .setBegin(new Event(Event.BIRTH).setDate(new Date(Date.AM,1948)))
-                        .setEnd(new Event(Event.BIRTH).setDate(new Date(Date.AM,2223)))
-                        .addProcess(new Process((Process.COVENANT))
-                                .setBegin(new Event().setDate(new Date(Date.AM,2048))))
-                                .addRole(Role.PARTICIPANT, new Entity(Entity.ABRAHAM)
-                                    .addName(Entity.ENGLISH, "Abraham"))
-                                .addRole(Role.LOCATION, CANAAN)
-                                );
+                    new Process(Process.LIFE)
+                            .setBegin(new Event().setDate(new Date().setYear(1948)))
+                            .setEnd(new Event().setDate(new Date().setYear(2123)))
+                            .addProcess(new Process((Process.COVENANT))
+                                    .setBegin(new Event().setDate(new Date().setYear(2018)))
+                                    .addRole(Role.PARTICIPANT, new Entity(Entity.ABRAHAM)
+                                            .addName(Entity.ENGLISH, "Abraham"))
+                                    .addRole(Role.LOCATION, CANAAN)
+                            ));
 
 }

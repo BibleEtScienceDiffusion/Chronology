@@ -46,5 +46,9 @@ public class Date extends Concept {
         return this;
     }
 
+    public void accept(OntologyVisitor v) {
+        v.visit(this);
+    }
+
 
 }

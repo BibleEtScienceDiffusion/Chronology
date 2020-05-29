@@ -57,6 +57,11 @@ public class Event extends Relation implements EventOntology {
         return this;
     }
 
+    public Event addRelation(Relation relation) {
+        super.addRelation(relation);
+        return this;
+    }
+
     public Event addRole(Role role, Concept concept) {
         super.addRole(role, concept);
         return this;

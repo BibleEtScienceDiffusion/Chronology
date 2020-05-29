@@ -9,6 +9,7 @@ public class Property extends Concept implements PropertyOntology {
 
     private Class type;
 
+
     public Property() {
 
     }
@@ -28,6 +29,16 @@ public class Property extends Concept implements PropertyOntology {
         return this;
     }
 
+    public Property addProperty(Property property, Object value) {
+        super.addProperty(property, value);
+        return this;
+    }
+
+    public Property addRelation(Relation relation) {
+        super.addRelation(relation);
+        return this;
+    }
+
     public Property setSubject(Concept subject) {
         this.subject = subject;
         return this;
@@ -41,7 +52,6 @@ public class Property extends Concept implements PropertyOntology {
         this.type = type;
         return this;
     }
-
 
     public Class getType() {
         return type;

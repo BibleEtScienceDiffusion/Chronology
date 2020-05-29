@@ -6,11 +6,11 @@ public interface RelationOntology {
             .addName(Entity.FRENCH, "a pour classe")
             .addClass(Concept.RELATION);
 
-    Relation PARENT = new Relation(Entity.ENGLISH, "has parent")
+    Relation HAS_PARENT = new Relation(Entity.ENGLISH, "has parent")
             .addName(Entity.FRENCH, "a pour parent")
             .addClass(Concept.RELATION);
 
-    Relation SIBLING = new Relation(Entity.ENGLISH, "has sibling")
+    Relation HAS_SIBLING = new Relation(Entity.ENGLISH, "has sibling")
             .addName(Entity.FRENCH, "a pour frère")
             .addClass(Concept.RELATION);
 
@@ -25,15 +25,6 @@ public interface RelationOntology {
     Relation NOT = new Relation(Entity.ENGLISH, "not")
             .addName(Entity.FRENCH, "non")
             .addClass(Concept.LOGICAL_RELATION);
-
-
-    Relation FROM = new Relation(Entity.ENGLISH, "from")
-            .addName(Entity.FRENCH, "depuis")
-            .addClass(Concept.SPATIO_TEMPORAL_RELATION);
-
-    Relation TO = new Relation(Entity.ENGLISH, "to")
-            .addName(Entity.FRENCH, "à")
-            .addClass(Concept.SPATIO_TEMPORAL_RELATION);
 
     Relation REFERENCE = new Relation(Entity.ENGLISH, "reference")
             .addName(Entity.FRENCH, "référence")

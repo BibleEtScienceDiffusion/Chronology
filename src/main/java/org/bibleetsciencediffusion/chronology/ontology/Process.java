@@ -42,6 +42,11 @@ public class Process extends Relation implements ProcessOntology {
         return this;
     }
 
+    public Process addRelation(Relation relation) {
+        super.addRelation(relation);
+        return this;
+    }
+
     public Event getBegin() {
         return (Event) getRole(Role.BEGIN);
     }
