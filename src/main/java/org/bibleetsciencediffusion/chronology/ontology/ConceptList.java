@@ -3,7 +3,7 @@ package org.bibleetsciencediffusion.chronology.ontology;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConceptList<T extends Concept> extends Concept {
+public class ConceptList<T extends Concept> /*extends Concept*/ {
 
     private List<T> list = new ArrayList<T>();
 

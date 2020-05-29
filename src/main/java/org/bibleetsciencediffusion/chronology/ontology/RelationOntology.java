@@ -2,36 +2,33 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface RelationOntology {
 
-    Relation HAS_CLASS = new Relation(Entity.ENGLISH, "has class")
-            .addName(Entity.FRENCH, "a pour classe")
+
+    Relation HAS_PARENT = new Relation(Name.ENGLISH, "has parent")
+            .addName(Name.FRENCH, "a pour parent")
             .addClass(Concept.RELATION);
 
-    Relation HAS_PARENT = new Relation(Entity.ENGLISH, "has parent")
-            .addName(Entity.FRENCH, "a pour parent")
+    Relation HAS_SIBLING = new Relation(Name.ENGLISH, "has sibling")
+            .addName(Name.FRENCH, "a pour frère")
             .addClass(Concept.RELATION);
 
-    Relation HAS_SIBLING = new Relation(Entity.ENGLISH, "has sibling")
-            .addName(Entity.FRENCH, "a pour frère")
-            .addClass(Concept.RELATION);
-
-    Relation AND = new Relation(Entity.ENGLISH, "and")
-            .addName(Entity.FRENCH, "et")
+    Relation AND = new Relation(Name.ENGLISH, "and")
+            .addName(Name.FRENCH, "et")
             .addClass(Concept.LOGICAL_RELATION);
 
-    Relation OR = new Relation(Entity.ENGLISH, "or")
-            .addName(Entity.FRENCH, "ou")
+    Relation OR = new Relation(Name.ENGLISH, "or")
+            .addName(Name.FRENCH, "ou")
             .addClass(Concept.LOGICAL_RELATION);
 
-    Relation NOT = new Relation(Entity.ENGLISH, "not")
-            .addName(Entity.FRENCH, "non")
+    Relation NOT = new Relation(Name.ENGLISH, "not")
+            .addName(Name.FRENCH, "non")
             .addClass(Concept.LOGICAL_RELATION);
 
-    Relation REFERENCE = new Relation(Entity.ENGLISH, "reference")
-            .addName(Entity.FRENCH, "référence")
+    Relation REFERENCE = new Relation(Name.ENGLISH, "reference")
+            .addName(Name.FRENCH, "référence")
             .addClass(Concept.RELATION);
 
-    Relation DEPENDENCY = new Relation(Entity.ENGLISH, "dependency")
-            .addName(Entity.FRENCH, "dépendance")
+    Relation DEPENDENCY = new Relation(Name.ENGLISH, "dependency")
+            .addName(Name.FRENCH, "dépendance")
             .addClass(Concept.RELATION);
 
 }

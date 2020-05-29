@@ -5,6 +5,9 @@ import java.util.Map;
 
 public class Name {
 
+    public static String ENGLISH = "EN";
+    public static String FRENCH = "FR";
+
     // possibility inherit from ISO_FR_LANGUAGE or ISO_EN_LANGUAGE
     private Map<String, Object> map = new HashMap<String, Object>();
     private Concept concept;

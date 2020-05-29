@@ -14,11 +14,11 @@ public class Entity extends Concept implements EntityOntology {
     }
 
 
-    public Entity(Entity language, String localizedName) {
+    public Entity(String language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Entity addName(Entity language, String localizedName) {
+    public Entity addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }

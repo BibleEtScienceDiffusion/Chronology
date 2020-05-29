@@ -11,11 +11,11 @@ public class Date extends Concept {
     }
 
     public Date getReference() {
-        return (Date) getRelation().getFirstRelationByModel(Relation.REFERENCE).getRole(Role.TARGET);
+        return (Date) getRelation().getFirstByModel(Relation.REFERENCE).getRole(Role.TARGET);
     }
 
     public Date setReference(Event reference) {
-        getRelation().getFirstRelationByModel(Relation.REFERENCE).addRole(Role.TARGET, reference);
+        getRelation().getFirstByModel(Relation.REFERENCE).addRole(Role.TARGET, reference);
         return this;
     }
 

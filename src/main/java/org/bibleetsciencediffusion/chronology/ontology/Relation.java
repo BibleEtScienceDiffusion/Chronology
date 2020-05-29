@@ -5,9 +5,10 @@ import java.util.Map;
 
 public class Relation extends Concept implements RelationOntology {
 
-
-    protected Map<Role,Concept> role = new HashMap<Role,Concept>();
-
+    /**
+     * map role to ConceptList or Concept
+     */
+    protected Map<Role, Object> role = new HashMap<Role, Object>();
 
 
     public Relation() {
@@ -19,11 +20,11 @@ public class Relation extends Concept implements RelationOntology {
         this.role = model.role;
     }
 
-    public Relation(Entity language, String localizedName) {
+    public Relation(String language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Relation addName(Entity language, String localizedName) {
+    public Relation addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }
@@ -35,7 +36,7 @@ public class Relation extends Concept implements RelationOntology {
 
 
     public Relation addRole(Role role, Concept concept) {
-        Concept mappedConcept = this.role.get(role);
+        Object mappedConcept = this.role.get(role);
         if (mappedConcept instanceof ConceptList) {
             ((ConceptList) mappedConcept).add(concept);
         } else {
@@ -45,7 +46,7 @@ public class Relation extends Concept implements RelationOntology {
     }
 
     public Concept getSubject() {
-        return getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
+        return (Concept) getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
     }
 
     /**
@@ -57,7 +58,7 @@ public class Relation extends Concept implements RelationOntology {
         return this;
     }
 
-    public Concept getRole(Role role) {
+    public Object getRole(Role role) {
         return this.role.get(role);
     }
 

@@ -19,12 +19,12 @@ public class Property extends Concept implements PropertyOntology {
         setType(model.getType());
     }
 
-    public Property(Entity language, String localizedName) {
+    public Property(String language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Property addName(Entity language, String localizedName) {
-        addName(language, localizedName);
+    public Property addName(String language, String localizedName) {
+        super.addName(language, localizedName);
         return this;
     }
 
@@ -39,7 +39,7 @@ public class Property extends Concept implements PropertyOntology {
     }
 
     public Concept getSubject() {
-        return getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
+        return (Concept) getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
     }
 
     public Property setSubject(Concept subject) {
@@ -57,7 +57,7 @@ public class Property extends Concept implements PropertyOntology {
     }
 
     public Property addClass(Concept concept) {
-        addClass(concept);
+        super.addClass(concept);
         return this;
     }
 

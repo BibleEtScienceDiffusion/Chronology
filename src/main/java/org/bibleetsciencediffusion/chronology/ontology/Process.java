@@ -17,11 +17,11 @@ public class Process extends Relation implements ProcessOntology {
     }
 
 
-    public Process(Entity language, String localizedName) {
+    public Process(String language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Process addName(Entity language, String localizedName) {
+    public Process addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }

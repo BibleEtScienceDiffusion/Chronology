@@ -2,27 +2,29 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public interface EntityOntology {
 
-    Entity ENGLISH = new Entity(Entity.ENGLISH,"english")
-            .addName(Entity.FRENCH,"anglais").addClass(Concept.LANGUAGE)
-            .addProperty(Property.ISO_CODE,"en");
+    Entity ENGLISH = new Entity(Name.ENGLISH, "english")
+            .addName(Name.FRENCH, "anglais").addClass(Concept.LANGUAGE)
+            .addProperty(Property.ISO_CODE, "en");
 
-    Entity FRENCH = new Entity(EntityOntology.ENGLISH,"french")
-            .addName(Entity.FRENCH,"français").addClass(Concept.LANGUAGE)
-            .addProperty(Property.ISO_CODE,"fr");
-    
-    Entity ISRAEL = new Entity(Entity.ENGLISH,"Israel")
-            .addName(Entity.FRENCH,"Israël")
+    Entity FRENCH = new Entity(Name.ENGLISH, "french")
+            .addName(Name.FRENCH, "français").addClass(Concept.LANGUAGE)
+            .addProperty(Property.ISO_CODE, "fr");
+
+    Entity ISRAEL = new Entity(Name.ENGLISH, "Israel")
+            .addName(Name.FRENCH, "Israël")
             .addClass(Concept.COUNTRY);
 
-    Entity CANAAN = new Entity(Entity.ENGLISH,"Canaan")
-            .addName(Entity.FRENCH,"Canaan")
-            .addClass(Concept.COUNTRY);;
+    Entity CANAAN = new Entity(Name.ENGLISH, "Canaan")
+            .addName(Name.FRENCH, "Canaan")
+            .addClass(Concept.COUNTRY);
+    ;
 
-    Entity EGYPT = new Entity(Entity.ENGLISH,"Egypt")
-            .addName(Entity.FRENCH,"Egypte")
-            .addClass(Concept.COUNTRY);;
+    Entity EGYPT = new Entity(Name.ENGLISH, "Egypt")
+            .addName(Name.FRENCH, "Egypte")
+            .addClass(Concept.COUNTRY);
+    ;
 
-    Entity ABRAHAM = new Entity(Entity.ENGLISH, "Abram")
+    Entity ABRAHAM = new Entity(Name.ENGLISH, "Abram")
             .addClass(Concept.HUMAN)
             .addProcess(
                     new Process(Process.LIFE)
@@ -31,7 +33,7 @@ public interface EntityOntology {
                             .addProcess(new Process((Process.COVENANT))
                                     .setBegin(new Event().setDate(new Date().setYear(2018)))
                                     .addRole(Role.PARTICIPANT, new Entity(Entity.ABRAHAM)
-                                            .addName(Entity.ENGLISH, "Abraham"))
+                                            .addName(Name.ENGLISH, "Abraham"))
                                     .addRole(Role.LOCATION, CANAAN)
                             ));
 

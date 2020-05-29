@@ -5,8 +5,9 @@ import java.util.Map;
 
 public class Concept implements ConceptOntology {
 
-    protected Map<Property,Object> property = new HashMap<Property,Object>();
+    protected Name name = new Name();
 
+    protected Map<Property, Object> property = new HashMap<Property, Object>();
 
     protected ConceptList<Relation> relation = new ConceptList<Relation>();
 
@@ -14,36 +15,30 @@ public class Concept implements ConceptOntology {
     }
 
     public Concept(Concept model) {
-        addClass(model.getFirstClass()).setName(model.getName());
+        //addClass(model.getFirstClass()).setName(model.getName());
         this.property = model.property;
         this.relation = model.relation;
     }
 
-    public Concept(Entity language, String localizedName) {
+    public Concept(String language, String localizedName) {
         addName(language, localizedName);
     }
 
 
-
-    public Concept addName(Entity language, String localizedName) {
+    public Concept addName(String language, String localizedName) {
         Name name = getName();
         name.setConcept(this);
-        name.add((String) language.getProperty().get(Property.ISO_CODE), localizedName);
+        name.add(language, localizedName);
         return this;
     }
 
     public Concept setName(Name name) {
         name.setConcept(this);
-        this.property.put(Property.NAME, name);
+        this.name = name;
         return this;
     }
 
     public  Name getName() {
-        Name name = (Name) this.property.get(Property.NAME);
-        if (name == null) {
-            name = new Name();
-            setName(name);
-        }
         return name;
     }
 
@@ -69,7 +64,7 @@ public class Concept implements ConceptOntology {
            return null;
         }
         else  {
-            return parentRelation.getRole(Role.TARGET);
+            return (Concept) parentRelation.getRole(Role.TARGET);
         }
 
     }

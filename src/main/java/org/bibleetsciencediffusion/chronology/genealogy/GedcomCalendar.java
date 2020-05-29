@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.genealogytools;
+package org.bibleetsciencediffusion.chronology.genealogy;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;

@@ -6,11 +6,11 @@ public class Role extends Concept implements RoleOntology {
 
     }
 
-    public Role(Entity language, String localizedName) {
+    public Role(String language, String localizedName) {
         super(language, localizedName);
     }
 
-    public Role addName(Entity language, String localizedName) {
+    public Role addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }

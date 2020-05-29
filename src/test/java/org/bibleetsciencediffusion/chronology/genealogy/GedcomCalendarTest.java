@@ -1,17 +1,17 @@
-package org.bibleetsciencediffusion.genealogytools;
+package org.bibleetsciencediffusion.chronology.genealogy;
 
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
 
-import static org.bibleetsciencediffusion.genealogytools.GedcomCalendar.convertWithAD;
+import static org.bibleetsciencediffusion.chronology.genealogy.GedcomCalendar.convertWithAD;
 
 public class GedcomCalendarTest {
 
     @Test
     public void testDate1() throws Exception {
-        Assert.assertEquals("3925 B.C.",GedcomCalendar.toAD("@#DHEBREW@ 0001"));
+        Assert.assertEquals("3925 B.C.", GedcomCalendar.toAD("@#DHEBREW@ 0001"));
     }
 
     @Test

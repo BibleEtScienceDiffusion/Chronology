@@ -13,7 +13,7 @@ public class Event extends Relation implements EventOntology {
 
     }
 
-    public Event(Entity language, String localizedName) {
+    public Event(String language, String localizedName) {
         super(language, localizedName);
     }
 
@@ -23,7 +23,7 @@ public class Event extends Relation implements EventOntology {
         this.process = model.process;
     }
 
-    public Event addName(Entity language, String localizedName) {
+    public Event addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }
