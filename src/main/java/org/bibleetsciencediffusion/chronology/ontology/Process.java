@@ -2,11 +2,6 @@ package org.bibleetsciencediffusion.chronology.ontology;
 
 public class Process extends Relation implements ProcessOntology {
 
-
-    private Event begin;
-
-    private Event end;
-
     /**
      * subprocesses
      */
@@ -19,8 +14,6 @@ public class Process extends Relation implements ProcessOntology {
     public Process(Process model) {
         super(model);
         this.process = model.process;
-        this.begin = model.begin;
-        this.end = model.end;
     }
 
 
@@ -50,21 +43,20 @@ public class Process extends Relation implements ProcessOntology {
     }
 
     public Event getBegin() {
-        return begin;
+        return (Event) getRole(Role.BEGIN);
     }
 
     public Process setBegin(Event begin) {
-        this.begin = begin;
+        addRole(Role.BEGIN, begin);
         return this;
     }
 
     public Event getEnd() {
-        return end;
-
+        return (Event) getRole(Role.END);
     }
 
     public Process setEnd(Event end) {
-        this.end = end;
+        addRole(Role.BEGIN, end);
         return this;
     }
 

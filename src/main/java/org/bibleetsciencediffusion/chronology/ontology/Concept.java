@@ -110,16 +110,20 @@ public class Concept implements ConceptOntology {
     }
 
     public boolean isNegation() {
-        Relation  negationRelation = getFirstRelationByModel(Relation.NOT);
+        Relation negationRelation = getFirstRelationByModel(Relation.NOT);
         return (negationRelation != null);
     }
 
     public boolean isAffirmation() {
-        Relation  negationRelation = getFirstRelationByModel(Relation.NOT);
+        Relation negationRelation = getFirstRelationByModel(Relation.NOT);
         return (negationRelation == null);
     }
 
 
+    public Concept expand() {
+        //TODO
+        return null;
+    }
 
     public void accept(OntologyVisitor v) {
         v.visit(this);

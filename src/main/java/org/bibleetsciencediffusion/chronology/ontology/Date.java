@@ -1,97 +1,50 @@
 package org.bibleetsciencediffusion.chronology.ontology;
 
 /**
- * object valeur
+ * concept valeur
  */
 
-public class Date  {
-
-    /**
-     * creation of the world
-     */
-    public static Date AM = new Date();
-
-    /**
-     * beginning of our era
-     */
-    public static Date JC = new Date(AM, 3925,0,0);
-
-    /**
-     * event reference
-     */
-    private Date reference = null;
-
-    /**
-     * sun rotation offset
-     */
-
-    private int year = 0;
-
-    /**
-     * moon rotation offset
-     */
-    private int month = 0;
-
-    /**
-     * earth rotation offset
-     */
-    private int day = 0;
+public class Date extends Concept {
 
     public Date() {
-    }
-
-    public Date(Date reference) {
-        this.reference = reference;
-    }
-
-    public Date(Date reference, int year) {
-        this.reference = reference;
-        this.year = year;
-    }
-
-    public Date(Date reference, int year, int month, int day) {
-        this.reference = reference;
-        this.year = year;
-        this.month = month;
-        this.day = day;
-    }
-
-    public Date setReference(Date reference) {
-        this.reference = reference;
-        return this;
-    }
-
-    public Date setYear(int year) {
-        this.year = year;
-        return this;
-    }
-
-    public Date setMonth(int month) {
-        this.month = month;
-        return this;
-    }
-
-    public Date setDay(int day) {
-        this.day = day;
-        return this;
+        addRelation(new Relation(Relation.REFERENCE).addRole(Role.TARGET, Event.AM));
     }
 
     public Date getReference() {
-        return reference;
+        return (Date) getRelation().getFirstRelationByModel(Relation.REFERENCE).getRole(Role.TARGET);
+    }
+
+    public Date setReference(Event reference) {
+        getRelation().getFirstRelationByModel(Relation.REFERENCE).addRole(Role.TARGET, reference);
+        return this;
     }
 
     public int getYear() {
-        return this.year;
+        return (Integer) getProperty().get(Property.YEAR);
+    }
+
+    public Date setYear(int year) {
+        getProperty().put(Property.YEAR, year);
+        return this;
     }
 
     public int getMonth() {
-        return this.month;
+        return (Integer) getProperty().get(Property.MONTH);
+    }
+
+    public Date setMonth(int month) {
+        getProperty().put(Property.MONTH, month);
+        return this;
     }
 
     public int getDay() {
-        return this.day;
+        return (Integer) getProperty().get(Property.DAY);
     }
 
+    public Date setDay(int day) {
+        getProperty().put(Property.DAY, day);
+        return this;
+    }
 
 
 }
