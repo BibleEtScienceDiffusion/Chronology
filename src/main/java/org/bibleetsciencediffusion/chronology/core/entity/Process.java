@@ -1,6 +1,8 @@
 package org.bibleetsciencediffusion.chronology.core.entity;
 
-public class Process extends Relation implements ProcessOntology {
+import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+
+public class Process extends Relation {
 
     /**
      * subprocesses
@@ -19,6 +21,14 @@ public class Process extends Relation implements ProcessOntology {
 
     public Process(String language, String localizedName) {
         super(language, localizedName);
+    }
+
+    public static Process newProcess(String lang, String name) {
+        return ConceptFactory.getInstance().newProcess(lang, name);
+    }
+
+    public static Process newProcess(Process model) {
+        return ConceptFactory.getInstance().newProcess(model);
     }
 
     public Process addName(String language, String localizedName) {
@@ -70,7 +80,7 @@ public class Process extends Relation implements ProcessOntology {
         return this;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 

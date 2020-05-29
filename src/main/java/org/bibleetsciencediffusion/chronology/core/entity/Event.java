@@ -1,7 +1,8 @@
 package org.bibleetsciencediffusion.chronology.core.entity;
 
-public class Event extends Relation implements EventOntology {
+import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
 
+public class Event extends Relation {
 
 
     /**
@@ -22,6 +23,15 @@ public class Event extends Relation implements EventOntology {
         super(model);
         this.process = model.process;
     }
+
+    public static Event newEvent(String lang, String name) {
+        return ConceptFactory.getInstance().newEvent(lang, name);
+    }
+
+    public static Event newEvent(Event model) {
+        return ConceptFactory.getInstance().newEvent(model);
+    }
+
 
     public Event addName(String language, String localizedName) {
         super.addName(language, localizedName);
@@ -72,7 +82,7 @@ public class Event extends Relation implements EventOntology {
         return this;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 

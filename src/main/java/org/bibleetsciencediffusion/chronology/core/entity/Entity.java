@@ -1,6 +1,6 @@
 package org.bibleetsciencediffusion.chronology.core.entity;
 
-public class Entity extends Concept implements EntityOntology {
+public class Entity extends Concept /*implements DomainDefinition*/ {
 
     private ConceptList<Process> process = new ConceptList<Process>();
 
@@ -47,7 +47,7 @@ public class Entity extends Concept implements EntityOntology {
         return this;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 }

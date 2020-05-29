@@ -6,7 +6,7 @@ import org.bibleetsciencediffusion.chronology.core.value.Name;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Concept implements ConceptOntology {
+public class Concept implements PrimitiveConcept {
 
     protected Name name = new Name();
 
@@ -29,7 +29,7 @@ public class Concept implements ConceptOntology {
 
 
     public static Concept newConcept(Concept model) {
-        return ConceptFactory.getInstance().newInstance(model);
+        return ConceptFactory.getInstance().newConcept(model);
     }
 
     public static Concept newConcept(String lang, String name) {
@@ -127,7 +127,7 @@ public class Concept implements ConceptOntology {
         return null;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 }

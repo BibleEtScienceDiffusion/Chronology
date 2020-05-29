@@ -1,10 +1,10 @@
 package org.bibleetsciencediffusion.chronology.core.entity;
 
-public interface OntologyVisitor {
+public interface ConceptVisitor {
 
     void visit(Concept concept);
 
-    void visit(Entity entity) ;
+    void visit(Entity entity);
 
     void visit(Property property);
 
@@ -18,5 +18,4 @@ public interface OntologyVisitor {
 
     void visit(Date date);
 
-    //void visit(Name name);
 }

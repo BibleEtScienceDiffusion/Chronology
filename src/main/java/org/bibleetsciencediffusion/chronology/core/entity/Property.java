@@ -1,6 +1,8 @@
 package org.bibleetsciencediffusion.chronology.core.entity;
 
-public class Property extends Concept implements PropertyOntology {
+import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+
+public class Property extends Concept {
 
     /**
      * the concept on which the property applies (subject)
@@ -21,6 +23,14 @@ public class Property extends Concept implements PropertyOntology {
 
     public Property(String language, String localizedName) {
         super(language, localizedName);
+    }
+
+    public static Property newProperty(Property model) {
+        return ConceptFactory.getInstance().newProperty(model);
+    }
+
+    public static Property newProperty(String lang, String name) {
+        return ConceptFactory.getInstance().newProperty(lang, name);
     }
 
     public Property addName(String language, String localizedName) {
@@ -61,7 +71,7 @@ public class Property extends Concept implements PropertyOntology {
         return this;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 

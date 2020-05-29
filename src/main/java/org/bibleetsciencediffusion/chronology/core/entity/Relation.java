@@ -1,9 +1,11 @@
 package org.bibleetsciencediffusion.chronology.core.entity;
 
+import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+
 import java.util.HashMap;
 import java.util.Map;
 
-public class Relation extends Concept implements RelationOntology {
+public class Relation extends Concept {
 
     /**
      * map role to ConceptList or Concept
@@ -22,6 +24,14 @@ public class Relation extends Concept implements RelationOntology {
 
     public Relation(String language, String localizedName) {
         super(language, localizedName);
+    }
+
+    public static Relation newRelation(Relation model) {
+        return ConceptFactory.getInstance().newRelation(model);
+    }
+
+    public static Relation newRelation(String lang, String name) {
+        return ConceptFactory.getInstance().newRelation(lang, name);
     }
 
     public Relation addName(String language, String localizedName) {
@@ -67,7 +77,7 @@ public class Relation extends Concept implements RelationOntology {
         return this;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 

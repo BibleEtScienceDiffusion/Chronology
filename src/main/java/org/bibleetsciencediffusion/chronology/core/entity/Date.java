@@ -7,7 +7,7 @@ package org.bibleetsciencediffusion.chronology.core.entity;
 public class Date extends Concept {
 
     public Date() {
-        addRelation(new Relation(Relation.REFERENCE).addRole(Role.TARGET, Event.AM));
+        addRelation(new Relation(Relation.REFERENCE).addRole(Role.TARGET, Event.BIRTH_JC));
     }
 
     public Date getReference() {
@@ -46,7 +46,7 @@ public class Date extends Concept {
         return this;
     }
 
-    public void accept(OntologyVisitor v) {
+    public void accept(ConceptVisitor v) {
         v.visit(this);
     }
 

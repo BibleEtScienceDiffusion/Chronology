@@ -2,7 +2,7 @@ package org.bibleetsciencediffusion.chronology.core.entity;
 
 import java.io.PrintWriter;
 
-public class FormatterVisitor implements OntologyVisitor {
+public class FormatterVisitor implements ConceptVisitor {
 
     /**
      * locale
