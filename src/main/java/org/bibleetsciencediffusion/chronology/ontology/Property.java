@@ -5,7 +5,7 @@ public class Property extends Concept implements PropertyOntology {
     /**
      * the concept on which the property applies (subject)
      */
-    private Concept subject;
+
 
     private Class type;
 
@@ -16,7 +16,6 @@ public class Property extends Concept implements PropertyOntology {
 
     public Property(Property model) {
         super(model);
-        setSubject(model.getSubject());
         setType(model.getType());
     }
 
@@ -39,13 +38,13 @@ public class Property extends Concept implements PropertyOntology {
         return this;
     }
 
-    public Property setSubject(Concept subject) {
-        this.subject = subject;
-        return this;
+    public Concept getSubject() {
+        return getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
     }
 
-    public Concept getSubject() {
-        return subject;
+    public Property setSubject(Concept subject) {
+        addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, subject));
+        return this;
     }
 
     public Property setType(Class type) {

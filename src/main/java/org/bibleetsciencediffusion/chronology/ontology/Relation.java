@@ -5,10 +5,6 @@ import java.util.Map;
 
 public class Relation extends Concept implements RelationOntology {
 
-    /**
-     * the concept on which the property applies (subject)
-     */
-    private Concept subject;
 
     protected Map<Role,Concept> role = new HashMap<Role,Concept>();
 
@@ -37,13 +33,8 @@ public class Relation extends Concept implements RelationOntology {
         return this;
     }
 
-    public Relation setSubject(Concept subject) {
-        this.subject = subject;
-        return this;
-    }
 
     public Relation addRole(Role role, Concept concept) {
-
         Concept mappedConcept = this.role.get(role);
         if (mappedConcept instanceof ConceptList) {
             ((ConceptList) mappedConcept).add(concept);
@@ -54,7 +45,16 @@ public class Relation extends Concept implements RelationOntology {
     }
 
     public Concept getSubject() {
-        return subject;
+        return getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
+    }
+
+    /**
+     * the concept on which the property applies (subject = is on dependency)
+     */
+
+    public Relation setSubject(Concept subject) {
+        addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, subject));
+        return this;
     }
 
     public Concept getRole(Role role) {
