@@ -1,4 +1,6 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.value;
+
+import org.bibleetsciencediffusion.chronology.core.entity.Concept;
 
 import java.util.HashMap;
 import java.util.Map;

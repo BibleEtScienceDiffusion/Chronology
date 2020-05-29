@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.entity;
 
 import java.util.ArrayList;
 import java.util.List;

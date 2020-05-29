@@ -1,4 +1,7 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.entity;
+
+import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.core.value.Name;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,6 +25,15 @@ public class Concept implements ConceptOntology {
 
     public Concept(String language, String localizedName) {
         addName(language, localizedName);
+    }
+
+
+    public static Concept newConcept(Concept model) {
+        return ConceptFactory.getInstance().newInstance(model);
+    }
+
+    public static Concept newConcept(String lang, String name) {
+        return ConceptFactory.getInstance().newConcept(lang, name);
     }
 
 

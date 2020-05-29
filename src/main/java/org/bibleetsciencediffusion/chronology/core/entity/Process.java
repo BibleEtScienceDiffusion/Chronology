@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.entity;
 
 public class Process extends Relation implements ProcessOntology {
 

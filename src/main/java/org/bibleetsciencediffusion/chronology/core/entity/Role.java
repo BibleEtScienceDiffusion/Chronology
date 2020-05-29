@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.entity;
 
 public class Role extends Concept implements RoleOntology {
 

@@ -1,4 +1,6 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.entity;
+
+import org.bibleetsciencediffusion.chronology.core.value.Name;
 
 public interface ConceptOntology {
 

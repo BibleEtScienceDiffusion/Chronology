@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core.entity;
 
 public class Property extends Concept implements PropertyOntology {
 

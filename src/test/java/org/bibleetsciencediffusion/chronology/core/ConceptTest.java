@@ -1,5 +1,9 @@
-package org.bibleetsciencediffusion.chronology.ontology;
+package org.bibleetsciencediffusion.chronology.core;
 
+import org.bibleetsciencediffusion.chronology.core.entity.Concept;
+import org.bibleetsciencediffusion.chronology.core.entity.Entity;
+import org.bibleetsciencediffusion.chronology.core.entity.FormatterVisitor;
+import org.bibleetsciencediffusion.chronology.core.entity.Property;
 import org.junit.Test;
 
 import java.io.PrintWriter;
