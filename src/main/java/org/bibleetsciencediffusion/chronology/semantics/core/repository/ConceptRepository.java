@@ -24,7 +24,7 @@ public class ConceptRepository {
         idMap.put(newConcept.getId(), newConcept);
         Name name = newConcept.getName();
         if (name != null) {
-            for (ConceptKey conceptKey : name.getSet()) {
+            for (ConceptKey conceptKey : name.getList()) {
                 ConceptList conceptList = keyMap.getOrDefault(conceptKey, new ConceptList());
                 conceptList.add(newConcept);
                 keyMap.put(conceptKey, conceptList);

@@ -4,6 +4,8 @@ import org.bibleetsciencediffusion.chronology.semantics.core.entity.Process;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.*;
 import org.bibleetsciencediffusion.chronology.semantics.core.repository.ConceptRepository;
 
+import java.util.Locale;
+
 public class ConceptFactory {
     private static ConceptFactory instance = new ConceptFactory();
 
@@ -41,6 +43,19 @@ public class ConceptFactory {
     }
 
     /**
+     * named context in a given language
+     *
+     * @param name
+     * @param locale
+     * @return
+     */
+    public Concept newConcept(Locale locale, String name) {
+        Concept result = new Concept(locale.getLanguage(), name);
+        store(result);
+        return result;
+    }
+
+    /**
      * anonymous concept
      *
      * @param model
@@ -66,6 +81,19 @@ public class ConceptFactory {
         return result;
     }
 
+    /**
+     * named context in a given language
+     *
+     * @param name
+     * @param locale
+     * @return
+     */
+    public Property newProperty(Locale locale, String name) {
+        Property result = new Property(locale.getLanguage(), name);
+        store(result);
+        return result;
+    }
+
 
     /**
      * anonymous concept
@@ -74,7 +102,7 @@ public class ConceptFactory {
      * @return
      */
     public Relation newRelation(Relation model) {
-        Relation result = new Relation(model);// model.clone();
+        Relation result = new Relation(model);
         store(result);
         return result;
     }
@@ -92,6 +120,13 @@ public class ConceptFactory {
         store(result);
         return result;
     }
+
+    public Relation newRelation(Locale locale, String name) {
+        Relation result = new Relation(locale.getLanguage(), name);
+        store(result);
+        return result;
+    }
+
 
     /**
      * anonymous concept
@@ -119,6 +154,12 @@ public class ConceptFactory {
         return result;
     }
 
+    public Process newProcess(Locale locale, String name) {
+        Process result = new Process(locale.getLanguage(), name);
+        store(result);
+        return result;
+    }
+
     /**
      * named context in a given language
      *
@@ -126,8 +167,16 @@ public class ConceptFactory {
      * @param lang
      * @return
      */
+
+
     public Role newRole(String lang, String name) {
         Role result = new Role(lang, name);
+        store(result);
+        return result;
+    }
+
+    public Role newRole(Locale locale, String name) {
+        Role result = new Role(locale.getLanguage(), name);
         store(result);
         return result;
     }
@@ -155,6 +204,12 @@ public class ConceptFactory {
      */
     public Event newEvent(String lang, String name) {
         Event result = new Event(lang, name);
+        store(result);
+        return result;
+    }
+
+    public Event newEvent(Locale locale, String name) {
+        Event result = new Event(locale.getLanguage(), name);
         store(result);
         return result;
     }

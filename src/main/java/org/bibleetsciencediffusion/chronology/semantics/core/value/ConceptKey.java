@@ -1,5 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.value;
 
+import java.util.Locale;
+
 public class ConceptKey {
 
 
@@ -10,6 +12,11 @@ public class ConceptKey {
     public ConceptKey(String lang, String name) {
         this.name = name;
         this.lang = lang;
+    }
+
+    public ConceptKey(Locale locale, String name) {
+        this.name = name;
+        this.lang = locale.getLanguage();
     }
 
     public String getName() {
