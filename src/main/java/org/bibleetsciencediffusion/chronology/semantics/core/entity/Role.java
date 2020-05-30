@@ -36,6 +36,10 @@ public class Role extends Concept {
         return this;
     }
 
+    public Role clone() {
+        return clone();
+    }
+
     public void accept(ConceptVisitor v) {
         v.visit(this);
     }

@@ -64,7 +64,7 @@ public class Property extends Concept {
     }
 
     public Property setSubject(Concept subject) {
-        addRelation(new Relation(DEPENDENCY).addRole(TARGET, subject));
+        addRelation(DEPENDENCY.clone().addRole(TARGET, subject));
         return this;
     }
 
@@ -75,6 +75,10 @@ public class Property extends Concept {
 
     public Class getType() {
         return type;
+    }
+
+    public Property clone() {
+        return clone();
     }
 
     public Property addClass(Concept concept) {

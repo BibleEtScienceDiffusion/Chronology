@@ -87,6 +87,10 @@ public class Relation extends Concept {
         return this;
     }
 
+    public Relation clone() {
+        return clone();
+    }
+
     public void accept(ConceptVisitor v) {
         v.visit(this);
     }

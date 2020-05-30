@@ -78,7 +78,7 @@ public class Concept implements PrimitiveConcept {
      * @return this
      */
     public Concept addClass(Concept concept) {
-        Relation parentRelation = new Relation(Relation.HAS_CLASS);
+        Relation parentRelation = Relation.HAS_CLASS.clone();
         parentRelation.addRole(Role.TARGET,concept);
         addRelation(parentRelation);
         return this;

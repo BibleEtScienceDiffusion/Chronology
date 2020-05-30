@@ -88,6 +88,10 @@ public class Event extends Relation {
         return this;
     }
 
+    public Event clone() {
+        return clone();
+    }
+
     public Event addClass(Concept concept) {
         super.addClass(concept);
         return this;

@@ -41,4 +41,11 @@ public class ConceptList<T extends Concept> /*extends Concept*/ {
         return found;
     }
 
+    public Concept asConcept() {
+        Concept target = Concept.LIST.clone();
+        for (Concept concept : getList()) {
+            target.addRelation(Relation.HAS_ELEMENT.clone().addRole(Role.TARGET, concept));
+        }
+        return target;
+    }
 }

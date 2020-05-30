@@ -85,6 +85,10 @@ public class Process extends Relation {
         return this;
     }
 
+    public Process clone() {
+        return clone();
+    }
+
     public Process addClass(Concept concept) {
         super.addClass(concept);
         return this;

@@ -36,7 +36,7 @@ public class Entity extends Concept /*implements DomainDefinition*/ {
 
     public Entity addProcess(Process process) {
         this.process.add(process);
-        process.setSubject(new Entity(this));
+        process.setSubject(this.clone());
         return this;
     }
 
@@ -55,6 +55,10 @@ public class Entity extends Concept /*implements DomainDefinition*/ {
     public Entity addClass(Concept concept) {
         super.addClass(concept);
         return this;
+    }
+
+    public Entity clone() {
+        return clone();
     }
 
     public void accept(ConceptVisitor v) {
