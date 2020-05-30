@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import java.io.PrintWriter;
 
@@ -40,7 +40,7 @@ public class FormatterVisitor implements ConceptVisitor {
     }
 
     public void visit(Concept concept) {
-        printWriter.println("concept name:" + concept.getName().get(getLang()));
+        //printWriter.println("concept name:" + concept.getName().get(getLang()));
 
         for (Property property : concept.getProperty().keySet()) {
             property.accept(this);
@@ -52,19 +52,19 @@ public class FormatterVisitor implements ConceptVisitor {
     }
 
     public void visit(Entity entity) {
-        printWriter.print("entity name:" + entity.getName().get(getLang()) + " ");
+        //printWriter.print("entity name:" + entity.getName().get(getLang()) + " ");
     }
 
     public void visit(Property property) {
-        printWriter.print("property name:" + property.getName().get(getLang()) + " ");
+        //printWriter.print("property name:" + property.getName().get(getLang()) + " ");
     }
 
     public void visit(Relation relation) {
-        printWriter.print("relation name:" + relation.getName().get(getLang()) + " ");
+        //printWriter.print("relation name:" + relation.getName().get(getLang()) + " ");
     }
 
     public void visit(Process process) {
-        printWriter.print("process name:" + process.getName().get(getLang()) + " ");
+        //printWriter.print("process name:" + process.getName().get(getLang()) + " ");
         if (process.getBegin()!=null) {
             printWriter.print("from:");
             process.getBegin().accept(this);
@@ -76,12 +76,12 @@ public class FormatterVisitor implements ConceptVisitor {
     }
 
     public void visit(Event event) {
-        printWriter.print("event name:" + event.getName().get(getLang()) + " ");
-        printWriter.println("date:" + event.getDate().getYear());
+        //printWriter.print("event name:" + event.getName().get(getLang()) + " ");
+        //printWriter.println("date:" + event.getDate().getYear());
     }
 
     public void visit(Role role) {
-        printWriter.print("role name:" + role.getName().get(getLang()) + " ");
+        //printWriter.print("role name:" + role.getName().get(getLang()) + " ");
     }
 
     public void visit(Date date) {

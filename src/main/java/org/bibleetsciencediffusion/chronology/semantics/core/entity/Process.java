@@ -1,6 +1,6 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
 public class Process extends Relation {
 
@@ -15,7 +15,7 @@ public class Process extends Relation {
 
     public Process(Process model) {
         super(model);
-        this.process = model.process;
+        this.process.addAll(model.process);
     }
 
 
@@ -58,20 +58,20 @@ public class Process extends Relation {
     }
 
     public Event getBegin() {
-        return (Event) getRole(Role.BEGIN);
+        return (Event) getRole(BEGIN);
     }
 
     public Process setBegin(Event begin) {
-        addRole(Role.BEGIN, begin);
+        addRole(BEGIN, begin);
         return this;
     }
 
     public Event getEnd() {
-        return (Event) getRole(Role.END);
+        return (Event) getRole(END);
     }
 
     public Process setEnd(Event end) {
-        addRole(Role.BEGIN, end);
+        addRole(BEGIN, end);
         return this;
     }
 

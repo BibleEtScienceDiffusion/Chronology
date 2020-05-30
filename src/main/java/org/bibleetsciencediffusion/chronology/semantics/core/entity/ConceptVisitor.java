@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 public interface ConceptVisitor {
 

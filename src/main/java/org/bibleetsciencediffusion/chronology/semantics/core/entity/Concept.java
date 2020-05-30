@@ -1,12 +1,15 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
-import org.bibleetsciencediffusion.chronology.core.value.Name;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Concept implements PrimitiveConcept {
+
+
+    protected String id;
 
     protected Name name = new Name();
 
@@ -18,9 +21,8 @@ public class Concept implements PrimitiveConcept {
     }
 
     public Concept(Concept model) {
-        //addClass(model.getFirstClass()).setName(model.getName());
-        this.property = model.property;
-        this.relation = model.relation;
+        this.property.putAll(model.property);
+        this.relation.addAll(model.relation);
     }
 
     public Concept(String language, String localizedName) {
@@ -36,16 +38,21 @@ public class Concept implements PrimitiveConcept {
         return ConceptFactory.getInstance().newConcept(lang, name);
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public Concept addName(String language, String localizedName) {
         Name name = getName();
-        name.setConcept(this);
         name.add(language, localizedName);
         return this;
     }
 
     public Concept setName(Name name) {
-        name.setConcept(this);
         this.name = name;
         return this;
     }
@@ -122,9 +129,8 @@ public class Concept implements PrimitiveConcept {
     }
 
 
-    public Concept expand() {
-        //TODO
-        return null;
+    public Concept clone() {
+        return clone();
     }
 
     public void accept(ConceptVisitor v) {

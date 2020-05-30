@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +17,16 @@ public class ConceptList<T extends Concept> /*extends Concept*/ {
 
     public ConceptList<T> add(T element) {
         list.add(element);
+        return this;
+    }
+
+    public ConceptList<T> addAll(List<T> list) {
+        this.list.addAll(list);
+        return this;
+    }
+
+    public ConceptList<T> addAll(ConceptList conceptList) {
+        this.list.addAll(conceptList.getList());
         return this;
     }
 

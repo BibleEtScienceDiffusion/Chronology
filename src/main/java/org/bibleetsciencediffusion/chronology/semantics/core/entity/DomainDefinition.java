@@ -1,8 +1,8 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.core.value.Name;
+import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
-import static org.bibleetsciencediffusion.chronology.core.entity.Concept.newConcept;
+import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept.newConcept;
 
 public interface DomainDefinition {
 

@@ -1,6 +1,6 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
 public class Role extends Concept {
 

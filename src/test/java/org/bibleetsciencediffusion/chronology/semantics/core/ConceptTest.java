@@ -1,9 +1,9 @@
-package org.bibleetsciencediffusion.chronology.core;
+package org.bibleetsciencediffusion.chronology.semantics.core;
 
-import org.bibleetsciencediffusion.chronology.core.entity.Concept;
-import org.bibleetsciencediffusion.chronology.core.entity.Entity;
-import org.bibleetsciencediffusion.chronology.core.entity.FormatterVisitor;
-import org.bibleetsciencediffusion.chronology.core.entity.Property;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.DomainDefinition;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.FormatterVisitor;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Property;
 import org.junit.Test;
 
 import java.io.PrintWriter;
@@ -29,7 +29,7 @@ public class ConceptTest {
 
     @Test
     public void testAbraham() throws Exception {
-        Entity.ABRAHAM.accept(new FormatterVisitor(new PrintWriter(System.out), "fr"));
+        DomainDefinition.ABRAHAM.accept(new FormatterVisitor(new PrintWriter(System.out), "fr"));
     }
 
 

@@ -1,7 +1,8 @@
-package org.bibleetsciencediffusion.chronology.core.factory;
+package org.bibleetsciencediffusion.chronology.semantics.core.factory;
 
-import org.bibleetsciencediffusion.chronology.core.entity.Process;
-import org.bibleetsciencediffusion.chronology.core.entity.*;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Process;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.*;
+import org.bibleetsciencediffusion.chronology.semantics.core.repository.ConceptRepository;
 
 public class ConceptFactory {
     private static ConceptFactory instance = new ConceptFactory();
@@ -21,10 +22,7 @@ public class ConceptFactory {
      */
     public Concept newConcept(Concept model) {
         Concept result = new Concept(model);// model.clone();
-        // new ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -38,10 +36,7 @@ public class ConceptFactory {
      */
     public Concept newConcept(String lang, String name) {
         Concept result = new Concept(lang, name);
-        // set ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -53,10 +48,7 @@ public class ConceptFactory {
      */
     public Property newProperty(Property model) {
         Property result = new Property(model);// model.clone();
-        // new ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -70,10 +62,7 @@ public class ConceptFactory {
      */
     public Property newProperty(String lang, String name) {
         Property result = new Property(lang, name);
-        // set ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -86,10 +75,7 @@ public class ConceptFactory {
      */
     public Relation newRelation(Relation model) {
         Relation result = new Relation(model);// model.clone();
-        // new ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -103,10 +89,7 @@ public class ConceptFactory {
      */
     public Relation newRelation(String lang, String name) {
         Relation result = new Relation(lang, name);
-        // set ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -118,10 +101,7 @@ public class ConceptFactory {
      */
     public Process newProcess(Process model) {
         Process result = new Process(model);// model.clone();
-        // new ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -135,10 +115,7 @@ public class ConceptFactory {
      */
     public Process newProcess(String lang, String name) {
         Process result = new Process(lang, name);
-        // set ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -151,10 +128,7 @@ public class ConceptFactory {
      */
     public Role newRole(String lang, String name) {
         Role result = new Role(lang, name);
-        // set ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -167,10 +141,7 @@ public class ConceptFactory {
      */
     public Event newEvent(Event model) {
         Event result = new Event(model);// model.clone();
-        // new ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
@@ -184,12 +155,15 @@ public class ConceptFactory {
      */
     public Event newEvent(String lang, String name) {
         Event result = new Event(lang, name);
-        // set ID
-        //result.setId(IdFactory.getInstance().generate());
-        // store in repository
-        //ConceptRepository.getInstance().add(result);
+        store(result);
         return result;
     }
 
+    private void store(Concept concept) {
+        // new ID
+        concept.setId(IdFactory.getInstance().generate());
+        // store in repository
+        ConceptRepository.getInstance().add(concept);
+    }
 
 }

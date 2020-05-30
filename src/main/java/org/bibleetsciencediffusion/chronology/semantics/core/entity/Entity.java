@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 public class Entity extends Concept /*implements DomainDefinition*/ {
 
@@ -10,7 +10,7 @@ public class Entity extends Concept /*implements DomainDefinition*/ {
 
     public Entity(Entity model) {
         super(model);
-        this.process = model.process;
+        this.process.addAll(model.process);
     }
 
 

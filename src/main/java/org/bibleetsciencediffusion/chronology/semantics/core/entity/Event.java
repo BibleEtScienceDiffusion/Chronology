@@ -1,6 +1,6 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
 public class Event extends Relation {
 
@@ -21,7 +21,7 @@ public class Event extends Relation {
 
     public Event(Event model) {
         super(model);
-        this.process = model.process;
+        this.process.addAll(model.process);
     }
 
     public static Event newEvent(String lang, String name) {
@@ -44,8 +44,8 @@ public class Event extends Relation {
      * @return
      */
     public Date getDate() {
-        return  (Date)
-                this.property.get(Property.DATE);
+        return (Date)
+                this.property.get(DATE);
     }
 
     /**
@@ -53,7 +53,7 @@ public class Event extends Relation {
      * @param date
      */
     public Event setDate(Date date) {
-        this.property.put(Property.DATE,date);
+        this.property.put(DATE, date);
         return this;
     }
 

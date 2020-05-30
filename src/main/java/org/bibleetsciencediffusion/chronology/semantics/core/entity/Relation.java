@@ -1,6 +1,6 @@
-package org.bibleetsciencediffusion.chronology.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +19,7 @@ public class Relation extends Concept {
 
     public Relation(Relation model) {
         super(model);
-        this.role = model.role;
+        this.role.putAll(model.role);
     }
 
     public Relation(String language, String localizedName) {
@@ -56,7 +56,7 @@ public class Relation extends Concept {
     }
 
     public Concept getSubject() {
-        return (Concept) getRelation().getFirstByModel(Relation.DEPENDENCY).getRole(Role.TARGET);
+        return (Concept) getRelation().getFirstByModel(DEPENDENCY).getRole(TARGET);
     }
 
     /**
@@ -64,7 +64,7 @@ public class Relation extends Concept {
      */
 
     public Relation setSubject(Concept subject) {
-        addRelation(new Relation(Relation.DEPENDENCY).addRole(Role.TARGET, subject));
+        addRelation(new Relation(DEPENDENCY).addRole(TARGET, subject));
         return this;
     }
 
