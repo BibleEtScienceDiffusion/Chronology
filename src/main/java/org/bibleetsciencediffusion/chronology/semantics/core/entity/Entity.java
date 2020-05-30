@@ -1,5 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
+import java.util.Locale;
+
 public class Entity extends Concept /*implements DomainDefinition*/ {
 
     private ConceptList<Process> process = new ConceptList<Process>();
@@ -18,11 +20,19 @@ public class Entity extends Concept /*implements DomainDefinition*/ {
         super(language, localizedName);
     }
 
+    public Entity(Locale locale, String localizedName) {
+        super(locale.getLanguage(), localizedName);
+    }
+
     public Entity addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }
 
+    public Entity addName(Locale locale, String localizedName) {
+        super.addName(locale.getLanguage(), localizedName);
+        return this;
+    }
 
     public Entity addProcess(Process process) {
         this.process.add(process);

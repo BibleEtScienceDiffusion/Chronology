@@ -2,6 +2,8 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
+import java.util.Locale;
+
 public class Process extends Relation {
 
     /**
@@ -31,11 +33,19 @@ public class Process extends Relation {
         return ConceptFactory.getInstance().newProcess(model);
     }
 
+    public static Process newProcess(Locale locale, String name) {
+        return ConceptFactory.getInstance().newProcess(locale, name);
+    }
+
     public Process addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }
 
+    public Process addName(Locale locale, String localizedName) {
+        super.addName(locale.getLanguage(), localizedName);
+        return this;
+    }
 
     public Process addRole(Role role, Concept concept) {
         super.addRole(role, concept);

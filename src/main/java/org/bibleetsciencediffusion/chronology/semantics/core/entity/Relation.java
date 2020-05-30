@@ -3,6 +3,7 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Relation extends Concept {
@@ -34,8 +35,17 @@ public class Relation extends Concept {
         return ConceptFactory.getInstance().newRelation(lang, name);
     }
 
+    public static Relation newRelation(Locale locale, String name) {
+        return ConceptFactory.getInstance().newRelation(locale, name);
+    }
+
     public Relation addName(String language, String localizedName) {
         super.addName(language, localizedName);
+        return this;
+    }
+
+    public Relation addName(Locale locale, String localizedName) {
+        super.addName(locale.getLanguage(), localizedName);
         return this;
     }
 

@@ -4,6 +4,7 @@ import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFact
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class Concept implements PrimitiveConcept {
@@ -38,6 +39,10 @@ public class Concept implements PrimitiveConcept {
         return ConceptFactory.getInstance().newConcept(lang, name);
     }
 
+    public static Concept newConcept(Locale locale, String name) {
+        return ConceptFactory.getInstance().newConcept(locale, name);
+    }
+
     public String getId() {
         return id;
     }
@@ -52,12 +57,18 @@ public class Concept implements PrimitiveConcept {
         return this;
     }
 
+    public Concept addName(Locale locale, String localizedName) {
+        Name name = getName();
+        name.add(locale, localizedName);
+        return this;
+    }
+
     public Concept setName(Name name) {
         this.name = name;
         return this;
     }
 
-    public  Name getName() {
+    public Name getName() {
         return name;
     }
 

@@ -17,6 +17,7 @@ public class Referent extends Object {
     // type (is a kind of)
     Concept prototype;
 
+
     // space it is located in (mental space, according Fauconnier)
     Referent space;
 
@@ -33,6 +34,37 @@ public class Referent extends Object {
         this.space = space;
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Concept getPrototype() {
+        return prototype;
+    }
+
+    public void setPrototype(Concept prototype) {
+        this.prototype = prototype;
+    }
+
+    public Referent getSpace() {
+        return space;
+    }
+
+    public void setSpace(Referent space) {
+        this.space = space;
+    }
+
+    public Object getValue() {
+        return value;
+    }
+
+    public void setValue(Object value) {
+        this.value = value;
+    }
 
     public Referent clone() {
         return clone();

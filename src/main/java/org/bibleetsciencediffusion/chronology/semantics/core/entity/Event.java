@@ -2,6 +2,8 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
+import java.util.Locale;
+
 public class Event extends Relation {
 
 
@@ -32,15 +34,24 @@ public class Event extends Relation {
         return ConceptFactory.getInstance().newEvent(model);
     }
 
+    public static Event newEvent(Locale locale, String name) {
+        return ConceptFactory.getInstance().newEvent(locale, name);
+    }
+
 
     public Event addName(String language, String localizedName) {
         super.addName(language, localizedName);
         return this;
     }
 
+    public Event addName(Locale locale, String localizedName) {
+        super.addName(locale.getLanguage(), localizedName);
+        return this;
+    }
 
     /**
      * helper
+     *
      * @return
      */
     public Date getDate() {
