@@ -1,4 +1,7 @@
-package org.bibleetsciencediffusion.chronology.semantics.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.factory;
+
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Process;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.*;
 
 import java.util.Locale;
 

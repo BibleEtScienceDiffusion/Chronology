@@ -1,6 +1,9 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.ConceptList;
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.State;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.PrimitiveConcept;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
 import java.util.Locale;

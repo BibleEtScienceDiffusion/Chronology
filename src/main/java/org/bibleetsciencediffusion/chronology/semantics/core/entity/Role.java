@@ -4,6 +4,9 @@ import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFact
 
 import java.util.Locale;
 
+/**
+ * use properties
+ */
 public class Role extends Concept {
 
     static public String MULTIPLICITY_0 = "0";

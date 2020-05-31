@@ -4,6 +4,7 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 //import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.ConceptList;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ReferentFactory;
 
 import java.util.Locale;

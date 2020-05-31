@@ -1,5 +1,6 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.ConceptList;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 
 import java.util.Locale;
@@ -55,8 +56,7 @@ public class Event extends Relation {
      * @return
      */
     public Date getDate() {
-        return (Date)
-                this.property.get(DATE);
+        return (Date) getProperty().get(DATE);
     }
 
     /**
@@ -64,7 +64,7 @@ public class Event extends Relation {
      * @param date
      */
     public Event setDate(Date date) {
-        this.property.put(DATE, date);
+        getProperty().put(DATE, date);
         return this;
     }
 

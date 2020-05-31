@@ -1,4 +1,7 @@
-package org.bibleetsciencediffusion.chronology.semantics.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.aggregate;
+
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Property;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation;
 
 import java.util.HashMap;
 import java.util.Map;

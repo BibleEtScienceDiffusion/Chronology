@@ -1,5 +1,8 @@
-package org.bibleetsciencediffusion.chronology.semantics.core.entity;
+package org.bibleetsciencediffusion.chronology.semantics.core.aggregate;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Role;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.ConceptKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 

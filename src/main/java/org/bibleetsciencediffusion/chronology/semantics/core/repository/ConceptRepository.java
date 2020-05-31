@@ -1,7 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.repository;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.ConceptList;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.ConceptList;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.ConceptKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
