@@ -72,31 +72,6 @@ public interface DomainDefinition {
 
      */
 
-    Entity ISRAEL = new Entity(Locale.ENGLISH, "Israel")
-            .addName(Locale.FRENCH, "Israël")
-            .addClass(DomainDefinition.COUNTRY);
 
-    Entity CANAAN = new Entity(Locale.ENGLISH, "Canaan")
-            .addName(Locale.FRENCH, "Canaan")
-            .addClass(DomainDefinition.COUNTRY);
-    ;
-
-    Entity EGYPT = new Entity(Locale.ENGLISH, "Egypt")
-            .addName(Locale.FRENCH, "Egypte")
-            .addClass(DomainDefinition.COUNTRY);
-    ;
-
-    Entity ABRAHAM = new Entity(Locale.ENGLISH, "Abram")
-            .addClass(Concept.HUMAN)
-            .addProcess(
-                    new Process(Process.LIFE)
-                            .setBegin(new Event().setDate(new Date().setYear(1948)))
-                            .setEnd(new Event().setDate(new Date().setYear(2123)))
-                            .addProcess(new Process((DomainDefinition.COVENANT))
-                                    .setBegin(new Event().setDate(new Date().setYear(2018)))
-                                    .addRole(Role.PARTICIPANT, new Entity()
-                                            .addName(Locale.ENGLISH, "Abraham"))
-                                    .addRole(Role.LOCATION, CANAAN)
-                            ));
 
 }

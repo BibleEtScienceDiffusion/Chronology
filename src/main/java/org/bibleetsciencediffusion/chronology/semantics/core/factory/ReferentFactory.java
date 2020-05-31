@@ -21,6 +21,12 @@ public class ReferentFactory {
         return referent;
     }
 
+    public Referent newReferent(Concept prototype) {
+        Referent referent = new Referent(prototype, null);
+        store(referent);
+        return referent;
+    }
+
     private void store(Referent referent) {
         // new ID
         referent.setId(IdFactory.getInstance().generate());

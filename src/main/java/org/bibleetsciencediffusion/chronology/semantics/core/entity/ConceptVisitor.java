@@ -4,7 +4,7 @@ public interface ConceptVisitor {
 
     void visit(Concept concept);
 
-    void visit(Entity entity);
+    void visit(Referent referent);
 
     void visit(Property property);
 

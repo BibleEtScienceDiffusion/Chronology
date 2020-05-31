@@ -3,7 +3,6 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
-import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
@@ -14,16 +13,23 @@ public class Concept implements PrimitiveConcept {
 
     protected Name name = new Name();
 
-    protected Map<Property, Object> property = new HashMap<Property, Object>();
 
-    protected ConceptList<Relation> relation = new ConceptList<Relation>();
+    protected State state = new State();
 
     public Concept() {
     }
 
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
     public Concept(Concept model) {
-        this.property.putAll(model.property);
-        this.relation.addAll(model.relation);
+        state.getProperty().putAll(model.getState().getProperty());
+        state.getRelation().addAll(model.getState().getRelation());
     }
 
     public Concept(String language, String localizedName) {
@@ -100,28 +106,29 @@ public class Concept implements PrimitiveConcept {
     }
 
     public Concept addProperty(Property property, Object value) {
-        this.property.put(property, value);
+        state.getProperty().put(property, value);
         property.setSubject(this);
         return this;
     }
 
     public Map<Property, Object> getProperty() {
-        return property;
+        return state.getProperty();
     }
 
 
     public Concept addRelation(Relation relation) {
-        this.relation.add(relation);
+        state.getRelation().add(relation);
         relation.setSubject(this);
         return this;
     }
 
     public ConceptList<Relation> getRelation() {
-        return relation;
+        return state.getRelation();
     }
 
-    public void setRelation(ConceptList<Relation> relation) {
-        this.relation = relation;
+    public Concept setRelation(ConceptList<Relation> relation) {
+        state.setRelation(relation);
+        return this;
     }
 
     public Relation getFirstRelationByModel(Relation model) {

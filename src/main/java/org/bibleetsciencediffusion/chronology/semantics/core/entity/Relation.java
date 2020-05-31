@@ -9,7 +9,7 @@ import java.util.Map;
 public class Relation extends Concept {
 
     /**
-     * map role to ConceptList or Concept
+     * map role to ConceptList or Concept (or Referent)
      */
     protected Map<Role, Object> role = new HashMap<Role, Object>();
 
