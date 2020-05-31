@@ -3,6 +3,7 @@ package org.bibleetsciencediffusion.chronology.semantics.core.value;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.Objects;
 
 public class Name {
 
@@ -23,4 +24,16 @@ public class Name {
         return list;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Name name = (Name) o;
+        return list.equals(name.list);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(list);
+    }
 }

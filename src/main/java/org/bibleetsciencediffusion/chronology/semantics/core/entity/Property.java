@@ -60,7 +60,7 @@ public class Property extends Concept {
     }
 
     public Concept getSubject() {
-        return (Concept) getRelation().getFirstByModel(DEPENDENCY).getRole(TARGET);
+        return (Concept) getRelation().findFirstByModel(DEPENDENCY).getRole(TARGET);
     }
 
     public Property setSubject(Concept subject) {

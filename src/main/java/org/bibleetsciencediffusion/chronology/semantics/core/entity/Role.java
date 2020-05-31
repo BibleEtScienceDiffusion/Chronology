@@ -35,16 +35,18 @@ public class Role extends Concept {
         return destinationMultiplicity;
     }
 
-    public void setDestinationMultiplicity(String destinationMultiplicity) {
+    public Role setDestinationMultiplicity(String destinationMultiplicity) {
         this.destinationMultiplicity = destinationMultiplicity;
+        return this;
     }
 
     public String getSourceMultiplicity() {
         return sourceMultiplicity;
     }
 
-    public void setSourceMultiplicity(String sourceMultiplicity) {
+    public Role setSourceMultiplicity(String sourceMultiplicity) {
         this.sourceMultiplicity = sourceMultiplicity;
+        return this;
     }
 
 

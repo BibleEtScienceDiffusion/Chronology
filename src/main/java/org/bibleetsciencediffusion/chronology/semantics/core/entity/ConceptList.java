@@ -1,5 +1,8 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.value.ConceptKey;
+import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,12 +33,26 @@ public class ConceptList<T extends Concept> /*extends Concept*/ {
         return this;
     }
 
-    public T getFirstByModel(T model) {
+    public T findFirstByModel(T model) {
         T found = null;
         for (T item : getList()) {
-            if (item.getName().hashCode() == model.getName().hashCode()) {
+            if (item.getName().equals(model.getName())) {
                 found = item;
                 break;
+            }
+        }
+        return found;
+    }
+
+    public T findFirstByKey(ConceptKey key) {
+        T found = null;
+        for (T item : getList()) {
+            Name name = item.getName();
+            for (ConceptKey ck : name.getList()) {
+                if (ck.equals(key)) {
+                    found = item;
+                    break;
+                }
             }
         }
         return found;

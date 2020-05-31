@@ -7,15 +7,15 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 public class Date extends Concept {
 
     public Date() {
-        addRelation(new Relation(REFERENCE).addRole(TARGET, BIRTH_JC));
+        addRelation(REFERENCE.clone().addRole(TARGET, BIRTH_JC));
     }
 
     public Date getReference() {
-        return (Date) getRelation().getFirstByModel(REFERENCE).getRole(TARGET);
+        return (Date) getRelation().findFirstByModel(REFERENCE).getRole(TARGET);
     }
 
     public Date setReference(Event reference) {
-        getRelation().getFirstByModel(REFERENCE).addRole(TARGET, reference);
+        getRelation().findFirstByModel(REFERENCE).addRole(TARGET, reference);
         return this;
     }
 

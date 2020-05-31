@@ -125,7 +125,7 @@ public class Concept implements PrimitiveConcept {
     }
 
     public Relation getFirstRelationByModel(Relation model) {
-        return getRelation().getFirstByModel(model);
+        return getRelation().findFirstByModel(model);
     }
 
 
@@ -142,6 +142,10 @@ public class Concept implements PrimitiveConcept {
 
     public Concept clone() {
         return clone();
+    }
+
+    public Concept self() {
+        return this;
     }
 
     public void accept(ConceptVisitor v) {
