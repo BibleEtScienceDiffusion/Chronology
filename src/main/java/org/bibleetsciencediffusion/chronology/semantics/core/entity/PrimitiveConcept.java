@@ -27,6 +27,9 @@ public interface PrimitiveConcept {
     Relation DEPENDENCY = newRelation(Locale.ENGLISH, "dependency")
             .addName(Locale.FRENCH, "dépendance")
             .addClass(RELATION);
+    Relation EQUIVALENCY = newRelation(Locale.ENGLISH, "equivalency")
+            .addName(Locale.FRENCH, "équivalence")
+            .addClass(RELATION);
     Concept LIST = newConcept(Locale.ENGLISH, "list")
             .addName(Locale.FRENCH, "liste")
             .addClass(CONCEPT);

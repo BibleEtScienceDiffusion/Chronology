@@ -6,6 +6,16 @@ import java.util.Locale;
 
 public class Role extends Concept {
 
+    static public String MULTIPLICITY_0 = "0";
+
+    static public String MULTIPLICITY_1 = "1";
+
+    static public String MULTIPLICITY_N = "N";
+
+    String sourceMultiplicity;
+
+    String destinationMultiplicity;
+
     public Role() {
     }
 
@@ -20,6 +30,23 @@ public class Role extends Concept {
     public static Role newRole(Locale locale, String name) {
         return ConceptFactory.getInstance().newRole(locale, name);
     }
+
+    public String getDestinationMultiplicity() {
+        return destinationMultiplicity;
+    }
+
+    public void setDestinationMultiplicity(String destinationMultiplicity) {
+        this.destinationMultiplicity = destinationMultiplicity;
+    }
+
+    public String getSourceMultiplicity() {
+        return sourceMultiplicity;
+    }
+
+    public void setSourceMultiplicity(String sourceMultiplicity) {
+        this.sourceMultiplicity = sourceMultiplicity;
+    }
+
 
     public Role addName(String language, String localizedName) {
         super.addName(language, localizedName);
