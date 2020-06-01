@@ -34,7 +34,7 @@ public class Referent extends NamedEntity<OWLIndividual> {
     private List<Process> process = new ArrayList<Process>();
 
     public Referent(OWLIndividual individual) {
-        this.setEntity(individual);
+        this.setOWLObject(individual);
     }
 
 
@@ -65,25 +65,25 @@ public class Referent extends NamedEntity<OWLIndividual> {
 
     public Referent isA(Concept concept) {
         OWLClassAssertionAxiom classAssertion = EntityFactory.getInstance().getDataFactory()
-                .getOWLClassAssertionAxiom(concept.getEntity(),
-                        getEntity());
+                .getOWLClassAssertionAxiom(concept.getOWLObject(),
+                        getOWLObject());
         OntologyService.getInstance().addAxiom(classAssertion);
         return this;
     }
 
     public Referent hasA(Relation relation, Referent referent) {
         OWLObjectPropertyAssertionAxiom assertion = EntityFactory.getInstance()
-                .getDataFactory().getOWLObjectPropertyAssertionAxiom(relation.getEntity(),
-                        getEntity(),
-                        referent.getEntity());
+                .getDataFactory().getOWLObjectPropertyAssertionAxiom(relation.getOWLObject(),
+                        getOWLObject(),
+                        referent.getOWLObject());
         OntologyService.getInstance().addAxiom(assertion);
         return this;
     }
 
     public Referent hasA(Property property, Integer value) {
         OWLDataPropertyAssertionAxiom assertion = EntityFactory.getInstance()
-                .getDataFactory().getOWLDataPropertyAssertionAxiom(property.getEntity(),
-                        getEntity(),
+                .getDataFactory().getOWLDataPropertyAssertionAxiom(property.getOWLObject(),
+                        getOWLObject(),
                         value);
         OntologyService.getInstance().addAxiom(assertion);
         return this;
@@ -91,8 +91,8 @@ public class Referent extends NamedEntity<OWLIndividual> {
 
     public Referent hasA(Property property, String value) {
         OWLDataPropertyAssertionAxiom assertion = EntityFactory.getInstance()
-                .getDataFactory().getOWLDataPropertyAssertionAxiom(property.getEntity(),
-                        getEntity(),
+                .getDataFactory().getOWLDataPropertyAssertionAxiom(property.getOWLObject(),
+                        getOWLObject(),
                         value);
         OntologyService.getInstance().addAxiom(assertion);
         return this;
@@ -100,8 +100,8 @@ public class Referent extends NamedEntity<OWLIndividual> {
 
     public Referent hasA(Property property, Boolean value) {
         OWLDataPropertyAssertionAxiom assertion = EntityFactory.getInstance()
-                .getDataFactory().getOWLDataPropertyAssertionAxiom(property.getEntity(),
-                        getEntity(),
+                .getDataFactory().getOWLDataPropertyAssertionAxiom(property.getOWLObject(),
+                        getOWLObject(),
                         value);
         OntologyService.getInstance().addAxiom(assertion);
         return this;

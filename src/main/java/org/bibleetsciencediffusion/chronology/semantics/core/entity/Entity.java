@@ -1,10 +1,12 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-public class Entity<T> {
+import org.semanticweb.owlapi.model.OWLObject;
+
+public class Entity<T extends OWLObject> {
 
     //TODO : make abstract id and use OWL name in concrete class
 
-    protected T entity;
+    protected T OWLObject;
 
     protected String id;
 
@@ -16,12 +18,12 @@ public class Entity<T> {
         this.id = id;
     }
 
-    public T getEntity() {
-        return entity;
+    public T getOWLObject() {
+        return OWLObject;
     }
 
-    public void setEntity(T entity) {
-        this.entity = entity;
+    public void setOWLObject(T OWLObject) {
+        this.OWLObject = OWLObject;
     }
 
 }

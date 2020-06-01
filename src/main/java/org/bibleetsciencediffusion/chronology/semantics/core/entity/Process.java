@@ -19,7 +19,7 @@ public class Process extends Relation {
     }
 
     public Process(OWLObjectProperty objectProperty) {
-        setEntity(objectProperty);
+        setOWLObject(objectProperty);
     }
 
     public Process addName(String language, String localizedName) {

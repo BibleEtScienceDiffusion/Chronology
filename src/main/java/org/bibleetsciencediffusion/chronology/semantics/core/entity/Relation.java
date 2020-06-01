@@ -1,7 +1,10 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.service.OntologyService;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLObjectPropertyRangeAxiom;
 
 import java.util.Locale;
 
@@ -14,7 +17,7 @@ public class Relation extends NamedEntity<OWLObjectProperty> {
 
 
     public Relation(OWLObjectProperty objectProperty) {
-        setEntity(objectProperty);
+        setOWLObject(objectProperty);
     }
 
 
@@ -34,17 +37,20 @@ public class Relation extends NamedEntity<OWLObjectProperty> {
     }
 
 
-    /*
-    public Relation addRole(Role role, Concept concept) {
-        Object mappedConcept = this.role.get(role);
-        if (mappedConcept instanceof EntityList) {
-            ((EntityList) mappedConcept).add(concept);
-        } else {
-            this.role.put(role, concept);
-        }
+    public Relation domain(Concept concept) {
+        OWLObjectPropertyDomainAxiom axiom = EntityFactory.getInstance()
+                .getDataFactory().getOWLObjectPropertyDomainAxiom(getOWLObject(), concept.getOWLObject());
+        OntologyService.getInstance().addAxiom(axiom);
         return this;
     }
-    */
+
+    public Relation range(Concept concept) {
+        OWLObjectPropertyRangeAxiom axiom = EntityFactory.getInstance()
+                .getDataFactory().getOWLObjectPropertyRangeAxiom(getOWLObject(), concept.getOWLObject());
+        OntologyService.getInstance().addAxiom(axiom);
+        return this;
+    }
+
 
     public void accept(EntityVisitor v) {
         v.visit(this);

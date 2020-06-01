@@ -1,7 +1,11 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.service.OntologyService;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyDomainAxiom;
+import org.semanticweb.owlapi.model.OWLDataPropertyRangeAxiom;
+import org.semanticweb.owlapi.vocab.OWL2Datatype;
 
 import java.util.Locale;
 
@@ -13,7 +17,7 @@ public class Property extends NamedEntity<OWLDataProperty> {
     }
 
     public Property(OWLDataProperty dataProperty) {
-        setEntity(dataProperty);
+        setOWLObject(dataProperty);
     }
 
 
@@ -32,6 +36,21 @@ public class Property extends NamedEntity<OWLDataProperty> {
         return this;
     }
 
+
+    public Property domain(Concept concept) {
+        OWLDataPropertyDomainAxiom axiom = EntityFactory.getInstance()
+                .getDataFactory().getOWLDataPropertyDomainAxiom(getOWLObject(), concept.getOWLObject());
+        OntologyService.getInstance().addAxiom(axiom);
+        return this;
+    }
+
+    // TODO : use a class to embed OWL2Datatype (factory datatype)
+    public Property range(OWL2Datatype dataType) {
+        OWLDataPropertyRangeAxiom axiom = EntityFactory.getInstance()
+                .getDataFactory().getOWLDataPropertyRangeAxiom(getOWLObject(), dataType);
+        OntologyService.getInstance().addAxiom(axiom);
+        return this;
+    }
 
     public void accept(EntityVisitor v) {
         v.visit(this);
