@@ -2,7 +2,7 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import java.io.PrintWriter;
 
-public class FormatterVisitor implements ConceptVisitor {
+public class FormatterVisitor implements EntityVisitor {
 
     /**
      * locale
@@ -42,13 +42,11 @@ public class FormatterVisitor implements ConceptVisitor {
     public void visit(Concept concept) {
         //printWriter.println("concept name:" + concept.getName().get(getLang()));
 
-        for (Property property : concept.getProperty().keySet()) {
-            property.accept(this);
-            printWriter.println("value:" + concept.getProperty().get(property));
-        }
-        for (Relation relation : concept.getRelation().getList()) {
-            relation.accept(this);
-        }
+    }
+
+    @Override
+    public void visit(Referent referent) {
+
     }
 
     public void visit(Entity entity) {
@@ -65,26 +63,8 @@ public class FormatterVisitor implements ConceptVisitor {
 
     public void visit(Process process) {
         //printWriter.print("process name:" + process.getName().get(getLang()) + " ");
-        if (process.getBegin()!=null) {
-            printWriter.print("from:");
-            process.getBegin().accept(this);
-        }
-        if (process.getEnd()!=null) {
-            printWriter.print("from:");
-            process.getEnd().accept(this);
-        }
-    }
-
-    public void visit(Event event) {
-        //printWriter.print("event name:" + event.getName().get(getLang()) + " ");
-        //printWriter.println("date:" + event.getDate().getYear());
-    }
-
-    public void visit(Role role) {
-        //printWriter.print("role name:" + role.getName().get(getLang()) + " ");
-    }
-
-    public void visit(Date date) {
 
     }
+
+
 }

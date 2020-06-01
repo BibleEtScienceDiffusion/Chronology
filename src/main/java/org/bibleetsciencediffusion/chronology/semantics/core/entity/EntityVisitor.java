@@ -1,6 +1,6 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-public interface ConceptVisitor {
+public interface EntityVisitor {
 
     void visit(Concept concept);
 
@@ -11,11 +11,5 @@ public interface ConceptVisitor {
     void visit(Relation relation);
 
     void visit(Process process);
-
-    void visit(Event event);
-
-    void visit(Role role);
-
-    void visit(Date date);
 
 }

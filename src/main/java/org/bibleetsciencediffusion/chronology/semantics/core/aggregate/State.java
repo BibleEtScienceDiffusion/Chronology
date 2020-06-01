@@ -10,7 +10,7 @@ public class State {
 
     protected Map<Property, Object> property = new HashMap<Property, Object>();
 
-    protected ConceptList<Relation> relation = new ConceptList<Relation>();
+    protected EntityList<Relation> relation = new EntityList<Relation>();
 
     public State() {
 
@@ -25,11 +25,11 @@ public class State {
         return this;
     }
 
-    public ConceptList<Relation> getRelation() {
+    public EntityList<Relation> getRelation() {
         return relation;
     }
 
-    public State setRelation(ConceptList<Relation> relation) {
+    public State setRelation(EntityList<Relation> relation) {
         this.relation = relation;
         return this;
     }

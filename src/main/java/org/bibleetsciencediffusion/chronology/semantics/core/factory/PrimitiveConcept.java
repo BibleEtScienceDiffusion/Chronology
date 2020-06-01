@@ -1,18 +1,9 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.factory;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.Process;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.*;
-
-import java.util.Locale;
-
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept.newConcept;
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Process.newProcess;
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Property.newProperty;
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation.newRelation;
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Role.newRole;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.EntityVisitor;
 
 public interface PrimitiveConcept {
-
+    /*
     Concept CONCEPT = newConcept(Locale.ENGLISH, "concept")
             .addName(Locale.FRENCH, "concept");
     Relation HAS_CLASS = newRelation(Locale.ENGLISH, "has class")
@@ -193,6 +184,7 @@ public interface PrimitiveConcept {
             .setType(Integer.class)
             .setSubject(DATE)
             .addClass(PROPERTY);
+    */
 
-    void accept(ConceptVisitor v);
+    void accept(EntityVisitor v);
 }

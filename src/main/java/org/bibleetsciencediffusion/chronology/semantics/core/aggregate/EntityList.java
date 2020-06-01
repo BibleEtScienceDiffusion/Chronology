@@ -1,15 +1,14 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.aggregate;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.Role;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Entity;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.ConceptKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConceptList<T extends Concept> /*extends Concept*/ {
+public class EntityList<T extends NamedEntity> extends Entity<T> {
 
     private List<T> list = new ArrayList<T>();
 
@@ -21,18 +20,18 @@ public class ConceptList<T extends Concept> /*extends Concept*/ {
         this.list = list;
     }
 
-    public ConceptList<T> add(T element) {
+    public EntityList<T> add(T element) {
         list.add(element);
         return this;
     }
 
-    public ConceptList<T> addAll(List<T> list) {
+    public EntityList<T> addAll(List<T> list) {
         this.list.addAll(list);
         return this;
     }
 
-    public ConceptList<T> addAll(ConceptList conceptList) {
-        this.list.addAll(conceptList.getList());
+    public EntityList<T> addAll(EntityList entityList) {
+        this.list.addAll(entityList.getList());
         return this;
     }
 
@@ -61,6 +60,7 @@ public class ConceptList<T extends Concept> /*extends Concept*/ {
         return found;
     }
 
+    /*
     public Concept asConcept() {
         Concept target = Concept.LIST.clone();
         for (Concept concept : getList()) {
@@ -68,4 +68,6 @@ public class ConceptList<T extends Concept> /*extends Concept*/ {
         }
         return target;
     }
+
+     */
 }

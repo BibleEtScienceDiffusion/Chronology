@@ -1,46 +1,29 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
+import org.semanticweb.owlapi.model.OWLDataProperty;
 
 import java.util.Locale;
 
-public class Property extends Concept {
-
-    /**
-     * the concept on which the property applies (subject)
-     */
-
-
-    private Class type;
+public class Property extends NamedEntity<OWLDataProperty> {
 
 
     public Property() {
 
     }
 
-    public Property(Property model) {
-        super(model);
-        setType(model.getType());
+    public Property(OWLDataProperty dataProperty) {
+        setEntity(dataProperty);
     }
 
-    public Property(String language, String localizedName) {
-        super(language, localizedName);
+
+    public static Property newProperty(OWLDataProperty dataProperty) {
+        return EntityFactory.getInstance().newProperty(dataProperty);
     }
 
-    public static Property newProperty(Property model) {
-        return ConceptFactory.getInstance().newProperty(model);
-    }
-
-    public static Property newProperty(String lang, String name) {
-        return ConceptFactory.getInstance().newProperty(lang, name);
-    }
-
-    public static Property newProperty(Locale locale, String name) {
-        return ConceptFactory.getInstance().newProperty(locale, name);
-    }
 
     public Property addName(Locale locale, String localizedName) {
-        super.addName(locale.getLanguage(), localizedName);
+        super.addName(locale, localizedName);
         return this;
     }
 
@@ -49,44 +32,8 @@ public class Property extends Concept {
         return this;
     }
 
-    public Property addProperty(Property property, Object value) {
-        super.addProperty(property, value);
-        return this;
-    }
 
-    public Property addRelation(Relation relation) {
-        super.addRelation(relation);
-        return this;
-    }
-
-    public Concept getSubject() {
-        return (Concept) getRelation().findFirstByModel(DEPENDENCY).getRole(TARGET);
-    }
-
-    public Property setSubject(Concept subject) {
-        addRelation(DEPENDENCY.clone().addRole(TARGET, subject));
-        return this;
-    }
-
-    public Property setType(Class type) {
-        this.type = type;
-        return this;
-    }
-
-    public Class getType() {
-        return type;
-    }
-
-    public Property clone() {
-        return clone();
-    }
-
-    public Property addClass(Concept concept) {
-        super.addClass(concept);
-        return this;
-    }
-
-    public void accept(ConceptVisitor v) {
+    public void accept(EntityVisitor v) {
         v.visit(this);
     }
 

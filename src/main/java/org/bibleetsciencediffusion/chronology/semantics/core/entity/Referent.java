@@ -4,9 +4,11 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 //import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
-import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.ConceptList;
-import org.bibleetsciencediffusion.chronology.semantics.core.factory.ReferentFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
+import org.semanticweb.owlapi.model.OWLIndividual;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 /**
@@ -19,25 +21,16 @@ import java.util.Locale;
 /**
  * instanciation of concept with a concrete state
  */
-public class Referent extends Concept {
-
-    // type (is a kind of)
-    Concept prototype;
+public class Referent extends NamedEntity<OWLIndividual> {
 
 
     // space it is located in (mental space, according Fauconnier)
     Referent space;
 
-    private ConceptList<Process> process = new ConceptList<Process>();
+    private List<Process> process = new ArrayList<Process>();
 
-    public Referent(Concept prototype) {
-        this.prototype = prototype;
-
-    }
-
-    public Referent(Concept prototype, Referent space) {
-        this.prototype = prototype;
-        this.space = space;
+    public Referent(OWLIndividual individual) {
+        this.setEntity(individual);
     }
 
 
@@ -45,12 +38,8 @@ public class Referent extends Concept {
         this.process.addAll(model.process);
     }
 
-    public static Referent newReferent(Concept prototype) {
-        return ReferentFactory.getInstance().newReferent(prototype);
-    }
-
-    public static Referent newReferent(Concept prototype, Referent space) {
-        return ReferentFactory.getInstance().newReferent(prototype, space);
+    public static Referent newReferent(OWLIndividual individual) {
+        return EntityFactory.getInstance().newReferent(individual);
     }
 
 
@@ -60,7 +49,7 @@ public class Referent extends Concept {
     }
 
     public Referent addName(Locale locale, String localizedName) {
-        super.addName(locale.getLanguage(), localizedName);
+        super.addName(locale, localizedName);
         return this;
     }
 
@@ -70,36 +59,13 @@ public class Referent extends Concept {
         return this;
     }
 
-    public Referent addProperty(Property property, Object value) {
-        super.addProperty(property, value);
-        //property.setSubject(this.clone());
-        return this;
-    }
 
-    public Referent addRelation(Relation relation) {
-        super.addRelation(relation);
-
-        return this;
-    }
-
-    public Referent addClass(Concept concept) {
-        super.addClass(concept);
-        return this;
-    }
-
-
-    public void accept(ConceptVisitor v) {
+    public void accept(EntityVisitor v) {
         v.visit(this);
     }
 
 
-    public Concept getPrototype() {
-        return prototype;
-    }
 
-    public void setPrototype(Concept prototype) {
-        this.prototype = prototype;
-    }
 
     public Referent getSpace() {
         return space;

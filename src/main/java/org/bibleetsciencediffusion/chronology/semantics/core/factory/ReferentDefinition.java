@@ -1,12 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.factory;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.Process;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.*;
-
-import java.util.Locale;
-
 public class ReferentDefinition {
-
+/*
 
     Referent CANAAN = Referent.newReferent(DomainDefinition.COUNTRY).addName(Locale.ENGLISH, "Canaan")
             .addName(Locale.FRENCH, "Canaan");
@@ -32,4 +27,7 @@ public class ReferentDefinition {
                                     .setBegin(new Event().setDate(new Date().setYear(2018)))
                                     .addRole(Role.LOCATION, CANAAN)
                             ));
+
+
+ */
 }

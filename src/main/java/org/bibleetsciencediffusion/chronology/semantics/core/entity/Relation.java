@@ -1,44 +1,27 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.ConceptList;
-import org.bibleetsciencediffusion.chronology.semantics.core.factory.ConceptFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
+import org.semanticweb.owlapi.model.OWLObjectProperty;
 
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
 
-public class Relation extends Concept {
-
-    /**
-     * map role to ConceptList or Concept (or Referent)
-     */
-    protected Map<Role, Object> role = new HashMap<Role, Object>();
+public class Relation extends NamedEntity<OWLObjectProperty> {
 
 
     public Relation() {
 
     }
 
-    public Relation(Relation model) {
-        super(model);
-        this.role.putAll(model.role);
+
+    public Relation(OWLObjectProperty objectProperty) {
+        setEntity(objectProperty);
     }
 
-    public Relation(String language, String localizedName) {
-        super(language, localizedName);
+
+    public static Relation newRelation(OWLObjectProperty objectProperty) {
+        return EntityFactory.getInstance().newRelation(objectProperty);
     }
 
-    public static Relation newRelation(Relation model) {
-        return ConceptFactory.getInstance().newRelation(model);
-    }
-
-    public static Relation newRelation(String lang, String name) {
-        return ConceptFactory.getInstance().newRelation(lang, name);
-    }
-
-    public static Relation newRelation(Locale locale, String name) {
-        return ConceptFactory.getInstance().newRelation(locale, name);
-    }
 
     public Relation addName(String language, String localizedName) {
         super.addName(language, localizedName);
@@ -50,49 +33,20 @@ public class Relation extends Concept {
         return this;
     }
 
-    public Relation addProperty(Property property, Object value) {
-        super.addProperty(property, value);
-        return this;
-    }
 
-
+    /*
     public Relation addRole(Role role, Concept concept) {
         Object mappedConcept = this.role.get(role);
-        if (mappedConcept instanceof ConceptList) {
-            ((ConceptList) mappedConcept).add(concept);
+        if (mappedConcept instanceof EntityList) {
+            ((EntityList) mappedConcept).add(concept);
         } else {
             this.role.put(role, concept);
         }
         return this;
     }
+    */
 
-    public Concept getSubject() {
-        return (Concept) getRelation().findFirstByModel(DEPENDENCY).getRole(TARGET);
-    }
-
-    /**
-     * the concept on which the property applies (subject = is on dependency)
-     */
-
-    public Relation setSubject(Concept subject) {
-        addRelation(new Relation(DEPENDENCY).addRole(TARGET, subject));
-        return this;
-    }
-
-    public Object getRole(Role role) {
-        return this.role.get(role);
-    }
-
-    public Relation addClass(Concept concept) {
-        super.addClass(concept);
-        return this;
-    }
-
-    public Relation clone() {
-        return clone();
-    }
-
-    public void accept(ConceptVisitor v) {
+    public void accept(EntityVisitor v) {
         v.visit(this);
     }
 
