@@ -7,20 +7,20 @@ import java.util.Objects;
 
 public class Name {
 
-    private List<ConceptKey> list = new ArrayList<ConceptKey>();
+    private List<EntityKey> list = new ArrayList<EntityKey>();
 
 
     public Name add(String languageIsoCode, String localizedName) {
-        list.add(new ConceptKey(languageIsoCode, localizedName));
+        list.add(new EntityKey(languageIsoCode, localizedName));
         return this;
     }
 
     public Name add(Locale locale, String localizedName) {
-        list.add(new ConceptKey(locale, localizedName));
+        list.add(new EntityKey(locale, localizedName));
         return this;
     }
 
-    public List<ConceptKey> getList() {
+    public List<EntityKey> getList() {
         return list;
     }
 

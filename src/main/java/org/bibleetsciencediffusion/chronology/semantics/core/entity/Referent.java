@@ -37,9 +37,8 @@ public class Referent extends NamedEntity<OWLIndividual> {
         this.setOWLObject(individual);
     }
 
-
-    public Referent(Referent model) {
-        this.process.addAll(model.process);
+    public String getId() {
+        return getOWLObject().toStringID();
     }
 
     public static Referent newReferent(String id) {

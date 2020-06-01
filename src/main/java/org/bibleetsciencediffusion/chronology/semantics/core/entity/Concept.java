@@ -19,6 +19,9 @@ public class Concept extends NamedEntity<OWLClass> implements PrimitiveConcept {
         setOWLObject(clazz);
     }
 
+    public String getId() {
+        return getOWLObject().toStringID();
+    }
 
     public static Concept newConcept(String id) {
         return EntityFactory.getInstance().newConcept(id);
@@ -42,7 +45,6 @@ public class Concept extends NamedEntity<OWLClass> implements PrimitiveConcept {
         OntologyService.getInstance().addAxiom(classAssertion);
         return this;
     }
-
 
     public void accept(EntityVisitor v) {
         v.visit(this);

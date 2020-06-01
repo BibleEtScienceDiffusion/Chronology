@@ -3,18 +3,18 @@ package org.bibleetsciencediffusion.chronology.semantics.core.value;
 import java.util.Locale;
 import java.util.Objects;
 
-public class ConceptKey {
+public class EntityKey {
 
     String term;
 
     String lang;
 
-    public ConceptKey(String lang, String term) {
+    public EntityKey(String lang, String term) {
         this.term = term;
         this.lang = lang;
     }
 
-    public ConceptKey(Locale locale, String term) {
+    public EntityKey(Locale locale, String term) {
         this.term = term;
         this.lang = locale.getLanguage();
     }
@@ -39,7 +39,7 @@ public class ConceptKey {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ConceptKey that = (ConceptKey) o;
+        EntityKey that = (EntityKey) o;
         return term.equals(that.term) &&
                 lang.equals(that.lang);
     }

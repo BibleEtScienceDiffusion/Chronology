@@ -25,6 +25,9 @@ public class Relation extends NamedEntity<OWLObjectProperty> {
         return EntityFactory.getInstance().newRelation(id);
     }
 
+    public String getId() {
+        return getOWLObject().toStringID();
+    }
 
     public Relation addName(String language, String localizedName) {
         super.addName(language, localizedName);

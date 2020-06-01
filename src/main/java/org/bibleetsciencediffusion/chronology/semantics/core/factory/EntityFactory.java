@@ -33,7 +33,6 @@ public class EntityFactory {
     public Referent newReferent(String id) {
         OWLIndividual individual = dataFactory.getOWLNamedIndividual(id);
         Referent referent = new Referent(individual);
-        referent.setId(id);
         store(referent);
         return referent;
     }
@@ -41,7 +40,6 @@ public class EntityFactory {
     public Concept newConcept(String id) {
         OWLClass clazz = dataFactory.getOWLClass(id);
         Concept concept = new Concept(clazz);
-        concept.setId(id);
         store(concept);
         return concept;
     }
@@ -49,7 +47,6 @@ public class EntityFactory {
     public Property newProperty(String id) {
         OWLDataProperty dataProperty = dataFactory.getOWLDataProperty(id);
         Property property = new Property(dataProperty);
-        property.setId(id);
         store(property);
         return property;
     }
@@ -57,16 +54,11 @@ public class EntityFactory {
     public Relation newRelation(String id) {
         OWLObjectProperty objectProperty = dataFactory.getOWLObjectProperty(id);
         Relation relation = new Relation(objectProperty);
-        relation.setId(id);
         store(relation);
         return relation;
     }
 
     private void store(Entity entity) {
-        // new ID
-        if (entity.getId() == null) {
-            entity.setId(IdFactory.getInstance().generate());
-        }
         // store in repository
         EntityRepository.getInstance().add((NamedEntity) entity);
     }

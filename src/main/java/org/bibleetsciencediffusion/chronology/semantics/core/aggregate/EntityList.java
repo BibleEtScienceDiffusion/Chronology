@@ -2,13 +2,15 @@ package org.bibleetsciencediffusion.chronology.semantics.core.aggregate;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.Entity;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
-import org.bibleetsciencediffusion.chronology.semantics.core.value.ConceptKey;
+import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
+import org.bibleetsciencediffusion.chronology.semantics.core.value.EntityKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
+import org.semanticweb.owlapi.model.OWLIndividual;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class EntityList<T extends NamedEntity> extends Entity<T> {
+public class EntityList<T extends NamedEntity> extends Entity<OWLIndividual> {
 
     private List<T> list = new ArrayList<T>();
 
@@ -18,6 +20,15 @@ public class EntityList<T extends NamedEntity> extends Entity<T> {
 
     public void setList(List<T> list) {
         this.list = list;
+    }
+
+    public EntityList() {
+        OWLIndividual individual = EntityFactory.getInstance().getDataFactory().getOWLAnonymousIndividual();
+        this.setOWLObject(individual);
+    }
+
+    public String getId() {
+        return getOWLObject().toStringID();
     }
 
     public EntityList<T> add(T element) {
@@ -46,11 +57,11 @@ public class EntityList<T extends NamedEntity> extends Entity<T> {
         return found;
     }
 
-    public T findFirstByKey(ConceptKey key) {
+    public T findFirstByKey(EntityKey key) {
         T found = null;
         for (T item : getList()) {
             Name name = item.getName();
-            for (ConceptKey ck : name.getList()) {
+            for (EntityKey ck : name.getList()) {
                 if (ck.equals(key)) {
                     found = item;
                     break;

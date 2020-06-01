@@ -20,6 +20,9 @@ public class Property extends NamedEntity<OWLDataProperty> {
         setOWLObject(dataProperty);
     }
 
+    public String getId() {
+        return getOWLObject().toStringID();
+    }
 
     public static Property newProperty(String id) {
         return EntityFactory.getInstance().newProperty(id);
