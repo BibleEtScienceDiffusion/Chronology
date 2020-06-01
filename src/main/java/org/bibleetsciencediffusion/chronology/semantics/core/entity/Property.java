@@ -17,8 +17,8 @@ public class Property extends NamedEntity<OWLDataProperty> {
     }
 
 
-    public static Property newProperty(OWLDataProperty dataProperty) {
-        return EntityFactory.getInstance().newProperty(dataProperty);
+    public static Property newProperty(String id) {
+        return EntityFactory.getInstance().newProperty(id);
     }
 
 

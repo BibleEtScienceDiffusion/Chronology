@@ -18,8 +18,8 @@ public class Relation extends NamedEntity<OWLObjectProperty> {
     }
 
 
-    public static Relation newRelation(OWLObjectProperty objectProperty) {
-        return EntityFactory.getInstance().newRelation(objectProperty);
+    public static Relation newRelation(String id) {
+        return EntityFactory.getInstance().newRelation(id);
     }
 
 

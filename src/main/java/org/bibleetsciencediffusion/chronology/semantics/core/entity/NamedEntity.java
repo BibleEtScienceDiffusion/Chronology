@@ -6,6 +6,9 @@ import java.util.Locale;
 
 public class NamedEntity<T> extends Entity<T> {
 
+    /**
+     * null if anonymous
+     */
     protected Name name;
 
 
@@ -19,6 +22,9 @@ public class NamedEntity<T> extends Entity<T> {
 
     public NamedEntity<T> addName(String language, String localizedName) {
         Name name = getName();
+        if (name == null) {
+            name = new Name();
+        }
         name.add(language, localizedName);
         return this;
     }
@@ -29,5 +35,8 @@ public class NamedEntity<T> extends Entity<T> {
         return this;
     }
 
+    public boolean isAnonymous() {
+        return name != null;
+    }
 
 }
