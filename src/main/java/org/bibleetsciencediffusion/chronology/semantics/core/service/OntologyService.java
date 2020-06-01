@@ -47,5 +47,4 @@ public class OntologyService {
         ontologyManager.addAxiom(ontology, axiom);
     }
 
-
 }

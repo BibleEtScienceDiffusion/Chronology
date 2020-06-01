@@ -1,12 +1,14 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.semanticweb.owlapi.model.OWLObject;
+import org.semanticweb.owlapi.model.OWLEntity;
 
-public abstract class Entity<T extends OWLObject> {
+public abstract class Entity<T extends OWLEntity> {
 
     protected T OWLObject;
 
-    public abstract String getId();
+    public String getId() {
+        return getOWLObject().toStringID();
+    }
 
     public T getOWLObject() {
         return OWLObject;

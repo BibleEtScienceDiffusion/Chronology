@@ -1,14 +1,13 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
-import org.bibleetsciencediffusion.chronology.semantics.core.factory.PrimitiveConcept;
 import org.bibleetsciencediffusion.chronology.semantics.core.service.OntologyService;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 import java.util.Locale;
 
-public class Concept extends NamedEntity<OWLClass> implements PrimitiveConcept {
+public class Concept extends NamedEntity<OWLClass> {
 
 
     public Concept() {
@@ -30,6 +29,7 @@ public class Concept extends NamedEntity<OWLClass> implements PrimitiveConcept {
 
     public Concept addName(String language, String localizedName) {
         super.addName(language, localizedName);
+
         return this;
     }
 

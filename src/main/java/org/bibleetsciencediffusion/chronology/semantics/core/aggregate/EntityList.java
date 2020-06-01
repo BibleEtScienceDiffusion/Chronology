@@ -5,12 +5,15 @@ import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.EntityKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
-import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class EntityList<T extends NamedEntity> extends Entity<OWLIndividual> {
+//TODO : change with collection Class
+public class EntityList<T extends NamedEntity> extends Entity<OWLNamedIndividual> {
+
+    private static int counter = 0;
 
     private List<T> list = new ArrayList<T>();
 
@@ -23,12 +26,10 @@ public class EntityList<T extends NamedEntity> extends Entity<OWLIndividual> {
     }
 
     public EntityList() {
-        OWLIndividual individual = EntityFactory.getInstance().getDataFactory().getOWLAnonymousIndividual();
+        counter++;
+        OWLNamedIndividual individual = EntityFactory.getInstance().getDataFactory().getOWLNamedIndividual(
+                EntityFactory.getInstance().getOntologyIRI() + "#", "list" + counter);
         this.setOWLObject(individual);
-    }
-
-    public String getId() {
-        return getOWLObject().toStringID();
     }
 
     public EntityList<T> add(T element) {

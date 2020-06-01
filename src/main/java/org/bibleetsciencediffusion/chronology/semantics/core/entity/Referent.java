@@ -8,7 +8,7 @@ import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFacto
 import org.bibleetsciencediffusion.chronology.semantics.core.service.OntologyService;
 import org.semanticweb.owlapi.model.OWLClassAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
-import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 
 import java.util.ArrayList;
@@ -25,7 +25,7 @@ import java.util.Locale;
 /**
  * instanciation of concept with a concrete state
  */
-public class Referent extends NamedEntity<OWLIndividual> {
+public class Referent extends NamedEntity<OWLNamedIndividual> {
 
 
     // space it is located in (mental space, according Fauconnier)
@@ -33,7 +33,7 @@ public class Referent extends NamedEntity<OWLIndividual> {
 
     private List<Process> process = new ArrayList<Process>();
 
-    public Referent(OWLIndividual individual) {
+    public Referent(OWLNamedIndividual individual) {
         this.setOWLObject(individual);
     }
 

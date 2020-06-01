@@ -8,19 +8,26 @@ import org.semanticweb.owlapi.model.*;
 public class EntityFactory {
 
     private static EntityFactory instance = new EntityFactory();
-    private static String ontologyIRI;
 
-    public static EntityFactory getInstance(String ontologyIRI) {
-        EntityFactory.ontologyIRI = ontologyIRI;
+    private OWLDataFactory dataFactory;
+
+    private String ontologyIRI = "";
+
+    public static EntityFactory getInstance() {
         return instance;
     }
 
 
-    private OWLDataFactory dataFactory;
+    public String getOntologyIRI() {
+        return ontologyIRI;
+    }
+
+    public void setOntologyIRI(String ontologyIRI) {
+        this.ontologyIRI = ontologyIRI;
+    }
 
     private EntityFactory() {
         dataFactory = OWLManager.getOWLDataFactory();
-
     }
 
     public OWLDataFactory getDataFactory() {
@@ -33,7 +40,7 @@ public class EntityFactory {
 
 
     public Referent newReferent(String id) {
-        OWLIndividual individual = dataFactory.getOWLNamedIndividual(ontologyIRI + ":", id);
+        OWLNamedIndividual individual = dataFactory.getOWLNamedIndividual(ontologyIRI + ":", id);
         Referent referent = new Referent(individual);
         store(referent);
         return referent;
