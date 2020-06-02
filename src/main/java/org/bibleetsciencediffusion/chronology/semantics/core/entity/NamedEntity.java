@@ -25,24 +25,24 @@ public abstract class NamedEntity<T extends OWLEntity> extends Entity<T> {
         this.name = name;
     }
 
-    public NamedEntity<T> addName(String language, String localizedName) {
+    public NamedEntity<T> addName(String localizedName, String language) {
         Name name = getName();
         if (name == null) {
             name = new Name();
         }
         name.add(language, localizedName);
         OWLAnnotation commentAnnotation = EntityFactory.getInstance().getDataFactory()
-                .getRDFSComment(EntityFactory.getInstance().getDataFactory().getOWLLiteral(localizedName, language));
+                .getRDFSLabel(EntityFactory.getInstance().getDataFactory().getOWLLiteral(localizedName, language));
         OWLAxiom axiom = EntityFactory.getInstance().getDataFactory().getOWLAnnotationAssertionAxiom(getOWLObject().getIRI(), commentAnnotation);
         OntologyService.getInstance().addAxiom(axiom);
         return this;
     }
 
-    public NamedEntity<T> addName(Locale locale, String localizedName) {
+    public NamedEntity<T> addName(String localizedName, Locale locale) {
         Name name = getName();
         name.add(locale, localizedName);
         OWLAnnotation commentAnnotation = EntityFactory.getInstance().getDataFactory()
-                .getRDFSComment(EntityFactory.getInstance().getDataFactory().getOWLLiteral(localizedName, locale.getLanguage()));
+                .getRDFSLabel(EntityFactory.getInstance().getDataFactory().getOWLLiteral(localizedName, locale.getLanguage()));
         OWLAxiom axiom = EntityFactory.getInstance().getDataFactory().getOWLAnnotationAssertionAxiom(getOWLObject().getIRI(), commentAnnotation);
         OntologyService.getInstance().addAxiom(axiom);
         return this;

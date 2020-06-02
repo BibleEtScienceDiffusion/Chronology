@@ -3,6 +3,7 @@ package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
 import org.bibleetsciencediffusion.chronology.semantics.core.service.OntologyService;
 import org.semanticweb.owlapi.model.OWLClass;
+import org.semanticweb.owlapi.model.OWLEquivalentClassesAxiom;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 
 import java.util.Locale;
@@ -22,19 +23,19 @@ public class Concept extends NamedEntity<OWLClass> {
         return getOWLObject().toStringID();
     }
 
-    public static Concept newConcept(String id) {
-        return EntityFactory.getInstance().newConcept(id);
+    public static Concept createConcept(String id) {
+        return EntityFactory.getInstance().createConcept(id);
     }
 
 
-    public Concept addName(String language, String localizedName) {
-        super.addName(language, localizedName);
+    public Concept addName(String localizedName, String language) {
+        super.addName(localizedName, language);
 
         return this;
     }
 
-    public Concept addName(Locale locale, String localizedName) {
-        super.addName(locale, localizedName);
+    public Concept addName(String localizedName, Locale locale) {
+        super.addName(localizedName, locale);
         return this;
     }
 
@@ -42,6 +43,13 @@ public class Concept extends NamedEntity<OWLClass> {
     public Concept subClassOf(Concept concept) {
         OWLSubClassOfAxiom classAssertion = EntityFactory.getInstance().getDataFactory()
                 .getOWLSubClassOfAxiom(getOWLObject(), concept.getOWLObject());
+        OntologyService.getInstance().addAxiom(classAssertion);
+        return this;
+    }
+
+    public Concept equivalent(Concept concept) {
+        OWLEquivalentClassesAxiom classAssertion = EntityFactory.getInstance().getDataFactory()
+                .getOWLEquivalentClassesAxiom(getOWLObject(), concept.getOWLObject());
         OntologyService.getInstance().addAxiom(classAssertion);
         return this;
     }

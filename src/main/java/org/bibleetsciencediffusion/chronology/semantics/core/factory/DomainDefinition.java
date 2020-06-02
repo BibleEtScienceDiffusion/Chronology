@@ -6,25 +6,32 @@ import org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation;
 
 import java.util.Locale;
 
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept.newConcept;
-import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation.newRelation;
+import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept.createConcept;
+import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation.createRelation;
 
-public interface DomainDefinition {
+public interface DomainDefinition extends PrimitiveConcept {
 
     /* Domain definition */
 
-    Concept KING = newConcept(null).addName(Locale.ENGLISH, "king")
-            .addName(Locale.FRENCH, "roi");
+    Concept KING = createConcept("king")
+            .addName("king", Locale.ENGLISH)
+            .addName("roi", Locale.FRENCH)
+            .subClassOf(HUMAN);
 
-    Concept PHARAOH = newConcept(null).addName(Locale.ENGLISH, "pharaoh")
-            .addName(Locale.FRENCH, "pharaon");
+    Concept PHARAOH = createConcept("pharaoh")
+            .addName("pharaoh", Locale.ENGLISH)
+            .addName("pharaon", Locale.FRENCH)
+            .subClassOf(KING);
 
 
-    Relation REIGN = newRelation(null).addName(Locale.ENGLISH, "reign")
-            .addName(Locale.FRENCH, "règne");
+    Relation REIGN = createRelation("reign")
+            .addName("reign", Locale.ENGLISH)
+            .addName("règne", Locale.FRENCH)
+            .subRelationOf(PROCESS);
 
-    Relation COVENANT = newRelation(null).addName(Locale.ENGLISH, "covenant")
-            .addName(Locale.FRENCH, "alliance");
+    Relation COVENANT = createRelation(null).addName("covenant", Locale.ENGLISH)
+            .addName("alliance", Locale.FRENCH)
+            .subRelationOf(PROCESS);
 
     /*
     Event CREATION = newEvent(null).addName(Locale.ENGLISH, "creation")
@@ -36,8 +43,10 @@ public interface DomainDefinition {
     Event INTRONIZATION = newEvent(null).addName(Locale.ENGLISH, "intronization")
             .addName(Locale.FRENCH, "intronisation");
     */
-    Concept COUNTRY = newConcept(null).addName(Locale.ENGLISH, "country")
-            .addName(Locale.FRENCH, "pays");
+    Concept COUNTRY = createConcept("country").
+            addName("country", Locale.ENGLISH)
+            .addName("pays", Locale.FRENCH)
+            .subClassOf(PLACE);
 
 
 

@@ -41,18 +41,18 @@ public class Referent extends NamedEntity<OWLNamedIndividual> {
         return getOWLObject().toStringID();
     }
 
-    public static Referent newReferent(String id) {
-        return EntityFactory.getInstance().newReferent(id);
+    public static Referent createReferent(String id) {
+        return EntityFactory.getInstance().createReferent(id);
     }
 
 
-    public Referent addName(String language, String localizedName) {
-        super.addName(language, localizedName);
+    public Referent addName(String localizedName, String language) {
+        super.addName(localizedName, language);
         return this;
     }
 
-    public Referent addName(Locale locale, String localizedName) {
-        super.addName(locale, localizedName);
+    public Referent addName(String localizedName, Locale locale) {
+        super.addName(localizedName, locale);
         return this;
     }
 
@@ -106,6 +106,7 @@ public class Referent extends NamedEntity<OWLNamedIndividual> {
         return this;
     }
 
+    //TODO: sameIndividualAs
 
     public Referent getSpace() {
         return space;

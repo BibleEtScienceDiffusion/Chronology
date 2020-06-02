@@ -13,6 +13,7 @@ public class EntityFactory {
 
     private String ontologyIRI = "";
 
+    //TODO : use namespace in a map : String -> EntityFactory
     public static EntityFactory getInstance() {
         return instance;
     }
@@ -39,28 +40,28 @@ public class EntityFactory {
     }
 
 
-    public Referent newReferent(String id) {
+    public Referent createReferent(String id) {
         OWLNamedIndividual individual = dataFactory.getOWLNamedIndividual(ontologyIRI + ":", id);
         Referent referent = new Referent(individual);
         store(referent);
         return referent;
     }
 
-    public Concept newConcept(String id) {
+    public Concept createConcept(String id) {
         OWLClass clazz = dataFactory.getOWLClass(ontologyIRI + "#", id);
         Concept concept = new Concept(clazz);
         store(concept);
         return concept;
     }
 
-    public Property newProperty(String id) {
+    public Property createProperty(String id) {
         OWLDataProperty dataProperty = dataFactory.getOWLDataProperty(ontologyIRI + "#", id);
         Property property = new Property(dataProperty);
         store(property);
         return property;
     }
 
-    public Relation newRelation(String id) {
+    public Relation createRelation(String id) {
         OWLObjectProperty objectProperty = dataFactory.getOWLObjectProperty(ontologyIRI + "#", id);
         Relation relation = new Relation(objectProperty);
         store(relation);

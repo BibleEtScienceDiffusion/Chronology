@@ -1,190 +1,185 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.factory;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.EntityVisitor;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Property;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation;
+
+import java.util.Locale;
+
+import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Concept.createConcept;
+import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Property.createProperty;
+import static org.bibleetsciencediffusion.chronology.semantics.core.entity.Relation.createRelation;
 
 public interface PrimitiveConcept {
+
+    Concept CONCEPT = createConcept("concept")
+            .addName("concept", Locale.ENGLISH)
+            .addName("concept", Locale.FRENCH);
+
+    Property PROPERTY = createProperty("property")
+            .addName("property", Locale.ENGLISH)
+            .addName("propriété", Locale.FRENCH);
+    Relation RELATION = createRelation("relation")
+            .addName("relation", Locale.ENGLISH)
+            .addName("relation", Locale.FRENCH);
+    Relation ROLE = createRelation("role")
+            .addName("Relation", Locale.ENGLISH)
+            .addName("rôle", Locale.FRENCH)
+            .subRelationOf(RELATION);
+    Relation TARGET = createRelation("target")
+            .addName("target", Locale.ENGLISH)
+            .addName("cible", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    //.subClassOf(Concept.RELATION);
+    Relation DEPENDENCY = createRelation("dependency")
+            .addName("dependency", Locale.ENGLISH)
+            .addName("dépendance", Locale.FRENCH)
+            .subRelationOf(RELATION);
+
+    Concept LIST = createConcept("list")
+            .addName("list", Locale.ENGLISH)
+            .addName("liste", Locale.FRENCH)
+            .subClassOf(CONCEPT);
+    Relation HAS_ELEMENT = createRelation("hasElement")
+            .addName("has for element", Locale.ENGLISH)
+            .addName("a pour élément", Locale.FRENCH)
+            .subRelationOf(RELATION);
+
+
+    Relation PROCESS = createRelation("process")
+            .addName("process", Locale.ENGLISH)
+            .addName("processus", Locale.FRENCH)
+            .subRelationOf(RELATION);
+
+    Relation EVENT = createRelation("event")
+            .addName("event", Locale.ENGLISH)
+            .addName("événement", Locale.FRENCH)
+            .subRelationOf(RELATION);
+
+    Relation LOGICAL_RELATION = createRelation("logicalRelation")
+            .addName("logical relation", Locale.ENGLISH)
+            .addName("relation logique", Locale.FRENCH)
+            .subRelationOf(RELATION);
+
+    Relation SPATIO_TEMPORAL_RELATION = createRelation("spatioTemporalRelation")
+            .addName("spatio-temporal relation", Locale.ENGLISH)
+            .addName("relation spatio-temporelle", Locale.FRENCH)
+            .subRelationOf(RELATION);
+
+    Relation TEMPORAL_RELATION = createRelation("temporalRelation")
+            .addName("temporal relation", Locale.ENGLISH)
+            .addName("relation temporelle", Locale.FRENCH)
+            .subRelationOf(SPATIO_TEMPORAL_RELATION);
+
+    Relation SPATIAL_RELATION = createRelation("spatialRelation").addName("spatial relation", Locale.ENGLISH)
+            .addName("relation spaciale", Locale.FRENCH)
+            .subRelationOf(SPATIO_TEMPORAL_RELATION);
+
+    Concept HUMAN = createConcept("human")
+            .addName("human", Locale.ENGLISH)
+            .addName("humain", Locale.FRENCH)
+            .subClassOf(CONCEPT);
+
+    Concept PLACE = createConcept("place")
+            .addName("place", Locale.ENGLISH)
+            .addName("lieu", Locale.FRENCH)
+            .subClassOf(CONCEPT);
+
+    Concept LANGUAGE = createConcept("language")
+            .addName("language", Locale.ENGLISH)
+            .addName("langue", Locale.FRENCH)
+            .subClassOf(CONCEPT);
+
+    Property DATE = createProperty("date")
+            .addName("date", Locale.ENGLISH)
+            .addName("date", Locale.FRENCH);
+    //.setType(Date.class)
+    //.setDomain(EVENT)
+    //.subClassOf(PROPERTY);
+
+    Relation AND = createRelation("and").addName("and", Locale.ENGLISH)
+            .addName("et", Locale.FRENCH)
+            .subRelationOf(LOGICAL_RELATION);
+
+    Relation OR = createRelation("or").addName("or", Locale.ENGLISH)
+            .addName("ou", Locale.FRENCH)
+            .subRelationOf(LOGICAL_RELATION);
+
+    Relation NOT = createRelation("not").addName("not", Locale.ENGLISH)
+            .addName("non", Locale.FRENCH)
+            .subRelationOf(LOGICAL_RELATION);
+
+    Relation HAS_AGENT = createRelation("hasAgent").addName("agent", Locale.ENGLISH)
+            .addName("agent", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_PATIENT = createRelation("hasPatient").addName("patient", Locale.ENGLISH)
+            .addName("patient", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_LOCATION = createRelation("hasLocation").addName("location", Locale.ENGLISH)
+            .addName("localisation", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation OCCURS_TIME = createRelation("occursTime").addName("time", Locale.ENGLISH)
+            .addName("temps", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_PARTICIPANT = createRelation("hasParticipant").addName("participant", Locale.ENGLISH)
+            .addName("participant", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_ORIGIN = createRelation("hasOrigin").addName("origin", Locale.ENGLISH)
+            .addName("origine", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_DESTINATION = createRelation("hasDestination").addName("destination", Locale.ENGLISH)
+            .addName("destination", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_SOURCE = createRelation("hasSource").addName("source", Locale.ENGLISH)
+            .addName("source", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_CAUSE = createRelation("hasCause").addName("cause", Locale.ENGLISH)
+            .addName("cause", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation HAS_BEGIN = createRelation("hasBegin").addName("begin", Locale.ENGLISH)
+            .addName("début", Locale.FRENCH)
+            .subRelationOf(ROLE);
+    Relation END = createRelation("hasEnd").addName("end", Locale.ENGLISH)
+            .addName("fin", Locale.FRENCH)
+            .subRelationOf(ROLE);
     /*
-    Concept CONCEPT = newConcept(Locale.ENGLISH, "concept")
-            .addName(Locale.FRENCH, "concept");
-    Relation HAS_CLASS = newRelation(Locale.ENGLISH, "has class")
-            .addName(Locale.FRENCH, "a pour classe");
-    Concept RELATION = newConcept(Locale.ENGLISH, "relation")
-            .addName(Locale.FRENCH, "relation")
-            .addClass(CONCEPT);
-    Concept ROLE = newConcept(Locale.ENGLISH, "role")
-            .addName(Locale.FRENCH, "rôle")
-            .addClass(CONCEPT);
-    Role TARGET = newRole(Locale.ENGLISH, "target")
-            .addName(Locale.FRENCH, "cible")
-            .addClass(ROLE);
-    //.addClass(Concept.RELATION);
-    Relation DEPENDENCY = newRelation(Locale.ENGLISH, "dependency")
-            .addName(Locale.FRENCH, "dépendance")
-            .addClass(RELATION);
-    Relation EQUIVALENCY = newRelation(Locale.ENGLISH, "equivalency")
-            .addName(Locale.FRENCH, "équivalence")
-            .addClass(RELATION);
-    Concept LIST = newConcept(Locale.ENGLISH, "list")
-            .addName(Locale.FRENCH, "liste")
-            .addClass(CONCEPT);
-    Relation HAS_ELEMENT = newRelation(Locale.ENGLISH, "has for element")
-            .addName(Locale.FRENCH, "a pour élément")
-            .addClass(RELATION);
-    Concept ENTITY = newConcept(Locale.ENGLISH, "entity")
-            .addName(Locale.FRENCH, "entité")
-            .addClass(CONCEPT);
-    Concept PROPERTY = newConcept(Locale.ENGLISH, "property")
-            .addName(Locale.FRENCH, "propriété")
-            .addClass(CONCEPT);
-
-    Concept PROCESS = newConcept(Locale.ENGLISH, "process")
-            .addName(Locale.FRENCH, "processus")
-            .addClass(RELATION);
-
-    Concept EVENT = newConcept(Locale.ENGLISH, "event")
-            .addName(Locale.FRENCH, "événement")
-            .addClass(RELATION);
-    Property VALUE = newProperty(Locale.ENGLISH, "date")
-            .addName(Locale.FRENCH, "date")
-            //.setType(Object.class)
-            .setSubject(PROPERTY)
-            .addClass(PROPERTY);
-
-    Concept LOGICAL_RELATION = newConcept(Locale.ENGLISH, "logical relation")
-            .addName(Locale.FRENCH, "relation logique")
-            .addClass(RELATION);
-
-    Concept SPATIO_TEMPORAL_RELATION = newConcept(Locale.ENGLISH, "spatio-temporal relation")
-            .addName(Locale.FRENCH, "relation spatio-temporelle")
-            .addClass(RELATION);
-
-    Concept TEMPORAL_RELATION = newConcept(Locale.ENGLISH, "temporal relation")
-            .addName(Locale.FRENCH, "relation temporelle")
-            .addClass(SPATIO_TEMPORAL_RELATION);
-
-    Concept SPATIAL_RELATION = newConcept(Locale.ENGLISH, "spatial relation")
-            .addName(Locale.FRENCH, "relation spaciale")
-            .addClass(SPATIO_TEMPORAL_RELATION);
-
-    Concept HUMAN = newConcept(Locale.ENGLISH, "human")
-            .addName(Locale.FRENCH, "humain")
-            .addClass(ENTITY);
-
-    Concept PLACE = newConcept(Locale.ENGLISH, "place")
-            .addName(Locale.FRENCH, "lieu")
-            .addClass(ENTITY);
-
-    Concept LANGUAGE = newConcept(Locale.ENGLISH, "language")
-            .addName(Locale.FRENCH, "langue")
-            .addClass(ENTITY);
-
-    Property ISO_CODE = newProperty(Locale.ENGLISH, "ISO code")
-            .addName(Locale.FRENCH, "code ISO")
-            //.setType(String.class);
-            .setSubject(LANGUAGE)
-            .addProperty(VALUE, Void.TYPE)
-            .addClass(PROPERTY);
-
-
-    Property DATE = newProperty(Locale.ENGLISH, "date")
-            .addName(Locale.FRENCH, "date")
-            //.setType(Date.class)
-            .setSubject(EVENT)
-            .addClass(PROPERTY);
-
-    Relation HAS_PARENT = newRelation(Locale.ENGLISH, "has parent")
-            .addName(Locale.FRENCH, "a pour parent")
-            .addClass(RELATION);
-
-    Relation HAS_SIBLING = newRelation(Locale.ENGLISH, "has sibling")
-            .addName(Locale.FRENCH, "a pour frère")
-            .addClass(RELATION);
-
-    Relation AND = newRelation(Locale.ENGLISH, "and")
-            .addName(Locale.FRENCH, "et")
-            .addClass(LOGICAL_RELATION);
-
-    Relation OR = newRelation(Locale.ENGLISH, "or")
-            .addName(Locale.FRENCH, "ou")
-            .addClass(LOGICAL_RELATION);
-
-    Relation NOT = newRelation(Locale.ENGLISH, "not")
-            .addName(Locale.FRENCH, "non")
-            .addClass(LOGICAL_RELATION);
-
-    Relation REFERENCE = newRelation(Locale.ENGLISH, "reference")
-            .addName(Locale.FRENCH, "référence")
-            .addClass(RELATION);
-    Role AGENT = newRole(Locale.ENGLISH, "agent")
-            .addName(Locale.FRENCH, "agent")
-            .addClass(ROLE);
-    Role PATIENT = newRole(Locale.ENGLISH, "patient")
-            .addName(Locale.FRENCH, "patient")
-            .addClass(ROLE);
-    Role LOCATION = newRole(Locale.ENGLISH, "location")
-            .addName(Locale.FRENCH, "localisation")
-            .addClass(ROLE);
-    Role TIME = newRole(Locale.ENGLISH, "time")
-            .addName(Locale.FRENCH, "temps")
-            .addClass(ROLE);
-    Role PARTICIPANT = newRole(Locale.ENGLISH, "participant")
-            .addName(Locale.FRENCH, "participant")
-            .addClass(ROLE);
-    Role ORIGIN = newRole(Locale.ENGLISH, "origin")
-            .addName(Locale.FRENCH, "origine")
-            .addClass(ROLE);
-    Role DESTINATION = newRole(Locale.ENGLISH, "destination")
-            .addName(Locale.FRENCH, "destination")
-            .addClass(ROLE);
-    Role SOURCE = newRole(Locale.ENGLISH, "source")
-            .addName(Locale.FRENCH, "source")
-            .addClass(ROLE);
-    Role CAUSE = newRole(Locale.ENGLISH, "cause")
-            .addName(Locale.FRENCH, "cause")
-            .addClass(ROLE);
-    Role BEGIN = newRole(Locale.ENGLISH, "begin")
-            .addName(Locale.FRENCH, "début")
-            .addClass(ROLE);
-    Role END = newRole(Locale.ENGLISH, "end")
-            .addName(Locale.FRENCH, "fin")
-            .addClass(ROLE);
-    Event BIRTH = Event.newEvent(Locale.ENGLISH, "birth")
-            .addName(Locale.FRENCH, "naissance")
-            .addRelation(newRelation(DEPENDENCY).addRole(TARGET, HUMAN))
-            .addClass(EVENT);
-    Event DEATH = Event.newEvent(Locale.ENGLISH, "death")
-            .addName(Locale.FRENCH, "mort")
-            .addRelation(newRelation(DEPENDENCY).addRole(TARGET, HUMAN))
-            .addClass(EVENT);
-    Process LIFE = newProcess(Locale.ENGLISH, "life")
-            .addName(Locale.FRENCH, "vie")
-            .addRole(AGENT, HUMAN)
-            .addClass(PROCESS);
-    Property NAME = newProperty(Locale.ENGLISH, "name")
-            .addName(Locale.FRENCH, "nom")
+    Event BIRTH = Event.newEvent("").addName(,Locale.ENGLISH "birth")
+            .addName(,Locale.FRENCH "naissance")
+            .addRelation(createRelation(DEPENDENCY).addRelation(TARGET, HUMAN))
+            .subClassOf(EVENT);
+    Event DEATH = Event.newEvent("").addName(,Locale.ENGLISH "death")
+            .addName(,Locale.FRENCH "mort")
+            .addRelation(createRelation(DEPENDENCY).addRelation(TARGET, HUMAN))
+            .subClassOf(EVENT);
+    Process LIFE = newProcess("").addName(,Locale.ENGLISH "life")
+            .addName(,Locale.FRENCH "vie")
+            .addRelation(AGENT, HUMAN)
+            .subClassOf(PROCESS);
+    Property NAME = createProperty("").addName(,Locale.ENGLISH "name")
+            .addName(,Locale.FRENCH "nom")
             //.setType(Name.class)
-            .setSubject(CONCEPT)
-            .addClass(PROPERTY);
-    Property YEAR = newProperty(Locale.ENGLISH, "year")
-            .addName(Locale.FRENCH, "année")
+            .setDomain(CONCEPT)
+            .subClassOf(PROPERTY);
+    Property YEAR = createProperty("").addName(,Locale.ENGLISH "year")
+            .addName(,Locale.FRENCH "année")
             //.setType(Integer.class)
-            .setSubject(DATE)
-            .addClass(PROPERTY);
-    Event BIRTH_JC = Event.newEvent(Locale.ENGLISH, "birth of Jesus")
-            .addName(Locale.FRENCH, "naissance de Jésus")
-            .addRole(TIME, new Date().setYear(3925))
-            .addClass(BIRTH);
-    Property MONTH = newProperty(Locale.ENGLISH, "month")
-            .addName(Locale.FRENCH, "mois")
+            .setDomain(DATE)
+            .subClassOf(PROPERTY);
+    Event BIRTH_JC = Event.newEvent("").addName(,Locale.ENGLISH "birth of Jesus")
+            .addName(,Locale.FRENCH "naissance de Jésus")
+            .addRelation(TIME, new Date().setYear(3925))
+            .subClassOf(BIRTH);
+    Property MONTH = createProperty("").addName(,Locale.ENGLISH "month")
+            .addName(,Locale.FRENCH "mois")
             .setType(Integer.class)
-            .setSubject(DATE)
-            .addClass(PROPERTY);
-    Property DAY = newProperty(Locale.ENGLISH, "day")
-            .addName(Locale.FRENCH, "jour")
+            .setDomain(DATE)
+            .subClassOf(PROPERTY);
+    Property DAY = createProperty("").addName(,Locale.ENGLISH "day")
+            .addName(,Locale.FRENCH "jour")
             .setType(Integer.class)
-            .setSubject(DATE)
-            .addClass(PROPERTY);
-    */
+            .setDomain(DATE)
+            .subClassOf(PROPERTY);
+  */
 
-    void accept(EntityVisitor v);
+
 }
