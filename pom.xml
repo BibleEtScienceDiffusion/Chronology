@@ -24,13 +24,35 @@
         <dependency>
             <groupId>net.sourceforge.owlapi</groupId>
             <artifactId>owlapi-distribution</artifactId>
-            <version>5.1.0</version>
+            <version>5.1.14</version>
         </dependency>
         <dependency>
             <groupId>org.gedcom4j</groupId>
             <artifactId>gedcom4j</artifactId>
             <version>4.0.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.gedcomx/gedcomx-rt-support -->
+        <dependency>
+            <groupId>org.gedcomx</groupId>
+            <artifactId>gedcomx-rt-support</artifactId>
+            <version>2.112.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.gedcomx/gedcomx-date -->
+        <dependency>
+            <groupId>org.gedcomx</groupId>
+            <artifactId>gedcomx-date</artifactId>
+            <version>2.112.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.gedcomx/gedcom5-conversion -->
+        <dependency>
+            <groupId>org.gedcomx</groupId>
+            <artifactId>gedcom5-conversion</artifactId>
+            <version>1.12.0</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
         <dependency>
@@ -43,6 +65,18 @@
             <artifactId>junit</artifactId>
             <version>4.8.2</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.2.11</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-core</artifactId>
+            <version>2.2.11</version>
         </dependency>
 
     </dependencies>

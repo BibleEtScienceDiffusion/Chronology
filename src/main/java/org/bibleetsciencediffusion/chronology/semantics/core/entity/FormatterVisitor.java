@@ -1,5 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.EntityList;
+
 import java.io.PrintWriter;
 
 public class FormatterVisitor implements EntityVisitor {
@@ -63,6 +65,11 @@ public class FormatterVisitor implements EntityVisitor {
 
     public void visit(Process process) {
         //printWriter.print("process name:" + process.getName().get(getLang()) + " ");
+
+    }
+
+    @Override
+    public void visit(EntityList v) {
 
     }
 

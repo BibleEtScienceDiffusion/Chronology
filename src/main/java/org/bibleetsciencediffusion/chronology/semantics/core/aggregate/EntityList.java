@@ -1,6 +1,6 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.aggregate;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.Entity;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.EntityVisitor;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.EntityKey;
@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //TODO : change with collection Class
-public class EntityList<T extends NamedEntity> extends Entity<OWLNamedIndividual> {
+public class EntityList<T extends NamedEntity> extends NamedEntity<OWLNamedIndividual> {
 
     private static int counter = 0;
 
@@ -82,4 +82,8 @@ public class EntityList<T extends NamedEntity> extends Entity<OWLNamedIndividual
     }
 
      */
+    @Override
+    public void accept(EntityVisitor v) {
+        v.visit(this);
+    }
 }

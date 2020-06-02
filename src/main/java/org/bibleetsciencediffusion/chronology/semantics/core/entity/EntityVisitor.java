@@ -1,5 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
+import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.EntityList;
+
 public interface EntityVisitor {
 
     void visit(Concept concept);
@@ -11,5 +13,7 @@ public interface EntityVisitor {
     void visit(Relation relation);
 
     void visit(Process process);
+
+    void visit(EntityList v);
 
 }

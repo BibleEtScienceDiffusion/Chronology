@@ -18,6 +18,6 @@ public abstract class Entity<T extends OWLEntity> {
         this.OWLObject = OWLObject;
     }
 
-    abstract void accept(EntityVisitor v);
+    public abstract void accept(EntityVisitor v);
 
 }
