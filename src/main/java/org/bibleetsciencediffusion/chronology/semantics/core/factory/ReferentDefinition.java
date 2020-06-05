@@ -8,24 +8,24 @@ public interface ReferentDefinition extends DomainDefinition {
 
 
     Referent CANAAN = Referent.createReferent("Canaan")
-            .addName("Canaan", Locale.ENGLISH)
-            .addName("Canaan", Locale.FRENCH)
+            .name("Canaan", Locale.ENGLISH)
+            .name("Canaan", Locale.FRENCH)
             .isA(COUNTRY);
 
     Referent ISRAEL = Referent.createReferent("Israel")
-            .addName("Israel", Locale.ENGLISH)
-            .addName("Israël", Locale.FRENCH)
+            .name("Israel", Locale.ENGLISH)
+            .name("Israël", Locale.FRENCH)
             .isA(COUNTRY);
 
     //TODO : modelize location of reign of pharaoh is in Egypt (Referent)
     Referent EGYPT = Referent.createReferent("Egypt")
-            .addName("Egypt", Locale.ENGLISH)
-            .addName("Egypte", Locale.FRENCH)
+            .name("Egypt", Locale.ENGLISH)
+            .name("Egypte", Locale.FRENCH)
             .isA(COUNTRY);
 
     Referent ABRAHAM = Referent.createReferent("Abraham")
-            .addName("Abram", Locale.ENGLISH)
-            .addName("Abram", Locale.FRENCH)
+            .name("Abram", Locale.ENGLISH)
+            .name("Abram", Locale.FRENCH)
             .isA(HUMAN);
             /*
             .addProcess(

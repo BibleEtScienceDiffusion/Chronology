@@ -1,10 +1,9 @@
-package org.bibleetsciencediffusion.chronology.semantics.core.aggregate;
+package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.EntityVisitor;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
 import org.bibleetsciencediffusion.chronology.semantics.core.factory.EntityFactory;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.EntityKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 
 import java.util.ArrayList;
@@ -27,8 +26,7 @@ public class EntityList<T extends NamedEntity> extends NamedEntity<OWLNamedIndiv
 
     public EntityList() {
         counter++;
-        OWLNamedIndividual individual = EntityFactory.getInstance().getDataFactory().getOWLNamedIndividual(
-                EntityFactory.getInstance().getOntologyIRI() + "#", "list" + counter);
+        OWLNamedIndividual individual = EntityFactory.getInstance().getDataFactory().getOWLNamedIndividual(IRI.create("#list" + counter));
         this.setOWLObject(individual);
     }
 

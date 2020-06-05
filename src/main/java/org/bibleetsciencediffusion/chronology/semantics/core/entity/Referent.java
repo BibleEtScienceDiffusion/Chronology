@@ -27,10 +27,6 @@ import java.util.Locale;
  */
 public class Referent extends NamedEntity<OWLNamedIndividual> {
 
-
-    // space it is located in (mental space, according Fauconnier)
-    Referent space;
-
     private List<Process> process = new ArrayList<Process>();
 
     public Referent(OWLNamedIndividual individual) {
@@ -46,13 +42,13 @@ public class Referent extends NamedEntity<OWLNamedIndividual> {
     }
 
 
-    public Referent addName(String localizedName, String language) {
-        super.addName(localizedName, language);
+    public Referent name(String localizedName, String language) {
+        super.name(localizedName, language);
         return this;
     }
 
-    public Referent addName(String localizedName, Locale locale) {
-        super.addName(localizedName, locale);
+    public Referent name(String localizedName, Locale locale) {
+        super.name(localizedName, locale);
         return this;
     }
 
@@ -107,15 +103,6 @@ public class Referent extends NamedEntity<OWLNamedIndividual> {
     }
 
     //TODO: sameIndividualAs
-
-    public Referent getSpace() {
-        return space;
-    }
-
-    public void setSpace(Referent space) {
-        this.space = space;
-    }
-
 
     public Referent clone() {
         return clone();

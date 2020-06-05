@@ -28,14 +28,14 @@ public class Concept extends NamedEntity<OWLClass> {
     }
 
 
-    public Concept addName(String localizedName, String language) {
-        super.addName(localizedName, language);
+    public Concept name(String localizedName, String language) {
+        super.name(localizedName, language);
 
         return this;
     }
 
-    public Concept addName(String localizedName, Locale locale) {
-        super.addName(localizedName, locale);
+    public Concept name(String localizedName, Locale locale) {
+        super.name(localizedName, locale);
         return this;
     }
 
@@ -47,12 +47,13 @@ public class Concept extends NamedEntity<OWLClass> {
         return this;
     }
 
-    public Concept equivalent(Concept concept) {
+    public Concept equivalentOf(Concept concept) {
         OWLEquivalentClassesAxiom classAssertion = EntityFactory.getInstance().getDataFactory()
                 .getOWLEquivalentClassesAxiom(getOWLObject(), concept.getOWLObject());
         OntologyService.getInstance().addAxiom(classAssertion);
         return this;
     }
+
 
     public void accept(EntityVisitor v) {
         v.visit(this);

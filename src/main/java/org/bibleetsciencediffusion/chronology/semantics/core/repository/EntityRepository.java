@@ -1,7 +1,7 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.repository;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.EntityList;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.Entity;
+import org.bibleetsciencediffusion.chronology.semantics.core.entity.EntityList;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.EntityKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;

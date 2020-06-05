@@ -41,28 +41,28 @@ public class EntityFactory {
 
 
     public Referent createReferent(String id) {
-        OWLNamedIndividual individual = dataFactory.getOWLNamedIndividual(ontologyIRI + ":", id);
+        OWLNamedIndividual individual = dataFactory.getOWLNamedIndividual(IRI.create(ontologyIRI + ":" + id));
         Referent referent = new Referent(individual);
         store(referent);
         return referent;
     }
 
     public Concept createConcept(String id) {
-        OWLClass clazz = dataFactory.getOWLClass(ontologyIRI + "#", id);
+        OWLClass clazz = dataFactory.getOWLClass(IRI.create(ontologyIRI + "#" + id));
         Concept concept = new Concept(clazz);
         store(concept);
         return concept;
     }
 
     public Property createProperty(String id) {
-        OWLDataProperty dataProperty = dataFactory.getOWLDataProperty(ontologyIRI + "#", id);
+        OWLDataProperty dataProperty = dataFactory.getOWLDataProperty(IRI.create(ontologyIRI + "#" + id));
         Property property = new Property(dataProperty);
         store(property);
         return property;
     }
 
     public Relation createRelation(String id) {
-        OWLObjectProperty objectProperty = dataFactory.getOWLObjectProperty(ontologyIRI + "#", id);
+        OWLObjectProperty objectProperty = dataFactory.getOWLObjectProperty(IRI.create(ontologyIRI + "#" + id));
         Relation relation = new Relation(objectProperty);
         store(relation);
         return relation;

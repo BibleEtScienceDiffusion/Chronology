@@ -14,23 +14,23 @@ public interface DomainDefinition extends PrimitiveConcept {
     /* Domain definition */
 
     Concept KING = createConcept("king")
-            .addName("king", Locale.ENGLISH)
-            .addName("roi", Locale.FRENCH)
+            .name("king", Locale.ENGLISH)
+            .name("roi", Locale.FRENCH)
             .subClassOf(HUMAN);
 
     Concept PHARAOH = createConcept("pharaoh")
-            .addName("pharaoh", Locale.ENGLISH)
-            .addName("pharaon", Locale.FRENCH)
+            .name("pharaoh", Locale.ENGLISH)
+            .name("pharaon", Locale.FRENCH)
             .subClassOf(KING);
 
 
     Relation REIGN = createRelation("reign")
-            .addName("reign", Locale.ENGLISH)
-            .addName("règne", Locale.FRENCH)
+            .name("reign", Locale.ENGLISH)
+            .name("règne", Locale.FRENCH)
             .subRelationOf(PROCESS);
 
-    Relation COVENANT = createRelation(null).addName("covenant", Locale.ENGLISH)
-            .addName("alliance", Locale.FRENCH)
+    Relation COVENANT = createRelation(null).name("covenant", Locale.ENGLISH)
+            .name("alliance", Locale.FRENCH)
             .subRelationOf(PROCESS);
 
     /*
@@ -44,8 +44,8 @@ public interface DomainDefinition extends PrimitiveConcept {
             .addName(Locale.FRENCH, "intronisation");
     */
     Concept COUNTRY = createConcept("country").
-            addName("country", Locale.ENGLISH)
-            .addName("pays", Locale.FRENCH)
+            name("country", Locale.ENGLISH)
+            .name("pays", Locale.FRENCH)
             .subClassOf(PLACE);
 
 

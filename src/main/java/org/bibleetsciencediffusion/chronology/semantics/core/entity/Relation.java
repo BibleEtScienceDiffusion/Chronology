@@ -27,13 +27,13 @@ public class Relation extends NamedEntity<OWLObjectProperty> {
         return getOWLObject().toStringID();
     }
 
-    public Relation addName(String localizedName, String language) {
-        super.addName(localizedName, language);
+    public Relation name(String localizedName, String language) {
+        super.name(localizedName, language);
         return this;
     }
 
-    public Relation addName(String localizedName, Locale locale) {
-        super.addName(localizedName, locale);
+    public Relation name(String localizedName, Locale locale) {
+        super.name(localizedName, locale);
         return this;
     }
 

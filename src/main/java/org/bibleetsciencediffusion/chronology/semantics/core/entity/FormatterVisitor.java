@@ -1,7 +1,5 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.entity;
 
-import org.bibleetsciencediffusion.chronology.semantics.core.aggregate.EntityList;
-
 import java.io.PrintWriter;
 
 public class FormatterVisitor implements EntityVisitor {

@@ -22,13 +22,13 @@ public class Process extends Relation {
         setOWLObject(objectProperty);
     }
 
-    public Process addName(String language, String localizedName) {
-        super.addName(language, localizedName);
+    public Process name(String language, String localizedName) {
+        super.name(language, localizedName);
         return this;
     }
 
-    public Process addName(Locale locale, String localizedName) {
-        super.addName(locale.getLanguage(), localizedName);
+    public Process name(Locale locale, String localizedName) {
+        super.name(locale.getLanguage(), localizedName);
         return this;
     }
 
