@@ -106,6 +106,8 @@ object TemporalStructureManchesterOntology extends App {
     dynamic Annotation(comment, "top level seme of temporal structures" @@ "en"),
     dynamic Annotation(comment, "sème de premier niveau des structures temporelles" @@ "fr"),
 
+    OWLNothing EquivalentTo ((transitional value true) and (dynamic value false)),
+
     // first level of distrinction
     state SubClassOf temporal_structure,
     action SubClassOf temporal_structure,
@@ -149,6 +151,7 @@ object TemporalStructureManchesterOntology extends App {
     occurrence SubPropertyOf role,
     occurrence Domain temporal_structure,
     occurrence Range event,
+
 
   ))
   ontology.getOWLOntologyManager.saveOntology(ontology, IRI.create(new File(args(0))))
