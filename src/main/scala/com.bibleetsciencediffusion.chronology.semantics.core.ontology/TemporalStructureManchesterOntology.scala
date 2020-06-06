@@ -17,6 +17,8 @@ object TemporalStructureManchesterOntology extends App {
   // ontology namespace
   val ns = "http://bibleetsciencediffusion.org/chronology.owl#"
 
+  val x = factory.getSWRLVariable(IRI.create(ns + "x"))
+
 
   // high level sememes
   val temporal_structure = Class(ns + "temporal_structure")
@@ -52,7 +54,6 @@ object TemporalStructureManchesterOntology extends App {
   val location = ObjectProperty(ns + "location")
   val occurrence = ObjectProperty(ns + "occurence")
 
-
   val ontology = Ontology("http://bibleetsciencediffusion.org/chronology.owl", Set(
     // axioms
     animated_thing SubClassOf OWLThing,
@@ -74,6 +75,9 @@ object TemporalStructureManchesterOntology extends App {
     place SubClassOf OWLThing,
     place Annotation(label, "place" @@ "en"),
     place Annotation(label, "place" @@ "fr"),
+
+    factory.getSWRLClassAtom(activity, x) --> factory.getSWRLClassAtom(action, x),
+    accomplishment(x) --> action(x),
 
     date Domain event,
     date Annotation(label, "date" @@ "en"),
