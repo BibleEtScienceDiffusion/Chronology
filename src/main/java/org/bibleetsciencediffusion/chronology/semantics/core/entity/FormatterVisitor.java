@@ -66,10 +66,4 @@ public class FormatterVisitor implements EntityVisitor {
 
     }
 
-    @Override
-    public void visit(EntityList v) {
-
-    }
-
-
 }

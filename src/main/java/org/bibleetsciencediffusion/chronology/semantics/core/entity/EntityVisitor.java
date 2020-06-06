@@ -12,6 +12,5 @@ public interface EntityVisitor {
 
     void visit(Process process);
 
-    void visit(EntityList v);
 
 }

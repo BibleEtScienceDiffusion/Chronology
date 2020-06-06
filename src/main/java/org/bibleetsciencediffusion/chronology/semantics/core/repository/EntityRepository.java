@@ -1,17 +1,22 @@
 package org.bibleetsciencediffusion.chronology.semantics.core.repository;
 
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.Entity;
-import org.bibleetsciencediffusion.chronology.semantics.core.entity.EntityList;
 import org.bibleetsciencediffusion.chronology.semantics.core.entity.NamedEntity;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.EntityKey;
 import org.bibleetsciencediffusion.chronology.semantics.core.value.Name;
 
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
 public class EntityRepository {
     protected static EntityRepository instance = new EntityRepository();
-    private Map<EntityKey, EntityList> keyMap = new HashMap<EntityKey, EntityList>();
+
+    // storage per key
+    private Map<EntityKey, Collection<Entity>> keyMap = new HashMap<EntityKey, Collection<Entity>>();
+
+    // storage per id
     private Map<String, Entity> idMap = new HashMap<String, Entity>();
 
     private EntityRepository() {
@@ -26,14 +31,14 @@ public class EntityRepository {
         Name name = newConcept.getName();
         if (name != null) {
             for (EntityKey entityKey : name.getList()) {
-                EntityList entityList = keyMap.getOrDefault(entityKey, new EntityList());
+                Collection<Entity> entityList = keyMap.getOrDefault(entityKey, new ArrayList<Entity>());
                 entityList.add(newConcept);
                 keyMap.put(entityKey, entityList);
             }
         }
     }
 
-    public EntityList findByKey(EntityKey key) {
+    public Collection<Entity> findByKey(EntityKey key) {
         return keyMap.get(key);
     }
 
