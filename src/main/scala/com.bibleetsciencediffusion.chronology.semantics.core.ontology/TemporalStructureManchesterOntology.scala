@@ -54,7 +54,11 @@ object TemporalStructureManchesterOntology extends App {
   val location = ObjectProperty(ns + "location")
   val occurrence = ObjectProperty(ns + "occurence")
 
-  val ontology = Ontology("http://bibleetsciencediffusion.org/chronology.owl", Set(
+
+  val manager = OWLManager.createOWLOntologyManager()
+  val ontology = manager.loadOntologyFromOntologyDocument(new File("C:\\Users\\frup43047\\Projects\\github.com\\BibleEtScienceDiffusion\\GenealogyTools\\src\\main\\resources\\ontologies\\bioontology-toplevel.rdf"))
+
+  val axioms = Set(
     // axioms
     animated_thing SubClassOf OWLThing,
     animated_thing SubClassOf (animated value true),
@@ -157,7 +161,10 @@ object TemporalStructureManchesterOntology extends App {
     occurrence Range event,
 
 
-  ))
-  ontology.getOWLOntologyManager.saveOntology(ontology, IRI.create(new File(args(0))))
+  )
+
+  axioms.foreach(a => manager.addAxiom(ontology, a))
+
+  manager.saveOntology(ontology, IRI.create(new File(args(0))))
 
 }
