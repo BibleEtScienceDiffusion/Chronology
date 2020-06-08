@@ -5,7 +5,6 @@ import java.io.File
 import org.phenoscape.scowl._
 import org.semanticweb.owlapi.apibinding.OWLManager
 import org.semanticweb.owlapi.model.IRI
-import org.semanticweb.owlapi.vocab.OWL2Datatype
 
 object TemporalStructureManchesterOntology extends App {
 
@@ -15,23 +14,31 @@ object TemporalStructureManchesterOntology extends App {
   val comment = factory.getRDFSComment
 
   // ontology namespace
+  val toplevel_ns = "http://purl.obolibrary.org/obo/"
   val ns = "http://bibleetsciencediffusion.org/chronology.owl#"
 
+  val manager = OWLManager.createOWLOntologyManager()
+  val ontology = manager.loadOntologyFromOntologyDocument(new File("C:\\Users\\frup43047\\Projects\\github.com\\BibleEtScienceDiffusion\\GenealogyTools\\src\\main\\resources\\ontologies\\bioontology-toplevel.rdf"))
+
+  // variables
   val x = factory.getSWRLVariable(IRI.create(ns + "x"))
 
-
   // high level sememes
-  val temporal_structure = Class(ns + "temporal_structure")
+  val obj = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000030"))
+  val role = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000023"))
+  val agent_role = Class(ns + "agent_role")
+  val patient_role = Class(ns + "patient_rome")
+  val temporal_structure = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000003"))
+  val temporal_region = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000008"))
   val state = Class(ns + "state")
   val action = Class(ns + "action")
   val activity = Class(ns + "activity")
   val accomplishment = Class(ns + "accomplishment")
   val achievement = Class(ns + "achievement")
+  val date = Class(ns + "date")
   val human_being = Class(ns + "human_being")
   val animal_being = Class(ns + "animal_being")
   val animated_thing = Class(ns + "animated_thing")
-  val place = Class(ns + "place")
-  val event = Class(ns + "event")
 
   // semes
   val dynamic = DataProperty(ns + "dynamic")
@@ -44,23 +51,18 @@ object TemporalStructureManchesterOntology extends App {
   val inchoative = DataProperty(ns + "inchoative")
   val teminative = DataProperty(ns + "terminative")
   val living = DataProperty(ns + "living")
-  val date = DataProperty(ns + "date")
+  //val date = ObjectProperty(ns + "date")
 
   // semantic relations
-  val part_of = ObjectProperty(ns + "part_of")
-  val role = ObjectProperty(ns + "role")
-  val agent = ObjectProperty(ns + "agent")
-  val patient = ObjectProperty(ns + "patient")
-  val location = ObjectProperty(ns + "location")
-  val occurrence = ObjectProperty(ns + "occurence")
+  val part_of = factory.getOWLObjectProperty(IRI.create(toplevel_ns + "BFO_0000050"))
+  val has_role = factory.getOWLObjectProperty(IRI.create(toplevel_ns + "RO_0000087"))
+  val has_agent = ObjectProperty(ns + "has_agent")
+  val has_patient = ObjectProperty(ns + "has_patient")
 
-
-  val manager = OWLManager.createOWLOntologyManager()
-  val ontology = manager.loadOntologyFromOntologyDocument(new File("C:\\Users\\frup43047\\Projects\\github.com\\BibleEtScienceDiffusion\\GenealogyTools\\src\\main\\resources\\ontologies\\bioontology-toplevel.rdf"))
 
   val axioms = Set(
     // axioms
-    animated_thing SubClassOf OWLThing,
+    animated_thing SubClassOf obj,
     animated_thing SubClassOf (animated value true),
     animated_thing Annotation(label, "animated thing" @@ "en"),
     animated_thing Annotation(label, "chose animée " @@ "fr"),
@@ -76,23 +78,12 @@ object TemporalStructureManchesterOntology extends App {
     animal_being SubClassOf (animal value true),
     animal_being DisjointWith human_being,
 
-    place SubClassOf OWLThing,
-    place Annotation(label, "place" @@ "en"),
-    place Annotation(label, "place" @@ "fr"),
-
+    // rules
     factory.getSWRLClassAtom(activity, x) --> factory.getSWRLClassAtom(action, x),
     accomplishment(x) --> action(x),
 
-    date Domain event,
-    date Annotation(label, "date" @@ "en"),
-    date Annotation(label, "date" @@ "fr"),
-    date Range OWL2Datatype.XSD_STRING.getDatatype(factory),
 
-    event SubClassOf OWLThing,
-    event Annotation(label, "event" @@ "en"),
-    event Annotation(label, "événement" @@ "fr"),
-
-    animated Domain OWLThing,
+    animated Domain animated_thing,
     animated Range XSDBoolean,
 
     human Domain human_being,
@@ -102,7 +93,6 @@ object TemporalStructureManchesterOntology extends App {
     living Domain animal_being,
     living Range XSDBoolean,
 
-    temporal_structure SubClassOf OWLThing,
     temporal_structure Annotation(label, "temporal structure" @@ "en"),
     temporal_structure Annotation(label, "structure temporelle " @@ "fr"),
 
@@ -113,8 +103,6 @@ object TemporalStructureManchesterOntology extends App {
     dynamic Annotation(label, "dynamique" @@ "fr"),
     dynamic Annotation(comment, "top level seme of temporal structures" @@ "en"),
     dynamic Annotation(comment, "sème de premier niveau des structures temporelles" @@ "fr"),
-
-    OWLNothing EquivalentTo ((transitional value true) and (dynamic value false)),
 
     // first level of distrinction
     state SubClassOf temporal_structure,
@@ -137,30 +125,22 @@ object TemporalStructureManchesterOntology extends App {
     accomplishment SubClassOf action,
     achievement SubClassOf action,
 
-    role Domain temporal_structure,
-    role Range OWLThing,
-    role Annotation(label, "role" @@ "en"),
-    role Annotation(label, "rôle" @@ "fr"),
+    date SubClassOf temporal_region,
 
-    agent SubPropertyOf role,
-    agent Domain action,
-    agent Range animated_thing,
-    agent Annotation(label, "agent" @@ "en"),
-    agent Annotation(label, "agent" @@ "fr"),
+    agent_role SubClassOf role,
+    patient_role SubClassOf role,
 
-    patient SubPropertyOf role,
-    patient Domain state,
-    patient Range OWLThing,
+    has_agent SubPropertyOf has_role,
+    has_agent Domain action,
+    has_agent Range agent_role,
+    has_agent Annotation(label, "has agent" @@ "en"),
+    has_agent Annotation(label, "a pour agent" @@ "fr"),
 
-    location SubPropertyOf role,
-    location Domain temporal_structure,
-    location Range place,
-
-    occurrence SubPropertyOf role,
-    occurrence Domain temporal_structure,
-    occurrence Range event,
-
-
+    has_patient SubPropertyOf has_role,
+    has_patient Domain state,
+    has_patient Range patient_role,
+    has_patient Annotation(label, "has patient" @@ "en"),
+    has_patient Annotation(label, "a pour patient" @@ "fr"),
   )
 
   axioms.foreach(a => manager.addAxiom(ontology, a))

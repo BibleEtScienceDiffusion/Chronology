@@ -1,4 +1,4 @@
-package org.bibleetsciencediffusion.chronology.semantics.core
+package org.bibleetsciencediffusion.chronology.semantics.core.ontology
 
 import java.io.File
 
