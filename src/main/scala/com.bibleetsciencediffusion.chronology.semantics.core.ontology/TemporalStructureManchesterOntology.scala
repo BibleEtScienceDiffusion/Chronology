@@ -8,7 +8,6 @@ import org.semanticweb.owlapi.model.IRI
 
 object TemporalStructureManchesterOntology extends App {
 
-
   val factory = OWLManager.getOWLDataFactory
   val label = factory.getRDFSLabel
   val comment = factory.getRDFSComment
@@ -38,7 +37,7 @@ object TemporalStructureManchesterOntology extends App {
   val date = Class(ns + "date")
   val human_being = Class(ns + "human_being")
   val animal_being = Class(ns + "animal_being")
-  val animated_thing = Class(ns + "animated_thing")
+  val biological_organism = Class(ns + "biological_organism")
 
   // semes
   val dynamic = DataProperty(ns + "dynamic")
@@ -62,17 +61,17 @@ object TemporalStructureManchesterOntology extends App {
 
   val axioms = Set(
     // axioms
-    animated_thing SubClassOf obj,
-    animated_thing SubClassOf (animated value true),
-    animated_thing Annotation(label, "animated thing" @@ "en"),
-    animated_thing Annotation(label, "chose animée " @@ "fr"),
+    biological_organism SubClassOf obj,
+    biological_organism SubClassOf (animated value true),
+    biological_organism Annotation(label, "biological organism" @@ "en"),
+    biological_organism Annotation(label, "organisme biologique " @@ "fr"),
 
-    human_being SubClassOf animated_thing,
+    human_being SubClassOf biological_organism,
     human_being Annotation(label, "human being" @@ "en"),
     human_being Annotation(label, "être humain " @@ "fr"),
     human_being SubClassOf (human value true),
 
-    animal_being SubClassOf animated_thing,
+    animal_being SubClassOf biological_organism,
     animal_being Annotation(label, "animal" @@ "en"),
     animal_being Annotation(label, "animal" @@ "fr"),
     animal_being SubClassOf (animal value true),
@@ -83,7 +82,7 @@ object TemporalStructureManchesterOntology extends App {
     accomplishment(x) --> action(x),
 
 
-    animated Domain animated_thing,
+    animated Domain biological_organism,
     animated Range XSDBoolean,
 
     human Domain human_being,
