@@ -21,23 +21,27 @@ object TemporalStructureManchesterOntology extends App {
 
   // variables
   val x = factory.getSWRLVariable(IRI.create(ns + "x"))
+  val y = factory.getSWRLVariable(IRI.create(ns + "y"))
 
   // high level sememes
   val obj = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000030"))
   val role = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000023"))
   val agent_role = Class(ns + "agent_role")
   val patient_role = Class(ns + "patient_rome")
-  val temporal_structure = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000003"))
+  val occurrence = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000003"))
   val temporal_region = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000008"))
+  val one_dimensional_temporal_region = factory.getOWLClass(IRI.create(toplevel_ns + "BFO_0000038"))
+  val event = Class(ns + "event")
   val state = Class(ns + "state")
   val action = Class(ns + "action")
   val activity = Class(ns + "activity")
   val accomplishment = Class(ns + "accomplishment")
   val achievement = Class(ns + "achievement")
-  val date = Class(ns + "date")
+  //val date = Class(ns + "date")
   val human_being = Class(ns + "human_being")
   val animal_being = Class(ns + "animal_being")
   val biological_organism = Class(ns + "biological_organism")
+  val cause = Class(ns + "cause")
 
   // semes
   val dynamic = DataProperty(ns + "dynamic")
@@ -50,7 +54,7 @@ object TemporalStructureManchesterOntology extends App {
   val inchoative = DataProperty(ns + "inchoative")
   val teminative = DataProperty(ns + "terminative")
   val living = DataProperty(ns + "living")
-  //val date = ObjectProperty(ns + "date")
+  val date = ObjectProperty(ns + "date")
 
   // semantic relations
   val part_of = factory.getOWLObjectProperty(IRI.create(toplevel_ns + "BFO_0000050"))
@@ -92,11 +96,11 @@ object TemporalStructureManchesterOntology extends App {
     living Domain animal_being,
     living Range XSDBoolean,
 
-    temporal_structure Annotation(label, "temporal structure" @@ "en"),
-    temporal_structure Annotation(label, "structure temporelle " @@ "fr"),
+    occurrence Annotation(label, "occurence" @@ "en"),
+    occurrence Annotation(label, "occurrence " @@ "fr"),
 
     // top seme of sememe temporal_structure
-    dynamic Domain temporal_structure,
+    dynamic Domain occurrence,
     dynamic Range XSDBoolean,
     dynamic Annotation(label, "dynamic" @@ "en"),
     dynamic Annotation(label, "dynamique" @@ "fr"),
@@ -104,8 +108,8 @@ object TemporalStructureManchesterOntology extends App {
     dynamic Annotation(comment, "sème de premier niveau des structures temporelles" @@ "fr"),
 
     // first level of distrinction
-    state SubClassOf temporal_structure,
-    action SubClassOf temporal_structure,
+    state SubClassOf occurrence,
+    action SubClassOf occurrence,
     state DisjointWith action,
     state SubClassOf (dynamic value false),
     state Annotation(label, "state" @@ "en"),
@@ -124,7 +128,6 @@ object TemporalStructureManchesterOntology extends App {
     accomplishment SubClassOf action,
     achievement SubClassOf action,
 
-    date SubClassOf temporal_region,
 
     agent_role SubClassOf role,
     patient_role SubClassOf role,
@@ -140,6 +143,14 @@ object TemporalStructureManchesterOntology extends App {
     has_patient Range patient_role,
     has_patient Annotation(label, "has patient" @@ "en"),
     has_patient Annotation(label, "a pour patient" @@ "fr"),
+
+    cause SubClassOf achievement,
+    event SubClassOf one_dimensional_temporal_region,
+    date Domain event,
+
+    //TODO: a beget y in d : a cause évenement sur y à la date d : création de  y avec propriété 'living'
+    cause(x) --> action(x),
+
   )
 
   axioms.foreach(a => manager.addAxiom(ontology, a))
