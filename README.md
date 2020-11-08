@@ -75,16 +75,16 @@ Johnson, Ken. Ancient Post-Flood History (pp. 145-146). Biblefacts.org. Édition
 
 | Patriarche  | Date de naissance (AM) | Engendre    | Age procréation | Age atteint à la mort | Date de mort (AM) | Référence |
 | ----------- | ---------------------- | ----------- | --------------- | --------------------- | ----------------- | --------  |
-| Adam        | 1                      | Seth        | 130             | 930                   | 930               | Genèse 5 |
-| Seth        | 130                    | Enosch      | 105             | 912                   | 1042              | Genèse 5 |
+| Adam        | 1                      | Seth        | 130             | 930                   | 930               | Genèse 5:4 |
+| Seth        | 130                    | Enosch      | 105             | 912                   | 1042              | Genèse 5:3 |
 | Enosch      | 235                    | Kenan       | 90              | 905                   | 1140              | Genèse 5 |
 | Kenan       | 325                    | Mahalaleel  | 70              | 910                   | 1235              | Genèse 5 |
-| Mahalaleel  | 395                    | Jered       | 65              | 895                   | 1290              | Genèse 5 |
+| Mahalaleel  | 395                    | Jered       | 65              | 895                   | 1290              | Genèse 5|
 | Jered       | 460                    | Henoc       | 162             | 962                   | 1422              | Genèse 5 |
-| Henoc       | 622                    | Metuschelah | 65              | 365 (enlevé)          | 987 (enlevé)      | Genèse 5 |
-| Metuschelah | 687                    | Lemec       | 187             | 969                   | 1656              | Genèse 5 |
+| Henoc       | 622                    | Metuschelah | 65              | 365 (enlevé)          | 987 (enlevé)      | Genèse 5:18,5:23 |
+| Metuschelah | 687                    | Lemec       | 187             | 969                   | 1656              | Genèse 5:22,27 |
 | Lemec       | 874                    | Noé         | 182             | 777                   | 1651              | Genèse 5 |
-| Noé         | 1056                   | Sem         | 502             | 950                   | 2154              | Genèse 9 |
+| Noé         | 1056                   | Sem         | 502             | 950                   | 2154              | Genèse 5:28,9 |
 
 
 
@@ -127,13 +127,13 @@ Cela nous ramène ainsi à un âge de 4500 ans, soit environ 2500 av. J.-C. Avec
 | Sem        | 1558                   | Arpaschad | 100             | 600                   | 2158              | Genèse 11 |
 | Arpaschad  | 1658                   | Schelach  | 35              | 438                   | 2096              | Genèse 11 |
 | Schelach   | 1693                   | Heber     | 30              | 433                   | 2126              | Genèse 11 |
-| Heber      | 1723                   | Peleg     | 34              | 464                   | 2187              | Genèse 11 |
-| Peleg      | 1757                   | Rehu      | 30              | 239                   | 1996              | Genèse 11 |
+| Heber      | 1723                   | Peleg     | 34              | 464                   | 2187              | Genèse 11:14,16 |
+| Peleg      | 1757                   | Rehu      | 30              | 239                   | 1996              | Genèse 11:16,19 |
 | Rehu       | 1787                   | Serug     | 32              | 239                   | 2026              | Genèse 11 |
 | Serug      | 1819                   | Nachor    | 30              | 230                   | 2049              | Genèse 11 |
 | Nachor     | 1849                   | Terach    | 29              | 148                   | 1997              | Genèse 11 |
-| Terach     | 1878                   | Abraham   | 70              | 205                   | 2083              | Genèse 11 |
-| Abraham    | 1948                   | Isaac     | 100             | 175                   | 2123              | Genèse 11 |
+| Terach     | 1878                   | Abraham   | 70              | 205                   | 2083              | Genèse 11:24 |
+| Abraham    | 1948                   | Isaac     | 100             | 175                   | 2123              | Genèse 11:26 |
 | Isaac      | 2048                   | Jacob     | 60              | 180                   | 2228              | Genèse 11 |
 
 #### Éléments externes
