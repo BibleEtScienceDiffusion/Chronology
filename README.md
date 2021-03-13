@@ -37,31 +37,32 @@ Ce livre est cité dans l'Ancien Testament dans Juges 10:13 et 2 Samuel 1:18. Da
 * Talmud, 
 * Midrashim
 
+### Reconsidérer les datations académiques
 
-### Recalibrer des datations de certaines preuves archéologiques externes
+Les datations académiques, notamment radiocarbones, fournissent une estimation du temps écoulé avant maintenant, en supposant diverses hypothèses, dont on ne peut objectivement s'assurer qu'elles ont été vérifiées tout au long du temps. La notion même de temps absolu a été complètement remise en cause, avec les théories modernes de la relativité générale.
 
-Cf. Wild, Eva Maria et Kutschera : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
+On ne peut pas appréhender le temps, si ce n'est de compter des événements périodiques. C'est pour cela que dès la Genèse, on compte dans la bible les successions de soirs et matins. C'est la datation biblique, caractérisée en étant centrée sur la terre qui tourne autour d'elle-même, éclairée par une source de lumière : le jour (yom en hébreu) est la période de base. Cette source de lumière est le soleil à partir du quatrième jour de la création selon Genèse 1:14-19 . Apocalypse 22:5 mentionne que Dieu est la source de lumière qui éclaire la nouvelle Jérusalem, et c'est selon toute vraisemblance cette même source de lumière durant  les trois premiers jours.
 
-Dans cet article, la référence demeure les recoupements  dendrochronologiques, dénombrant  de manière indiscutable le nombres d'années terrestres qui se sont écoulées, à travers des coupes d'arbres.
+En diverses autres références, la bible mentionne il y eut un soir et un matin pour indiquer une révolution de la terre autour d'elle-même : Psaume 55:17, 1 Samuel 17:16, Exode 12:15-16, Exode 40.2, 17
 
-Les datations radiocarbones donnent des estimations qui sont d'autant plus reculées dans le temps qu'elles sont anciennes, ce qui nécessite un recalibrage non linéaire.
-Eddie Marie-Couste a exploré cette piste selon une étude à publier.
+La datation biblique et objective dont il est question ici est donc de compter le nombre de révolutions périodiques de la terre autour d'elle-même, à partir du moment où elle a été créée, dès le commencement de la création, comme indiqué dans Genèse 1:1-2. 
+
+
 
 ### Privilégier les chronologies relatives aux datations absolues  
 
 Comme les datations radiocarbones sont à considérer avec beaucoup de précautions, on tirera profit de toutes les archives qui mentionnent des durées de vie de personnages historiques, des durées de vie.
-La méthode est de faire de|s recoupements à travers diverses sources ou événements.
+La méthode est de faire des recoupements à travers diverses sources ou événements.
 
-La mise en parallèle de la chronooigie des descendants d'Abraham et de la chronologie égyptienne
-a toujours été une pierre d'achaoppement, car la succession des dynapties égyptiennes prises les unes après les autres est plus étirée.
+La mise en parallèle de la chronologie des descendants d'Abraham et de la chronologie égyptienne a toujours été une pierre d'achoppement, car la succession des dynasties égyptiennes prises les unes après les autres est plus étirée.
 Or, on remarque qu'il y a plusieurs lieux d'exercice du pouvoir, Memphis et Elephantine, dans l'Egypte ancienne et moyenne.
-Plutôt que d'avoir une approche complexe où ses lieux du pouvoir s'alterne, il semble plus conforme à la réalitité, que ces pouvoirs se sont exercés simultanément, et donc qu'il y a des dynasties parallèles.
- 
+Plutôt que d'avoir une approche complexe où ses lieux du pouvoir s'alterne, il semble plus conforme à la réalité, que ces pouvoirs se sont exercés simultanément, et donc qu'il y a des dynasties parallèles.
+
 Basé sur les archives de  Manetho corrigées par Jasher, le tableau suivant montre le temps total (en parenthèses) de chaque dynastie et le temps total où chaque dynastie régnait sur Memphis ou Elephantine. 
 
 | Dynasties à Memphis (699 ans) | Dynasties à Elephantine (624 ans)|
 | ------------ | --------------- |
-| Première – (253 ans) | Seconde – (302 ans) | 
+| Première – (253 ans) | Seconde – (302 ans) |
 | Quatrième – (274 ans) | Troisième – 2120-2334 AM (214 ans) |
 | Sixième – 2278-2448 AM (172 ans)  | Cinquième – 2340-2448 AM (108 ans) |
 
@@ -294,7 +295,7 @@ On voit donc que les datations coïncident très bien dans ces conditions.
 
 * 2488 AM
 
-Le début de la conquête de Canaan correspond à la mort de Moïse, soit un âge de 120
+Le début de la conquête de Canaan correspond à la mort de Moïse, soit un âge de 120 ans
 , 40 ans après l'Exode d'Egypte. Ce temps correspond à une errance dans le désert.
 
 #### Éléments externes
@@ -310,7 +311,7 @@ Ces travaux ont été repris par l'archéologue Kathleen Kenyon, de l'Universit�
 ## Le premier temple d'Israël
 ### La datation de la construction/dédicace du premier temple
 #### Éléments internes
-Dans 1 Rois 6, versets 1 et 38, il est dit qu'il a fallu attendre 480 ans de l'Exode au début de la construction du temple de Salomon. On apprend aussi qu'il a fallu 7 temps pour en achever la construction. Le temple de Salomaon a donc été dédicacé 487 ans après l'Exode, c'est à dire en l'année 2935 AM. 
+Dans 1 Rois 6, versets 1 et 38, il est dit qu'il a fallu attendre 480 ans de l'Exode au début de la construction du temple de Salomon. On apprend aussi qu'il a fallu 7 temps pour en achever la construction. Le temple de Salomon a donc été dédicacé 487 ans après l'Exode, c'est à dire en l'année 2935 AM. 
 Johnson, Ken. Ancient Post-Flood History (p. 21). Biblefacts.org. Édition du Kindle. 
 
 “And it came to pass in the four hundred and eightieth year after the children of Israel were come out of the land of Egypt, in the fourth year of Solomon's reign over Israel, in the month Zif, which is the second month, that he began to build the house of the LORD.” 1 Kings 6: 1 
@@ -340,4 +341,3 @@ Le calendrier hébreu pharisien
 * Garstang, John et Garstang, J.B.E., The Story of Jericho,  New edition, revised. London: Marshall, Morgan and Scott. 200 pp. 8/6.
 * Johnson, Ken : Ancient Post Flood History, biblefacts.org
 * Millard, Alan : Des pierres qui parlent... Lumières archéologiques sur les lieux et les temps bibliques, Excelcis, 1998
-* Wild, Eva Maria et Kutschera, Walter : L'Egypte ancienne à l'aune du radiocarbone, Pour la science, numéro 413, mars 2012 
