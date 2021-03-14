@@ -6,7 +6,7 @@ Ce projet présente des outils informatiques pour extraire des éléments de chr
 
 Il présente également une chronologie biblique au format GEDCOM sous
 
-- [src/main/resources/genealogy](src/main/resources/genealogy)
+- [src/main/resources/genealogies](src/main/resources/genealogies)
 
 avec des dates justifiées dans l'article [Chronologie_biblique.md](Chronologie_biblique.md)
 
